@@ -1,0 +1,11 @@
+Name: FreeBSD Source
+Description: FreeBSD is an operating system
+URL: https://www.freebsd.org/
+Version: 14.3
+Requires: FreeBSD-clang \
+  FreeBSD-libc \
+  FreeBSD-mkuzip \
+  FreeBSD-xz \
+  FreeBSD-zlib \
+  FreeBSD-zstd
+Source: https://cgit.freebsd.org/src/

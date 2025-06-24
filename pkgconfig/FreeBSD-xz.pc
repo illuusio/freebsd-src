@@ -1,0 +1,8 @@
+Name: xz
+Description: XZ Utils are a complete C99 implementation of the .xz file format
+URL: https://tukaani.org/xz/
+Version: 5.8.1
+License: 0BSD
+LicenseFile: https://cgit.freebsd.org/src/plain/contrib/xz/COPYING.0BSD
+Source: https://github.com/tukaani-project/xz
+
