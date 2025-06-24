@@ -1,0 +1,8 @@
+Name: clang
+Description: The Clang project provides a language front-end and tooling infrastructure for languages in the C language family
+URL: https://clang.llvm.org/
+Version: 19.x-llvmorg-19.1.4-0-gaadaa00de76e
+License: Apache-2.0
+LicenseFile: https://cgit.freebsd.org/src/plain/contrib/llvm-project/clang/LICENSE.TXT
+Source: https://cgit.freebsd.org/src/tree/contrib/llvm-project/clang
+
