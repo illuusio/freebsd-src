@@ -1,0 +1,8 @@
+Name: zstd
+Description: Zstandard is a fast compression algorithm, providing high compression ratios
+URL: https://facebook.github.io/zstd/
+Version: 1.5.2
+License: BSD-3-Clause
+LicenseFile: https://cgit.freebsd.org/src/plain/sys/contrib/zstd/LICENSE
+Source: https://github.com/facebook/zstd
+
