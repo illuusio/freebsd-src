@@ -1,0 +1,87 @@
+version = 1
+
+[[annotations]]
+path = [
+    "mkuzip/mkuz_blk.c",
+    "mkuzip/mkuz_blk.h"]
+SPDX-License-Identifier = "bsd-simplified"
+SPDX-FileCopyrightText = "Copyright (c) 2004-2016 Maxim Sobolev <sobomax@FreeBSD.org>"
+precedence = "override"
+
+[[annotations]]
+path = [
+    "mkuzip/mkuz_blk_chain.h",
+    "mkuzip/mkuz_blockcache.c",
+    "mkuzip/mkuz_blockcache.h",
+    "mkuzip/mkuz_cfg.h"]
+SPDX-License-Identifier = "bsd-simplified"
+SPDX-FileCopyrightText = "Copyright (c) 2016 Maxim Sobolev <sobomax@FreeBSD.org>"
+precedence = "override"
+
+[[annotations]]
+path = [
+    "mkuzip/mkuz_cloop.h",
+    "mkuzip/mkuz_conveyor.c"]
+SPDX-License-Identifier = "bsd-simplified"
+SPDX-FileCopyrightText = "Copyright (c) 2004-2016 Maxim Sobolev <sobomax@FreeBSD.org>"
+precedence = "override"
+
+[[annotations]]
+path = [
+    "mkuzip/mkuz_conveyor.h",
+    "mkuzip/mkuz_format.h"]
+SPDX-License-Identifier = "bsd-simplified"
+SPDX-FileCopyrightText = "Copyright (c) 2016 Maxim Sobolev <sobomax@FreeBSD.org>"
+precedence = "override"
+
+[[annotations]]
+path = [
+    "mkuzip/mkuz_fqueue.c",
+    "mkuzip/mkuz_fqueue.h",
+    "mkuzip/mkuz_insize.c"]
+SPDX-License-Identifier = "bsd-simplified"
+SPDX-FileCopyrightText = "Copyright (c) 2004-2016 Maxim Sobolev <sobomax@FreeBSD.org>"
+precedence = "override"
+
+[[annotations]]
+path = "mkuzip/mkuz_insize.h"
+SPDX-License-Identifier = "bsd-simplified"
+SPDX-FileCopyrightText = "Copyright (c) 2016 Maxim Sobolev <sobomax@FreeBSD.org>"
+precedence = "override"
+
+[[annotations]]
+path = [
+    "mkuzip/mkuz_lzma.c",
+    "mkuzip/mkuz_lzma.h"]
+SPDX-License-Identifier = "bsd-simplified"
+SPDX-FileCopyrightText = "Copyright (c) 2004-2016 Maxim Sobolev <sobomax@FreeBSD.org>"
+SPDX-FileCopyrightText = "Copyright (c) 2011 Aleksandr Rybalko <ray@ddteam.net>"
+precedence = "override"
+
+[[annotations]]
+path = [
+    "mkuzip/mkuz_time.c",
+    "mkuzip/mkuz_time.h",
+    "mkuzip/mkuz_zlib.c",
+    "mkuzip/mkuz_zlib.h"]
+SPDX-License-Identifier = "bsd-simplified"
+SPDX-FileCopyrightText = "Copyright (c) 2004-2016 Maxim Sobolev <sobomax@FreeBSD.org>"
+precedence = "override"
+
+[[annotations]]
+path = [
+    "mkuzip/mkuz_zstd.c",
+    "mkuzip/mkuz_zstd.h"]
+SPDX-License-Identifier = "bsd-simplified"
+SPDX-FileCopyrightText = "Copyright (c) 2019 Conrad Meyer <cem@FreeBSD.org>"
+precedence = "override"
+
+
+[[annotations]]
+path = [
+    "mkuzip/mkuzip.c",
+    "mkuzip/mkuzip.h"]
+SPDX-License-Identifier = "bsd-simplified"
+SPDX-FileCopyrightText = "Copyright (c) 2004-2016 Maxim Sobolev <sobomax@FreeBSD.org>"
+precedence = "override"
+
