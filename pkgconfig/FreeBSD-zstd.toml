@@ -1,0 +1,505 @@
+version = 1
+
+[[annotations]]
+path = [
+    "zstd/doc/educational_decoder/harness.c",
+    "zstd/doc/educational_decoder/zstd_decompress.c",
+    "zstd/doc/educational_decoder/zstd_decompress.h"]
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-FileCopyrightText = "Copyright (c) Facebook, Inc."
+precedence = "override"
+
+[[annotations]]
+path = [
+    "zstd/examples/common.h",
+    "zstd/examples/dictionary_compression.c",
+    "zstd/examples/dictionary_decompression.c",
+    "zstd/examples/multiple_simple_compression.c",
+    "zstd/examples/multiple_streaming_compression.c",
+    "zstd/examples/simple_compression.c",
+    "zstd/examples/simple_decompression.c",
+    "zstd/examples/streaming_compression.c"]
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-FileCopyrightText = "Copyright (c) Yann Collet, Facebook, Inc."
+precedence = "override"
+
+[[annotations]]
+path = "zstd/examples/streaming_compression_thread_pool.c"
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-FileCopyrightText = "Copyright (c) Martin Liska, SUSE, Facebook, Inc."
+precedence = "override"
+
+[[annotations]]
+path = [
+    "zstd/examples/streaming_decompression.c",
+    "zstd/examples/streaming_memory_usage.c",
+    "zstd/lib/zdict.h",
+    "zstd/lib/zstd.h",
+    "zstd/lib/zstd_errors.h",
+    "zstd/lib/common/bitstream.h",
+    "zstd/lib/common/compiler.h"]
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-FileCopyrightText = "Copyright (c) Yann Collet, Facebook, Inc."
+precedence = "override"
+
+[[annotations]]
+path = "zstd/lib/common/cpu.h"
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-FileCopyrightText = "Copyright (c) Facebook, Inc."
+precedence = "override"
+
+[[annotations]]
+path = [
+    "zstd/lib/common/debug.c",
+    "zstd/lib/common/debug.h",
+    "zstd/lib/common/entropy_common.c",
+    "zstd/lib/common/error_private.c",
+    "zstd/lib/common/error_private.h",
+    "zstd/lib/common/fse.h",
+    "zstd/lib/common/fse_decompress.c",
+    "zstd/lib/common/huf.h",
+    "zstd/lib/common/mem.h",
+    "zstd/lib/common/pool.c",
+    "zstd/lib/common/pool.h"]
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-FileCopyrightText = "Copyright (c) Yann Collet, Facebook, Inc."
+precedence = "override"
+
+[[annotations]]
+path = "zstd/lib/common/portability_macros.h"
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-FileCopyrightText = "Copyright (c) Facebook, Inc."
+precedence = "override"
+
+[[annotations]]
+path = [
+    "zstd/lib/common/threading.c",
+    "zstd/lib/common/threading.h"]
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-FileCopyrightText = "Copyright (c) 2016 Tino Reichardt"
+precedence = "override"
+
+[[annotations]]
+path = [
+    "zstd/lib/common/xxhash.c",
+    "zstd/lib/common/xxhash.h",
+    "zstd/lib/common/zstd_common.c"]
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-FileCopyrightText = "Copyright (c) Yann Collet, Facebook, Inc."
+precedence = "override"
+
+[[annotations]]
+path = "zstd/lib/common/zstd_deps.h"
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-FileCopyrightText = "Copyright (c) Facebook, Inc."
+precedence = "override"
+
+[[annotations]]
+path = "zstd/lib/common/zstd_internal.h"
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-FileCopyrightText = "Copyright (c) Yann Collet, Facebook, Inc."
+precedence = "override"
+
+[[annotations]]
+path = "zstd/lib/common/zstd_trace.h"
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-FileCopyrightText = "Copyright (c) Facebook, Inc."
+precedence = "override"
+
+[[annotations]]
+path = [
+    "zstd/lib/compress/clevels.h",
+    "zstd/lib/compress/fse_compress.c",
+    "zstd/lib/compress/hist.c",
+    "zstd/lib/compress/hist.h",
+    "zstd/lib/compress/huf_compress.c",
+    "zstd/lib/compress/zstd_compress.c",
+    "zstd/lib/compress/zstd_compress_internal.h",
+    "zstd/lib/compress/zstd_compress_literals.c",
+    "zstd/lib/compress/zstd_compress_literals.h",
+    "zstd/lib/compress/zstd_compress_sequences.c",
+    "zstd/lib/compress/zstd_compress_sequences.h",
+    "zstd/lib/compress/zstd_compress_superblock.c",
+    "zstd/lib/compress/zstd_compress_superblock.h",
+    "zstd/lib/compress/zstd_cwksp.h",
+    "zstd/lib/compress/zstd_double_fast.c",
+    "zstd/lib/compress/zstd_double_fast.h",
+    "zstd/lib/compress/zstd_fast.c",
+    "zstd/lib/compress/zstd_fast.h",
+    "zstd/lib/compress/zstd_lazy.c",
+    "zstd/lib/compress/zstd_lazy.h",
+    "zstd/lib/compress/zstd_ldm.c",
+    "zstd/lib/compress/zstd_ldm.h",
+    "zstd/lib/compress/zstd_ldm_geartab.h"]
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-FileCopyrightText = "Copyright (c) Yann Collet, Facebook, Inc."
+precedence = "override"
+
+[[annotations]]
+path = "zstd/lib/compress/zstd_opt.c"
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-FileCopyrightText = "Copyright (c) Przemyslaw Skibinski, Yann Collet, Facebook, Inc."
+precedence = "override"
+
+[[annotations]]
+path = [
+    "zstd/lib/compress/zstd_opt.h",
+    "zstd/lib/compress/zstdmt_compress.c",
+    "zstd/lib/compress/zstdmt_compress.h",
+    "zstd/lib/decompress/huf_decompress.c",
+    "zstd/lib/decompress/zstd_ddict.c",
+    "zstd/lib/decompress/zstd_ddict.h",
+    "zstd/lib/decompress/zstd_decompress.c",
+    "zstd/lib/decompress/zstd_decompress_block.c",
+    "zstd/lib/decompress/zstd_decompress_block.h",
+    "zstd/lib/decompress/zstd_decompress_internal.h",
+    "zstd/lib/deprecated/zbuff.h",
+    "zstd/lib/deprecated/zbuff_common.c",
+    "zstd/lib/deprecated/zbuff_compress.c",
+    "zstd/lib/deprecated/zbuff_decompress.c",
+    "zstd/lib/dictBuilder/cover.c"]
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-FileCopyrightText = "Copyright (c) Yann Collet, Facebook, Inc."
+precedence = "override"
+
+[[annotations]]
+path = "zstd/lib/dictBuilder/cover.h"
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-FileCopyrightText = "Copyright (c) Facebook, Inc."
+precedence = "override"
+
+[[annotations]]
+path = [
+    "zstd/lib/dictBuilder/divsufsort.c",
+    "zstd/lib/dictBuilder/divsufsort.h"]
+SPDX-License-Identifier = "mit"
+SPDX-FileCopyrightText = "Copyright (c) 2003-2008 Yuta Mori"
+precedence = "override"
+
+[[annotations]]
+path = "zstd/lib/dictBuilder/fastcover.c"
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-FileCopyrightText = "Copyright (c) Facebook, Inc."
+precedence = "override"
+
+[[annotations]]
+path = "zstd/lib/dictBuilder/zdict.c"
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-FileCopyrightText = "Copyright (c) Yann Collet, Facebook, Inc."
+precedence = "override"
+
+[[annotations]]
+path = [
+    "zstd/lib/freebsd/assert.h",
+    "zstd/lib/freebsd/limits.h",
+    "zstd/lib/freebsd/stddef.h",
+    "zstd/lib/freebsd/stdint.h",
+    "zstd/lib/freebsd/stdio.h"]
+SPDX-License-Identifier = "public-domain"
+precedence = "override"
+
+[[annotations]]
+path = "zstd/lib/freebsd/stdlib.h"
+SPDX-License-Identifier = "bsd-simplified"
+SPDX-FileCopyrightText = "Copyright (c) 2014-2015 Allan Jude <allanjude@freebsd.org>"
+precedence = "override"
+
+[[annotations]]
+path = "zstd/lib/freebsd/string.h"
+SPDX-License-Identifier = "public-domain"
+precedence = "override"
+
+[[annotations]]
+path = "zstd/lib/freebsd/zstd_kfreebsd.c"
+SPDX-License-Identifier = "bsd-simplified"
+SPDX-FileCopyrightText = "Copyright (c) 2018 Conrad Meyer <cem@freebsd.org>"
+precedence = "override"
+
+[[annotations]]
+path = "zstd/lib/freebsd/zstd_kfreebsd.h"
+SPDX-License-Identifier = "bsd-simplified"
+SPDX-FileCopyrightText = "Copyright (c) 2014-2015 Allan Jude <allanjude@freebsd.org>"
+precedence = "override"
+
+[[annotations]]
+path = "zstd/lib/freebsd/zstd_kmalloc.c"
+SPDX-License-Identifier = "bsd-simplified"
+SPDX-FileCopyrightText = "Copyright (c) 2016-2017 Allan Jude <allanjude@freebsd.org>"
+precedence = "override"
+
+[[annotations]]
+path = "zstd/lib/legacy/zstd_legacy.h"
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-FileCopyrightText = "Copyright (c) Yann Collet, Facebook, Inc."
+precedence = "override"
+
+[[annotations]]
+path = "zstd/lib/legacy/zstd_v01.c"
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-License-Identifier = "bsd-simplified"
+SPDX-FileCopyrightText = "Copyright (c) Yann Collet, Facebook, Inc."
+SPDX-FileCopyrightText = "Copyright (c) 2014-2015, Yann Collet"
+precedence = "override"
+
+[[annotations]]
+path = "zstd/lib/legacy/zstd_v01.h"
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-FileCopyrightText = "Copyright (c) Yann Collet, Facebook, Inc."
+precedence = "override"
+
+[[annotations]]
+path = "zstd/lib/legacy/zstd_v02.c"
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-License-Identifier = "bsd-simplified"
+SPDX-FileCopyrightText = "Copyright (c) Yann Collet, Facebook, Inc."
+SPDX-FileCopyrightText = "Copyright (c) 2013-2015, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2015, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2015, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2015, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2015, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2014-2015, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2014-2015, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2015, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2015, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2014-2015, Yann Collet"
+precedence = "override"
+
+[[annotations]]
+path = "zstd/lib/legacy/zstd_v02.h"
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-FileCopyrightText = "Copyright (c) Yann Collet, Facebook, Inc."
+precedence = "override"
+
+[[annotations]]
+path = "zstd/lib/legacy/zstd_v03.c"
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-License-Identifier = "bsd-simplified"
+SPDX-FileCopyrightText = "Copyright (c) Yann Collet, Facebook, Inc."
+SPDX-FileCopyrightText = "Copyright (c) 2013-2015, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2015, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2015, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2015, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2015, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2014-2015, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2014-2015, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2015, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2015, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2014-2015, Yann Collet"
+precedence = "override"
+
+[[annotations]]
+path = "zstd/lib/legacy/zstd_v03.h"
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-FileCopyrightText = "Copyright (c) Yann Collet, Facebook, Inc."
+precedence = "override"
+
+[[annotations]]
+path = "zstd/lib/legacy/zstd_v04.c"
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-License-Identifier = "bsd-simplified"
+SPDX-FileCopyrightText = "Copyright (c) Yann Collet, Facebook, Inc."
+SPDX-FileCopyrightText = "Copyright (c) 2013-2015, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2015, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2015, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2015, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2015, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2015, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2015-2016, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2015, Yann Collet"
+precedence = "override"
+
+[[annotations]]
+path = "zstd/lib/legacy/zstd_v04.h"
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-FileCopyrightText = "Copyright (c) Yann Collet, Facebook, Inc."
+precedence = "override"
+
+[[annotations]]
+path = "zstd/lib/legacy/zstd_v05.c"
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-License-Identifier = "bsd-simplified"
+SPDX-FileCopyrightText = "Copyright (c) Yann Collet, Facebook, Inc."
+SPDX-FileCopyrightText = "Copyright (c) 2013-2015, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2014-2016, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2014-2016, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2015, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2016, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2015, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2015, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2016, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2016, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2015, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2014-2016, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2015-2016, Yann Collet"
+precedence = "override"
+
+[[annotations]]
+path = "zstd/lib/legacy/zstd_v05.h"
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-FileCopyrightText = "Copyright (c) Yann Collet, Facebook, Inc."
+precedence = "override"
+
+[[annotations]]
+path = "zstd/lib/legacy/zstd_v06.c"
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-License-Identifier = "bsd-simplified"
+SPDX-FileCopyrightText = "Copyright (c) Yann Collet, Facebook, Inc."
+SPDX-FileCopyrightText = "Copyright (c) 2013-2015, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2014-2016, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2014-2016, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2016, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2016, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2015, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2016, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2015, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2016, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2016, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2016, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2015-2016, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2014-2016, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2015-2016, Yann Collet"
+precedence = "override"
+
+[[annotations]]
+path = "zstd/lib/legacy/zstd_v06.h"
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-FileCopyrightText = "Copyright (c) Yann Collet, Facebook, Inc."
+precedence = "override"
+
+[[annotations]]
+path = "zstd/lib/legacy/zstd_v07.c"
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-License-Identifier = "bsd-simplified"
+SPDX-FileCopyrightText = "Copyright (c) Yann Collet, Facebook, Inc."
+SPDX-FileCopyrightText = "Copyright (c) 2013-2015, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2016, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2016, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2016, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2016, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2015, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2013-2016, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2015-2016, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2014-2016, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2014-2016, Yann Collet"
+SPDX-FileCopyrightText = "Copyright (c) 2015-2016, Yann Collet"
+precedence = "override"
+
+[[annotations]]
+path = [
+    "zstd/lib/legacy/zstd_v07.h",
+    "zstd/programs/benchfn.c",
+    "zstd/programs/benchfn.h",
+    "zstd/programs/benchzstd.c",
+    "zstd/programs/benchzstd.h",
+    "zstd/programs/datagen.c",
+    "zstd/programs/datagen.h",
+    "zstd/programs/dibio.c",
+    "zstd/programs/dibio.h",
+    "zstd/programs/fileio.c",
+    "zstd/programs/fileio.h"]
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-FileCopyrightText = "Copyright (c) Yann Collet, Facebook, Inc."
+precedence = "override"
+
+[[annotations]]
+path = "zstd/programs/platform.h"
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-FileCopyrightText = "Copyright (c) Przemyslaw Skibinski, Yann Collet, Facebook, Inc."
+precedence = "override"
+
+[[annotations]]
+path = [
+    "zstd/programs/timefn.c",
+    "zstd/programs/timefn.h"]
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-FileCopyrightText = "Copyright (c) Yann Collet, Facebook, Inc."
+precedence = "override"
+
+[[annotations]]
+path = [
+    "zstd/programs/util.c",
+    "zstd/programs/util.h"]
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-FileCopyrightText = "Copyright (c) Przemyslaw Skibinski, Yann Collet, Facebook, Inc."
+precedence = "override"
+
+[[annotations]]
+path = "zstd/programs/zstdcli.c"
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-FileCopyrightText = "Copyright (c) Yann Collet, Facebook, Inc."
+precedence = "override"
+
+[[annotations]]
+path = [
+    "zstd/programs/zstdcli_trace.c",
+    "zstd/programs/zstdcli_trace.h"]
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-FileCopyrightText = "Copyright (c) Facebook, Inc."
+precedence = "override"
+
+[[annotations]]
+path = "zstd/zlibWrapper/gzclose.c"
+SPDX-License-Identifier = "zlib"
+SPDX-FileCopyrightText = "Copyright (c) 2004, 2010 Mark Adler"
+precedence = "override"
+
+[[annotations]]
+path = "zstd/zlibWrapper/gzcompatibility.h"
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-FileCopyrightText = "Copyright (c) 2016-2021, Przemyslaw Skibinski, Yann Collet, Facebook, Inc."
+precedence = "override"
+
+[[annotations]]
+path = "zstd/zlibWrapper/gzguts.h"
+SPDX-License-Identifier = "zlib"
+SPDX-FileCopyrightText = "Copyright (c) 2004, 2005, 2010, 2011, 2012, 2013, 2016 Mark Adler"
+precedence = "override"
+
+[[annotations]]
+path = "zstd/zlibWrapper/gzlib.c"
+SPDX-License-Identifier = "zlib"
+SPDX-FileCopyrightText = "Copyright (c) 2004-2017 Mark Adler"
+precedence = "override"
+
+[[annotations]]
+path = "zstd/zlibWrapper/gzread.c"
+SPDX-License-Identifier = "zlib"
+SPDX-FileCopyrightText = "Copyright (c) 2004, 2005, 2010, 2011, 2012, 2013, 2016 Mark Adler"
+precedence = "override"
+
+[[annotations]]
+path = "zstd/zlibWrapper/gzwrite.c"
+SPDX-License-Identifier = "zlib"
+SPDX-FileCopyrightText = "Copyright (c) 2004-2017 Mark Adler"
+precedence = "override"
+
+[[annotations]]
+path = [
+    "zstd/zlibWrapper/zstd_zlibwrapper.c",
+    "zstd/zlibWrapper/zstd_zlibwrapper.h"]
+SPDX-License-Identifier = "bsd-new OR gpl-2.0"
+SPDX-FileCopyrightText = "Copyright (c) 2016-2021, Przemyslaw Skibinski, Yann Collet, Facebook, Inc."
+precedence = "override"
+
+[[annotations]]
+path = [
+    "zstd/zlibWrapper/examples/example.c",
+    "zstd/zlibWrapper/examples/example_original.c"]
+SPDX-License-Identifier = "zlib"
+SPDX-FileCopyrightText = "Copyright (c) 1995-2006, 2011 Jean-loup Gailly"
+precedence = "override"
+
+[[annotations]]
+path = [
+    "zstd/zlibWrapper/examples/fitblk.c",
+    "zstd/zlibWrapper/examples/fitblk_original.c"]
+SPDX-License-Identifier = "public-domain"
+precedence = "override"
+
+[[annotations]]
+path = "zstd/zlibWrapper/examples/minigzip.c"
+SPDX-License-Identifier = "zlib"
+SPDX-FileCopyrightText = "Copyright (c) 1995-2006, 2010, 2011 Jean-loup Gailly"
+precedence = "override"
+
+

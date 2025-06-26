@@ -1,0 +1,82 @@
+{% set license_ns = namespace() -%}
+{% set license_ns.last_license = '' -%}
+{% set license_ns.first_row = true -%}
+{% set license_ns.macro_row = true -%}
+{% set license_ns.printed = false -%}
+{% set license_list = [] -%}
+{% set copyright_list = [] -%}
+{% set path_list = [] -%}
+{% set last_license_list = [] -%}
+{% set last_copyright_list = [] -%}
+{% set save_license_list = [] -%}
+{% set save_copyright_list = [] -%}
+
+{% macro print_annotation(path, license, copyright) -%}
+[[annotations]]
+{% if path|length == 1 -%}
+path = "{{ path[0] }}"
+{% else -%}
+path = [
+{% set license_ns.macro_row = true -%}
+{% for item in path_list -%}
+{% if license_ns.macro_row == false -%}
+,
+{% endif -%}
+{%set cur_string = "    \"" + item + "\"" -%}
+{{ cur_string -}}
+{% set license_ns.macro_row = false -%}
+{% endfor -%}
+]
+{% endif -%}
+{% for item in license -%}
+SPDX-License-Identifier = "{{ item }}"
+{% endfor -%}
+{% for item in copyright -%}
+SPDX-FileCopyrightText = "{{ item }}"
+{% endfor -%}
+precedence = "override"
+{% set license_ns.macro_row = false -%}
+{% endmacro -%}
+
+version = 1
+{% if files.license_copyright %}
+{% for path, data in files.license_copyright.items() -%}
+{% set license_ns.printed = false -%}
+{% for row in data -%}
+{% if row.what == 'copyright' -%}
+{% set tmp = copyright_list.append(row.value) -%}
+{% endif -%}
+{% if row.what == 'license' and license_ns.last_license != row.value -%}
+{% set tmp = license_list.append(row.value) -%}
+{% set license_ns.last_license = row.value -%}
+{% endif -%}
+{% endfor -%}
+{% if license_ns.first_row == false and (copyright_list != last_copyright_list or license_list != last_license_list) -%}
+{{ print_annotation(path_list, last_license_list, last_copyright_list) }}
+{% set license_ns.printed = true -%}
+{% set tmp = path_list.clear() -%}
+{% set tmp = last_copyright_list.clear() -%}
+{% set tmp = last_license_list.clear() -%}
+{% set tmp = last_license_list.extend(license_list) -%}
+{% set tmp = last_copyright_list.extend(copyright_list) -%}
+{% set tmp = path_list.append(path) -%}
+{% else -%}
+{% set tmp = path_list.append(path) -%}
+{% endif -%}
+{% if license_ns.first_row == true -%}
+{% set tmp = last_license_list.extend(license_list) -%}
+{% set tmp = last_copyright_list.extend(copyright_list) -%}
+{% endif -%}
+{% set tmp = save_copyright_list.clear() -%}
+{% set tmp = save_license_list.clear() -%}
+{% set tmp = save_copyright_list.extend(copyright_list) -%}
+{% set tmp = save_license_list.extend(license_list) -%}
+{% set tmp = copyright_list.clear() -%}
+{% set tmp = license_list.clear() -%}
+{% set license_ns.first_row = false -%}
+{% set license_ns.last_license = '' -%}
+{% endfor -%}
+{% endif %}
+{% if license_ns.printed == false -%}
+{{ print_annotation(path_list, save_license_list, save_copyright_list) }}
+{% endif %}
