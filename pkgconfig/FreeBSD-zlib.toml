@@ -2,38 +2,38 @@ version = 1
 
 [[annotations]]
 path = "zlib/adler32.c"
-SPDX-License-Identifier = "zlib"
+SPDX-License-Identifier = "Zlib"
 SPDX-FileCopyrightText = "Copyright (c) 1995-2011, 2016 Mark Adler"
 precedence = "override"
 
 [[annotations]]
 path = "zlib/compress.c"
-SPDX-License-Identifier = "zlib"
+SPDX-License-Identifier = "Zlib"
 SPDX-FileCopyrightText = "Copyright (c) 1995-2005, 2014, 2016 Jean-loup Gailly, Mark Adler"
 precedence = "override"
 
 [[annotations]]
 path = "zlib/crc32.c"
-SPDX-License-Identifier = "zlib"
+SPDX-License-Identifier = "Zlib"
 SPDX-FileCopyrightText = "Copyright (c) 1995-2022 Mark Adler"
 precedence = "override"
 
 [[annotations]]
 path = "zlib/deflate.c"
-SPDX-License-Identifier = "zlib"
+SPDX-License-Identifier = "Zlib"
 SPDX-FileCopyrightText = "Copyright (c) 1995-2024 Jean-loup Gailly and Mark Adler"
 SPDX-FileCopyrightText = "Copyright 1995-2024 Jean-loup Gailly and Mark Adler"
 precedence = "override"
 
 [[annotations]]
 path = "zlib/deflate.h"
-SPDX-License-Identifier = "zlib"
+SPDX-License-Identifier = "Zlib"
 SPDX-FileCopyrightText = "Copyright (c) 1995-2024 Jean-loup Gailly"
 precedence = "override"
 
 [[annotations]]
 path = "zlib/gzclose.c"
-SPDX-License-Identifier = "zlib"
+SPDX-License-Identifier = "Zlib"
 SPDX-FileCopyrightText = "Copyright (c) 2004, 2010 Mark Adler"
 precedence = "override"
 
@@ -41,111 +41,111 @@ precedence = "override"
 path = [
     "zlib/gzguts.h",
     "zlib/gzlib.c"]
-SPDX-License-Identifier = "zlib"
+SPDX-License-Identifier = "Zlib"
 SPDX-FileCopyrightText = "Copyright (c) 2004-2024 Mark Adler"
 precedence = "override"
 
 [[annotations]]
 path = "zlib/gzread.c"
-SPDX-License-Identifier = "zlib"
+SPDX-License-Identifier = "Zlib"
 SPDX-FileCopyrightText = "Copyright (c) 2004-2017 Mark Adler"
 precedence = "override"
 
 [[annotations]]
 path = "zlib/gzwrite.c"
-SPDX-License-Identifier = "zlib"
+SPDX-License-Identifier = "Zlib"
 SPDX-FileCopyrightText = "Copyright (c) 2004-2019 Mark Adler"
 precedence = "override"
 
 [[annotations]]
 path = "zlib/infback.c"
-SPDX-License-Identifier = "zlib"
+SPDX-License-Identifier = "Zlib"
 SPDX-FileCopyrightText = "Copyright (c) 1995-2022 Mark Adler"
 precedence = "override"
 
 [[annotations]]
 path = "zlib/inffast.c"
-SPDX-License-Identifier = "zlib"
+SPDX-License-Identifier = "Zlib"
 SPDX-License-Identifier = "warranty-disclaimer"
 SPDX-FileCopyrightText = "Copyright (c) 1995-2017 Mark Adler"
 precedence = "override"
 
 [[annotations]]
 path = "zlib/inffast.h"
-SPDX-License-Identifier = "zlib"
+SPDX-License-Identifier = "Zlib"
 SPDX-FileCopyrightText = "Copyright (c) 1995-2003, 2010 Mark Adler"
 precedence = "override"
 
 [[annotations]]
 path = "zlib/inflate.c"
-SPDX-License-Identifier = "zlib"
+SPDX-License-Identifier = "Zlib"
 SPDX-FileCopyrightText = "Copyright (c) 1995-2022 Mark Adler"
 precedence = "override"
 
 [[annotations]]
 path = "zlib/inflate.h"
-SPDX-License-Identifier = "zlib"
+SPDX-License-Identifier = "Zlib"
 SPDX-FileCopyrightText = "Copyright (c) 1995-2019 Mark Adler"
 precedence = "override"
 
 [[annotations]]
 path = "zlib/inftrees.c"
-SPDX-License-Identifier = "zlib"
+SPDX-License-Identifier = "Zlib"
 SPDX-FileCopyrightText = "Copyright (c) 1995-2024 Mark Adler"
 SPDX-FileCopyrightText = "Copyright 1995-2024 Mark Adler"
 precedence = "override"
 
 [[annotations]]
 path = "zlib/inftrees.h"
-SPDX-License-Identifier = "zlib"
+SPDX-License-Identifier = "Zlib"
 SPDX-FileCopyrightText = "Copyright (c) 1995-2005, 2010 Mark Adler"
 precedence = "override"
 
 [[annotations]]
 path = "zlib/trees.c"
-SPDX-License-Identifier = "zlib"
+SPDX-License-Identifier = "Zlib"
 SPDX-FileCopyrightText = "Copyright (c) 1995-2024 Jean-loup Gailly"
 precedence = "override"
 
 [[annotations]]
 path = "zlib/uncompr.c"
-SPDX-License-Identifier = "zlib"
+SPDX-License-Identifier = "Zlib"
 SPDX-FileCopyrightText = "Copyright (c) 1995-2003, 2010, 2014, 2016 Jean-loup Gailly, Mark Adler"
 precedence = "override"
 
 [[annotations]]
 path = "zlib/zconf.h"
-SPDX-License-Identifier = "zlib"
+SPDX-License-Identifier = "Zlib"
 SPDX-FileCopyrightText = "Copyright (c) 1995-2024 Jean-loup Gailly, Mark Adler"
 precedence = "override"
 
 [[annotations]]
 path = "zlib/zlib.h"
-SPDX-License-Identifier = "zlib"
+SPDX-License-Identifier = "Zlib"
 SPDX-FileCopyrightText = "Copyright (c) 1995-2024 Jean-loup Gailly and Mark Adler"
 precedence = "override"
 
 [[annotations]]
 path = "zlib/zutil.c"
-SPDX-License-Identifier = "zlib"
+SPDX-License-Identifier = "Zlib"
 SPDX-FileCopyrightText = "Copyright (c) 1995-2017 Jean-loup Gailly"
 precedence = "override"
 
 [[annotations]]
 path = "zlib/zutil.h"
-SPDX-License-Identifier = "zlib"
+SPDX-License-Identifier = "Zlib"
 SPDX-FileCopyrightText = "Copyright (c) 1995-2024 Jean-loup Gailly, Mark Adler"
 precedence = "override"
 
 [[annotations]]
 path = "zlib/test/example.c"
-SPDX-License-Identifier = "zlib"
+SPDX-License-Identifier = "Zlib"
 SPDX-FileCopyrightText = "Copyright (c) 1995-2006, 2011, 2016 Jean-loup Gailly"
 precedence = "override"
 
 [[annotations]]
 path = "zlib/test/infcover.c"
-SPDX-License-Identifier = "zlib"
+SPDX-License-Identifier = "Zlib"
 SPDX-FileCopyrightText = "Copyright (c) 2011, 2016 Mark Adler"
 precedence = "override"
 
