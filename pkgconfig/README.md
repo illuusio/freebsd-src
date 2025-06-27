@@ -1,3 +1,6 @@
+> [!WARNING]
+> 💥 Attention please! You've entered our testing ground! ☠ The contents of this repo are purely for testing purposes. Please don't use the files or information here for any other reason. Thank you for your cooperation! 🌟
+
 # Technical Guide: C SBOMs with Pkg-config Files
 
 This directory contains a draft implementation (currently WIP) of C Software Bill of Materials (SBOMs), following the approach outlined in [C SBOMs and how pkgconf can solve this 
@@ -10,7 +13,7 @@ The pkg-config files in this repository have been tailored specifically for *Fre
 information such as upstream version (if applicable), license, URL, LicenseFile link, and Source link. In an ideal scenario, the `.pc` files should include:
 
  * **Name:** The package name
- *  **Description:** A brief description of the package
+ * **Description:** A brief description of the package
  * **URL:** The official website or repository URL
  * **Version:** The version number of the package
  * **License:** The software license type
