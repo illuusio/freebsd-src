@@ -68,11 +68,11 @@ Examples to use these `.pc` files with `pkgconf`:
 
 For example, making of Zlib [REUSE TOML](https://reuse.software/) file with scancode-toolkit command would be:
 ```
-scancode -clpeui -n 16 --include "*.c" --include="*.h" --custom-output pkgconfig/FreeBSD-libc.toml --custom-template pkgconfig/tmpl/template.toml lib/libc
-scancode -clpeui -n 16 --include "*.c" --include="*.h" --custom-output pkgconfig/FreeBSD-mkuzip.toml --custom-template pkgconfig/tmpl/template.toml usr.bin/mkuzip/
-scancode -clpeui -n 16 --include "*.c" --include="*.h" --custom-output pkgconfig/FreeBSD-xz.toml --custom-template pkgconfig/tmpl/template.toml contrib/xz/
-scancode -clpeui -n 16 --include "*.c" --include="*.h" --custom-output pkgconfig/FreeBSD-zstd.toml --custom-template pkgconfig/tmpl/template.toml sys/contrib/zstd/
-scancode -clpeui -n 16 --include "*.c" --include="*.h" --custom-output pkgconfig/FreeBSD-zlib.toml --custom-template pkgconfig/tmpl/template.toml sys/contrib/zlib/
+scancode -clpeui -n 16 --include "*.c" --include="*.h" --custom-output pkgconfig/FreeBSD-libc.toml --custom-template pkgconfig/tmpl/template.j2 lib/libc
+scancode -clpeui -n 16 --include "*.c" --include="*.h" --custom-output pkgconfig/FreeBSD-mkuzip.toml --custom-template pkgconfig/tmpl/template.j2 usr.bin/mkuzip/
+scancode -clpeui -n 16 --include "*.c" --include="*.h" --custom-output pkgconfig/FreeBSD-xz.toml --custom-template pkgconfig/tmpl/template.j2 contrib/xz/
+scancode -clpeui -n 16 --include "*.c" --include="*.h" --custom-output pkgconfig/FreeBSD-zstd.toml --custom-template pkgconfig/tmpl/template.j2 sys/contrib/zstd/
+scancode -clpeui -n 16 --include "*.c" --include="*.h" --custom-output pkgconfig/FreeBSD-zlib.toml --custom-template pkgconfig/tmpl/template.j2 sys/contrib/zlib/
 ```
 
 The biggest problem is that licenses are not SPDX compatible in the output. They need to be adjusted manually, and there are misdetections
