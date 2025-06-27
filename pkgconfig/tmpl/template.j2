@@ -1,5 +1,5 @@
 {% set license_ns = namespace() -%}
-{% set license_ns.last_license = '' -%}
+{% set license_ns.last_license = "" -%}
 {% set license_ns.first_row = true -%}
 {% set license_ns.macro_row = true -%}
 {% set license_ns.printed = false -%}
@@ -22,7 +22,7 @@ path = [
 {% if license_ns.macro_row == false -%}
 ,
 {% endif -%}
-{%set cur_string = "    \"" + item + "\"" -%}
+{% set cur_string = "    \"" + item + "\"" -%}
 {{ cur_string -}}
 {% set license_ns.macro_row = false -%}
 {% endfor -%}
@@ -74,7 +74,7 @@ version = 1
 {% set tmp = copyright_list.clear() -%}
 {% set tmp = license_list.clear() -%}
 {% set license_ns.first_row = false -%}
-{% set license_ns.last_license = '' -%}
+{% set license_ns.last_license = "" -%}
 {% endfor -%}
 {% endif %}
 {% if license_ns.printed == false -%}
