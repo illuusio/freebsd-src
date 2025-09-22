@@ -1,0 +1,83 @@
+@prefix ns1: <https://spdx.org/rdf/3.0.1/terms/Core/> .
+@prefix ns2: <https://spdx.org/rdf/3.0.1/terms/Software/> .
+@prefix ns3: <https://spdx.org/rdf/3.0.1/terms/SimpleLicensing/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://freebsd.org/git/f72908c/Document/1> a ns1:SpdxDocument ;
+    ns1:creationInfo _:creationinfo_1 ;
+    ns1:dataLicense <file:///home/tuukka/src/c/FreeBSD/freebsd-src/pkgconfig/doc/FreeBSD-DOC> ;
+    ns1:element <https://freebsd.org/git/f72908c/Sbom/1> ;
+    ns1:rootElement <https://freebsd.org/git/f72908c/Sbom/1> .
+
+<https://freebsd.org/git/f72908c/Relationship/1> a ns1:Relationship ;
+    ns1:creationInfo _:creationinfo_1 ;
+    ns1:from <https://freebsd.org/git/f72908c/Sbom/1> ;
+    ns1:relationshipType <https://spdx.org/rdf/3.0.1/terms/Core/RelationshipType/contains> ;
+    ns1:to <https://freebsd.org/git/f72908c/Package/example> .
+
+<https://freebsd.org/git/f72908c/Relationship/2> a ns1:Relationship ;
+    ns1:creationInfo _:creationinfo_1 ;
+    ns1:from <https://freebsd.org/git/f72908c/Package/example> ;
+    ns1:relationshipType <https://spdx.org/rdf/3.0.1/terms/Core/RelationshipType/hasDeclaredLicense> ;
+    ns1:to <https://freebsd.org/git/f72908c/LicenseExpression/BSD-2-Clause>,
+        <https://freebsd.org/git/f72908c/SimpleLicensingText/BSD-2-Clause> .
+
+<https://freebsd.org/git/f72908c/Relationship/3> a ns1:Relationship ;
+    ns1:creationInfo _:creationinfo_1 ;
+    ns1:from <https://freebsd.org/git/f72908c/Package/example> ;
+    ns1:relationshipType <https://spdx.org/rdf/3.0.1/terms/Core/RelationshipType/hasConcludedLicense> ;
+    ns1:to <https://freebsd.org/git/f72908c/LicenseExpression/BSD-2-Clause>,
+        <https://freebsd.org/git/f72908c/SimpleLicensingText/BSD-2-Clause> .
+
+<https://freebsd.org/git/f72908c/Agent/amon_navi> a ns1:Agent ;
+    ns1:creationInfo _:creationinfo_1 ;
+    ns1:name "Amon Navi"^^xsd:string .
+
+<https://freebsd.org/git/f72908c/Agent/freebsd-14.3-amd64-123> a ns1:Agent ;
+    ns1:creationInfo _:creationinfo_1 ;
+    ns1:description "FreeBSD 14.3 builder number 123 for AMD64 architecture"^^xsd:string ;
+    ns1:name "FreeBSD-14.3-amd64-123"^^xsd:string .
+
+<https://freebsd.org/git/f72908c/Agent/freebsd_project> a ns1:Agent ;
+    ns1:creationInfo _:creationinfo_1 ;
+    ns1:description "FreeBSD is an operating system used to power modern servers, desktops, and embedded platforms."^^xsd:string ;
+    ns1:name "FreeBSD Project"^^xsd:string .
+
+<https://freebsd.org/git/f72908c/LicenseExpression/BSD-2-Clause> a ns3:LicenseExpression ;
+    ns1:creationInfo _:creationinfo_1 ;
+    ns3:licenseExpression "BSD-2-Clause"^^xsd:string .
+
+<https://freebsd.org/git/f72908c/Sbom/1> a ns2:Sbom ;
+    ns1:creationInfo _:creationinfo_1 ;
+    ns1:element <https://freebsd.org/git/f72908c/Agent/amon_navi>,
+        <https://freebsd.org/git/f72908c/Agent/freebsd-14.3-amd64-123>,
+        <https://freebsd.org/git/f72908c/Agent/freebsd_project>,
+        <https://freebsd.org/git/f72908c/LicenseExpression/BSD-2-Clause>,
+        <https://freebsd.org/git/f72908c/Package/example>,
+        <https://freebsd.org/git/f72908c/Relationship/1>,
+        <https://freebsd.org/git/f72908c/Relationship/2>,
+        <https://freebsd.org/git/f72908c/Relationship/3>,
+        <https://freebsd.org/git/f72908c/SimpleLicensingText/BSD-2-Clause> ;
+    ns1:rootElement <https://freebsd.org/git/f72908c/Package/example> ;
+    ns2:sbomType <https://spdx.org/rdf/3.0.1/terms/Software/SbomType/build> .
+
+<https://freebsd.org/git/f72908c/SimpleLicensingText/BSD-2-Clause> a ns3:SimpleLicensingText ;
+    ns1:creationInfo _:creationinfo_1 ;
+    ns3:licenseText """This should contain whole
+BSD 2-clause license text"""^^xsd:string .
+
+<https://freebsd.org/git/f72908c/Package/example> a <file:///home/tuukka/src/c/FreeBSD/freebsd-src/pkgconfig/doc/Package> ;
+    ns1:builtTime "2025-09-22T00:00:00Z"^^xsd:dateTimeStamp ;
+    ns1:creationInfo _:creationinfo_1 ;
+    ns1:name "example"^^xsd:string ;
+    ns1:originatedBy <https://freebsd.org/git/f72908c/Agent/freebsd-14.3-amd64-123>,
+        <https://freebsd.org/git/f72908c/Agent/freebsd_project> ;
+    ns1:suppliedBy <https://freebsd.org/git/f72908c/Agent/freebsd_project> ;
+    ns2:copyrightText "NOASSERTION"^^xsd:string ;
+    ns2:packageVersion "1.0.0"^^xsd:string .
+
+_:creationinfo_1 a ns1:CreationInfo ;
+    ns1:created "2025-09-22T00:00:00Z"^^xsd:dateTimeStamp ;
+    ns1:createdBy <https://freebsd.org/git/f72908c/Agent/amon_navi> ;
+    ns1:specVersion "3.0.1"^^xsd:string .
+

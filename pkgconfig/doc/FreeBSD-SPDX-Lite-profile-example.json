@@ -1,0 +1,127 @@
+{
+  "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+  "@graph": [
+    {
+      "@type": "SpdxDocument",
+      "spdxId": "https://freebsd.org/git/f72908c/Document/1",
+      "creationInfo": "_:creationinfo_1",
+      "rootElement": [
+        "https://freebsd.org/git/f72908c/Sbom/1"
+      ],
+      "element": [
+        "https://freebsd.org/git/f72908c/Sbom/1"
+      ],
+      "dataLicense": "FreeBSD-DOC"
+    },
+    {
+      "@type": "software_Sbom",
+      "spdxId": "https://freebsd.org/git/f72908c/Sbom/1",
+      "creationInfo": "_:creationinfo_1",
+      "element": [
+        "https://freebsd.org/git/f72908c/Agent/amon_navi",
+        "https://freebsd.org/git/f72908c/Agent/freebsd-14.3-amd64-123",
+        "https://freebsd.org/git/f72908c/Agent/freebsd_project",
+        "https://freebsd.org/git/f72908c/LicenseExpression/BSD-2-Clause",
+        "https://freebsd.org/git/f72908c/Package/example",
+        "https://freebsd.org/git/f72908c/Relationship/1",
+        "https://freebsd.org/git/f72908c/Relationship/2",
+        "https://freebsd.org/git/f72908c/Relationship/3",
+        "https://freebsd.org/git/f72908c/SimpleLicensingText/BSD-2-Clause"
+      ],
+      "rootElement": [
+        "https://freebsd.org/git/f72908c/Package/example"
+      ],
+      "software_sbomType": [
+        "build"
+      ]
+    },
+    {
+      "@type": "CreationInfo",
+      "@id": "_:creationinfo_1",
+      "created": "2025-09-22T00:00:00Z",
+      "createdBy": [
+        "https://freebsd.org/git/f72908c/Agent/amon_navi"
+      ],
+      "specVersion": "3.0.1"
+    },
+    {
+      "@type": "Agent",
+      "creationInfo": "_:creationinfo_1",
+      "name": "Amon Navi",
+      "spdxId": "https://freebsd.org/git/f72908c/Agent/amon_navi"
+    },
+    {
+      "@type": "Agent",
+      "creationInfo": "_:creationinfo_1",
+      "description": "FreeBSD 14.3 builder number 123 for AMD64 architecture",
+      "name": "FreeBSD-14.3-amd64-123",
+      "spdxId": "https://freebsd.org/git/f72908c/Agent/freebsd-14.3-amd64-123"
+    },
+    {
+      "@type": "Agent",
+      "creationInfo": "_:creationinfo_1",
+      "description": "FreeBSD is an operating system used to power modern servers, desktops, and embedded platforms.",
+      "name": "FreeBSD Project",
+      "spdxId": "https://freebsd.org/git/f72908c/Agent/freebsd_project"
+    },
+    {
+      "@type": "Package",
+      "builtTime": "2025-09-22T00:00:00Z",
+      "creationInfo": "_:creationinfo_1",
+      "name": "example",
+      "originatedBy": [
+                        "https://freebsd.org/git/f72908c/Agent/freebsd_project",
+                        "https://freebsd.org/git/f72908c/Agent/freebsd-14.3-amd64-123"
+                      ],
+      "software_copyrightText": "NOASSERTION",
+      "software_packageVersion": "1.0.0",
+      "suppliedBy": "https://freebsd.org/git/f72908c/Agent/freebsd_project",
+      "spdxId": "https://freebsd.org/git/f72908c/Package/example"
+    },
+    {
+      "@type": "simplelicensing_LicenseExpression",
+      "spdxId": "https://freebsd.org/git/f72908c/LicenseExpression/BSD-2-Clause",
+      "creationInfo": "_:creationinfo_1",
+      "simplelicensing_licenseExpression": "BSD-2-Clause"
+    },
+    {
+      "@type": "simplelicensing_SimpleLicensingText",
+      "creationInfo": "_:creationinfo_1",
+      "simplelicensing_licenseText": "This should contain whole\nBSD 2-clause license text",
+      "spdxId": "https://freebsd.org/git/f72908c/SimpleLicensingText/BSD-2-Clause"
+    },
+    {
+      "@type": "Relationship",
+      "spdxId": "https://freebsd.org/git/f72908c/Relationship/1",
+      "creationInfo": "_:creationinfo_1",
+      "from": "https://freebsd.org/git/f72908c/Sbom/1",
+      "to": [
+        "https://freebsd.org/git/f72908c/Package/example"
+      ],
+      "relationshipType": "contains"
+    },
+    {
+      "@type": "Relationship",
+      "spdxId": "https://freebsd.org/git/f72908c/Relationship/2",
+      "creationInfo": "_:creationinfo_1",
+      "from": "https://freebsd.org/git/f72908c/Package/example",
+      "to": [
+        "https://freebsd.org/git/f72908c/LicenseExpression/BSD-2-Clause",
+        "https://freebsd.org/git/f72908c/SimpleLicensingText/BSD-2-Clause"
+      ],
+      "relationshipType": "hasDeclaredLicense"
+    },
+    {
+      "@type": "Relationship",
+      "spdxId": "https://freebsd.org/git/f72908c/Relationship/3",
+      "creationInfo": "_:creationinfo_1",
+      "from": "https://freebsd.org/git/f72908c/Package/example",
+      "to": [
+        "https://freebsd.org/git/f72908c/LicenseExpression/BSD-2-Clause",
+        "https://freebsd.org/git/f72908c/SimpleLicensingText/BSD-2-Clause"
+      ],
+      "relationshipType": "hasConcludedLicense"
+    }
+  ]
+}
+

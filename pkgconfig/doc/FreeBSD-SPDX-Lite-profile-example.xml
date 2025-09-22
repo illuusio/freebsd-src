@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ns1="https://spdx.org/rdf/3.0.1/terms/Software/"
+   xmlns:ns2="https://spdx.org/rdf/3.0.1/terms/Core/"
+   xmlns:ns3="https://spdx.org/rdf/3.0.1/terms/SimpleLicensing/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="https://freebsd.org/git/f72908c/Relationship/3">
+    <rdf:type rdf:resource="https://spdx.org/rdf/3.0.1/terms/Core/Relationship"/>
+    <ns2:creationInfo rdf:nodeID="creationinfo_1"/>
+    <ns2:from rdf:resource="https://freebsd.org/git/f72908c/Package/example"/>
+    <ns2:to rdf:resource="https://freebsd.org/git/f72908c/LicenseExpression/BSD-2-Clause"/>
+    <ns2:to rdf:resource="https://freebsd.org/git/f72908c/SimpleLicensingText/BSD-2-Clause"/>
+    <ns2:relationshipType rdf:resource="https://spdx.org/rdf/3.0.1/terms/Core/RelationshipType/hasConcludedLicense"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://freebsd.org/git/f72908c/Sbom/1">
+    <rdf:type rdf:resource="https://spdx.org/rdf/3.0.1/terms/Software/Sbom"/>
+    <ns2:creationInfo rdf:nodeID="creationinfo_1"/>
+    <ns2:element rdf:resource="https://freebsd.org/git/f72908c/Agent/amon_navi"/>
+    <ns2:element rdf:resource="https://freebsd.org/git/f72908c/Agent/freebsd-14.3-amd64-123"/>
+    <ns2:element rdf:resource="https://freebsd.org/git/f72908c/Agent/freebsd_project"/>
+    <ns2:element rdf:resource="https://freebsd.org/git/f72908c/LicenseExpression/BSD-2-Clause"/>
+    <ns2:element rdf:resource="https://freebsd.org/git/f72908c/Package/example"/>
+    <ns2:element rdf:resource="https://freebsd.org/git/f72908c/Relationship/1"/>
+    <ns2:element rdf:resource="https://freebsd.org/git/f72908c/Relationship/2"/>
+    <ns2:element rdf:resource="https://freebsd.org/git/f72908c/Relationship/3"/>
+    <ns2:element rdf:resource="https://freebsd.org/git/f72908c/SimpleLicensingText/BSD-2-Clause"/>
+    <ns2:rootElement rdf:resource="https://freebsd.org/git/f72908c/Package/example"/>
+    <ns1:sbomType rdf:resource="https://spdx.org/rdf/3.0.1/terms/Software/SbomType/build"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="creationinfo_1">
+    <rdf:type rdf:resource="https://spdx.org/rdf/3.0.1/terms/Core/CreationInfo"/>
+    <ns2:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2025-09-22T00:00:00Z</ns2:created>
+    <ns2:createdBy rdf:resource="https://freebsd.org/git/f72908c/Agent/amon_navi"/>
+    <ns2:specVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.0.1</ns2:specVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://freebsd.org/git/f72908c/Agent/freebsd-14.3-amd64-123">
+    <rdf:type rdf:resource="https://spdx.org/rdf/3.0.1/terms/Core/Agent"/>
+    <ns2:creationInfo rdf:nodeID="creationinfo_1"/>
+    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FreeBSD 14.3 builder number 123 for AMD64 architecture</ns2:description>
+    <ns2:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FreeBSD-14.3-amd64-123</ns2:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://freebsd.org/git/f72908c/Agent/freebsd_project">
+    <rdf:type rdf:resource="https://spdx.org/rdf/3.0.1/terms/Core/Agent"/>
+    <ns2:creationInfo rdf:nodeID="creationinfo_1"/>
+    <ns2:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FreeBSD is an operating system used to power modern servers, desktops, and embedded platforms.</ns2:description>
+    <ns2:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FreeBSD Project</ns2:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://freebsd.org/git/f72908c/Relationship/2">
+    <rdf:type rdf:resource="https://spdx.org/rdf/3.0.1/terms/Core/Relationship"/>
+    <ns2:creationInfo rdf:nodeID="creationinfo_1"/>
+    <ns2:from rdf:resource="https://freebsd.org/git/f72908c/Package/example"/>
+    <ns2:to rdf:resource="https://freebsd.org/git/f72908c/LicenseExpression/BSD-2-Clause"/>
+    <ns2:to rdf:resource="https://freebsd.org/git/f72908c/SimpleLicensingText/BSD-2-Clause"/>
+    <ns2:relationshipType rdf:resource="https://spdx.org/rdf/3.0.1/terms/Core/RelationshipType/hasDeclaredLicense"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://freebsd.org/git/f72908c/Package/example">
+    <rdf:type rdf:resource="file:///home/tuukka/src/c/FreeBSD/freebsd-src/pkgconfig/doc/Package"/>
+    <ns2:builtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2025-09-22T00:00:00Z</ns2:builtTime>
+    <ns2:creationInfo rdf:nodeID="creationinfo_1"/>
+    <ns2:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">example</ns2:name>
+    <ns2:originatedBy rdf:resource="https://freebsd.org/git/f72908c/Agent/freebsd_project"/>
+    <ns2:originatedBy rdf:resource="https://freebsd.org/git/f72908c/Agent/freebsd-14.3-amd64-123"/>
+    <ns1:copyrightText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NOASSERTION</ns1:copyrightText>
+    <ns1:packageVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0.0</ns1:packageVersion>
+    <ns2:suppliedBy rdf:resource="https://freebsd.org/git/f72908c/Agent/freebsd_project"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://freebsd.org/git/f72908c/LicenseExpression/BSD-2-Clause">
+    <rdf:type rdf:resource="https://spdx.org/rdf/3.0.1/terms/SimpleLicensing/LicenseExpression"/>
+    <ns2:creationInfo rdf:nodeID="creationinfo_1"/>
+    <ns3:licenseExpression rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSD-2-Clause</ns3:licenseExpression>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://freebsd.org/git/f72908c/Document/1">
+    <rdf:type rdf:resource="https://spdx.org/rdf/3.0.1/terms/Core/SpdxDocument"/>
+    <ns2:creationInfo rdf:nodeID="creationinfo_1"/>
+    <ns2:rootElement rdf:resource="https://freebsd.org/git/f72908c/Sbom/1"/>
+    <ns2:element rdf:resource="https://freebsd.org/git/f72908c/Sbom/1"/>
+    <ns2:dataLicense rdf:resource="file:///home/tuukka/src/c/FreeBSD/freebsd-src/pkgconfig/doc/FreeBSD-DOC"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://freebsd.org/git/f72908c/Relationship/1">
+    <rdf:type rdf:resource="https://spdx.org/rdf/3.0.1/terms/Core/Relationship"/>
+    <ns2:creationInfo rdf:nodeID="creationinfo_1"/>
+    <ns2:from rdf:resource="https://freebsd.org/git/f72908c/Sbom/1"/>
+    <ns2:to rdf:resource="https://freebsd.org/git/f72908c/Package/example"/>
+    <ns2:relationshipType rdf:resource="https://spdx.org/rdf/3.0.1/terms/Core/RelationshipType/contains"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://freebsd.org/git/f72908c/Agent/amon_navi">
+    <rdf:type rdf:resource="https://spdx.org/rdf/3.0.1/terms/Core/Agent"/>
+    <ns2:creationInfo rdf:nodeID="creationinfo_1"/>
+    <ns2:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amon Navi</ns2:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://freebsd.org/git/f72908c/SimpleLicensingText/BSD-2-Clause">
+    <rdf:type rdf:resource="https://spdx.org/rdf/3.0.1/terms/SimpleLicensing/SimpleLicensingText"/>
+    <ns2:creationInfo rdf:nodeID="creationinfo_1"/>
+    <ns3:licenseText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This should contain whole
+BSD 2-clause license text</ns3:licenseText>
+  </rdf:Description>
+</rdf:RDF>
