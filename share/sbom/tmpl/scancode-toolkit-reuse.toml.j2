@@ -1,0 +1,101 @@
+{#
+SPDX-License-Identifier: BSD-2-Clause
+
+Copyright(c) 2025-2026 The FreeBSD Foundation.
+
+This software was developed by Tuukka Pasanen <tuukka.pasanen@ilmi.fi>
+under sponsorship from the FreeBSD Foundation.
+
+Usage that prints to stdout:
+scancode --info --copyright --license --license-text --license-score 98 --custom-template /home/tuukka/src/c/FreeBSD/freebsd-src/share/sbom/tmpl/scancode-toolkit-reuse.toml.j2 --custom-output - bin
+
+Stdout output example:
+version = 1
+
+[[annotations]]
+path = "bin/cat/cat.c"
+SPDX-License-Identifier = "BSD-3-Clause"
+SPDX-FileCopyrightText = "1989, 1993 The Regents of the University of California"
+precedence = "override"
+
+[[annotations]]
+path = "bin/chflags/chflags.c"
+SPDX-License-Identifier = "BSD-3-Clause"
+SPDX-FileCopyrightText = "1992, 1993, 1994 The Regents of the University of California"
+precedence = "override"
+
+[[annotations]]
+path = "bin/chio/chio.c"
+SPDX-License-Identifier = "BSD-4-Clause"
+SPDX-FileCopyrightText = [ "1996 Jason R. Thorpe <thorpej@and.com>", "1997, by Matthew Jacob, for NASA/Ames Research Ctr", "2000, by C. Stephen Gunn, Waterspout Communications" ]
+precedence = "override"
+...
+-#}
+{% import 'scancode-toolkit-variables.j2' as variables -%}
+{% set license_ns = namespace() -%}
+{% set license_ns.last_license = "" -%}
+{% set license_ns.first_row = true -%}
+{% set license_ns.macro_row = true -%}
+{% set license_ns.printed = false -%}
+{% set license_list = [] -%}
+{% set copyright_list = [] -%}
+{% set path_list = [] -%}
+{% set last_license_list = [] -%}
+{% set last_copyright_list = [] -%}
+{% set save_license_list = [] -%}
+{% set save_copyright_list = [] -%}
+{%+ macro print_annotation(path, license, copyright) -%}
+[[annotations]]
+{% if path|length == 1 -%}
+path = "{{ path[0] }}"
+{% else -%}
+{{ variables.convert_list_to_toml("path", path_list) -}}
+{% endif -%}
+{{+ variables.convert_list_to_toml("SPDX-License-Identifier", license) -}}
+{{+ variables.convert_list_to_toml("SPDX-FileCopyrightText", copyright) -}}
+precedence = "override"
+{% set license_ns.macro_row = false -%}
+{% endmacro -%}
+version = 1
+{% if files.license_copyright %}
+{% for path, data in files.license_copyright.items() -%}
+{% set license_ns.printed = false -%}
+{% for row in data -%}
+{% if row.what == 'copyright' -%}
+{% set tmp = copyright_list.append(row.value|replace("Copyright (c) ", "")) -%}
+{% endif -%}
+{% if row.what == 'license' and license_ns.last_license != row.value -%}
+{{ variables.convert_scancode_to_spdx(row.value) -}}
+{% set tmp = license_list.append(variables.macro_rtn.spdx_license) -%}
+{% set license_ns.last_license = row.value -%}
+{% endif -%}
+{% endfor -%}
+{% if license_ns.first_row == false and (copyright_list != last_copyright_list or license_list != last_license_list) -%}
+{{ print_annotation(path_list, last_license_list, last_copyright_list) }}
+{% set license_ns.printed = true -%}
+{% set tmp = path_list.clear() -%}
+{% set tmp = last_copyright_list.clear() -%}
+{% set tmp = last_license_list.clear() -%}
+{% set tmp = last_license_list.extend(license_list) -%}
+{% set tmp = last_copyright_list.extend(copyright_list) -%}
+{% set tmp = path_list.append(path) -%}
+{% else -%}
+{% set tmp = path_list.append(path) -%}
+{% endif -%}
+        {% if license_ns.first_row == true -%}
+            {% set tmp = last_license_list.extend(license_list) -%}
+            {% set tmp = last_copyright_list.extend(copyright_list) -%}
+        {% endif -%}
+        {% set tmp = save_copyright_list.clear() -%}
+        {% set tmp = save_license_list.clear() -%}
+        {% set tmp = save_copyright_list.extend(copyright_list) -%}
+        {% set tmp = save_license_list.extend(license_list) -%}
+        {% set tmp = copyright_list.clear() -%}
+        {% set tmp = license_list.clear() -%}
+        {% set license_ns.first_row = false -%}
+        {% set license_ns.last_license = "" -%}
+    {% endfor -%}
+{% endif %}
+{% if license_ns.printed == false -%}
+{{ print_annotation(path_list, save_license_list, save_copyright_list) }}
+{% endif %}

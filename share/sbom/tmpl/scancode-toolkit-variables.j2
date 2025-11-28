@@ -1,0 +1,78 @@
+{#
+SPDX-License-Identifier: BSD-2-Clause
+
+Copyright(c) 2025-2026 The FreeBSD Foundation.
+
+This software was developed by Tuukka Pasanen <tuukka.pasanen@ilmi.fi>
+under sponsorship from the FreeBSD Foundation.
+-#}
+{% set license_array = {"bsd-2-clause-views": "BSD-2-Clause-Views",
+        "bsd-4-clause-shortened": "BSD-4-Clause-Shortened",
+        "bsd-axis-nomod": "LicenseRef-scancode-bsd-axis-nomod",
+        "bsd-new":"BSD-3-Clause",
+        "bsd-original-uc": "BSD-4-Clause-UC",
+        "bsd-original": "BSD-4-Clause",
+        "bsd-simplified": "BSD-2-Clause",
+        "bsd-source-code": "BSD-Source-Code",
+        "bsd-unchanged": "LicenseRef-scancode-bsd-unchanged",
+        "bsd-unmodified": "LicenseRef-scancode-bsd-unmodified",
+        "caldera-no-preamble": "Caldera-no-preamble",
+        "carnegie-mellon-contributors": "CMU-Mach",
+        "cc0-1.0": "CC0-1.0",
+        "flex-2.5": "BSD-3-Clause-flex",
+        "font-alias": "LicenseRef-scancode-font-alias",
+        "gpl-1.0-plus": "GPL-1.0-or-later",
+        "gpl-2.0-plus": "GPL-2.0-or-later",
+        "gpl-3.0-plus": "GPL-3.0-or-later",
+        "intel-bsd-2-clause": "LicenseRef-scancode-intel-bsd-2-clause",
+        "intel-bsd": "BSD-3-Clause-acpica",
+        "mit-license-1998": "LicenseRef-scancode-mit-license-1998",
+        "mit-old-style-no-advert": "NTP",
+        "mit-taylor-variant": "pkgconf",
+        "ntp-0": "NTP-0",
+        "openssl-ssleay": "OpenSSL",
+        "proprietary-license": " LicenseRef-scancode-proprietary-license",
+        "public-domain-disclaimer": "LicenseRef-scancode-public-domain-disclaimer",
+        "public-domain": "LicenseRef-PublicDomain",
+        "rsa-1990": "LicenseRef-scancode-rsa-1990",
+        "unknown-spdx": "LicenseRef-scancode-unknown-spdx",
+        "sudo": "LicenseRef-scancode-sudo",
+        "sun-rpc": "LicenseRef-scancode-sun-rpc",
+        "tatu-ylonen": "SSH-short",
+        "tcp-wrappers": "TCP-wrappers",
+        "warranty-disclaimer": " LicenseRef-scancode-warranty-disclaimer",
+        "whistle": "LicenseRef-scancode-whistle",
+        "x11-keith-packard": "HPND-sell-variant"
+    } -%}
+{% set macro_rtn = namespace() -%}
+{% macro convert_scancode_to_spdx(license_string) -%}
+    {% set macro_rtn.spdx_license = license_string -%}
+    {% if license_string|length > 3 -%}
+        {% for key in license_array -%}
+            {% set macro_rtn.spdx_license = macro_rtn.spdx_license|replace(key, license_array[key]) -%}
+        {% endfor -%}
+    {% else -%}
+        {% set macro_rtn.spdx_license = license_string|upper -%}
+    {% endif -%}
+{% endmacro -%}
+{% macro inner_print_toml_array(input_list) -%}
+{% set macro_rtn.macro_row = true -%}
+{% set macro_rtn.cur_string = "" -%}
+{% for item in input_list -%}
+{% if macro_rtn.macro_row == false -%}
+{% set macro_rtn.cur_string = macro_rtn.cur_string + ", " -%}
+{% endif -%}
+{%+ set macro_rtn.cur_string = macro_rtn.cur_string + "\"" + item + "\""  -%}
+{% set macro_rtn.macro_row = false -%}
+{% endfor -%}
+{%+ set macro_rtn.cur_string = macro_rtn.cur_string + " " -%}
+{{ macro_rtn.cur_string -}}
+{% endmacro -%}
+{% macro convert_list_to_toml(name, input_list) -%}
+{% set macro_rtn.macro_row = true -%}
+{% if input_list|length == 1 -%}
+{{ name }} = "{{+ input_list[0] -}}"
+{% else -%}
+{{ name }} = [ {{+ inner_print_toml_array(input_list) -}} ]
+{% endif -%}
+{% endmacro -%}
