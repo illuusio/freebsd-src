@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
+Name: hesinfo
+Description: find out what is stored in the Hesiod database
+URL: https://man.freebsd.org/cgi/man.cgi?query=hesinfo&manpath=FreeBSD+15.0-RELEASE
+Version: 15.0
+License: NOASSERTION
+Source: https://cgit.freebsd.org/src/tree/usr.bin/hesinfo?h=stable/15

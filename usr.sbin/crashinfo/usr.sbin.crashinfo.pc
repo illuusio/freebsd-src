@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
+Name: crashinfo
+Description: analyze a core dump of the operating system
+URL: https://man.freebsd.org/cgi/man.cgi?query=crashinfo&manpath=FreeBSD+15.0-RELEASE
+Version: 15.0
+License: NOASSERTION
+Source: https://cgit.freebsd.org/src/tree/usr.sbin/crashinfo?h=stable/15
+Requires: 

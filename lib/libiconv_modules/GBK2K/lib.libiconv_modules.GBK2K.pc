@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
+Name: GBK2K
+Description: Library missing description
+URL: https://man.freebsd.org/cgi/man.cgi?query=GBK2K&manpath=FreeBSD+15.0-RELEASE
+Version: 15.0
+License: NOASSERTION
+Source: https://cgit.freebsd.org/src/tree/lib/libiconv_modules/GBK2K?h=stable/15
+Requires: lib.csu \
+	lib.libc \
+	lib.libcompiler_rt

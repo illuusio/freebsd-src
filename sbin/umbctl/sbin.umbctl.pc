@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
+Name: umbctl
+Description: display or set MBIM cellular modem interface parameters (4G/LTE)
+URL: https://man.freebsd.org/cgi/man.cgi?query=umbctl&manpath=FreeBSD+15.0-RELEASE
+Version: 15.0
+License: NOASSERTION
+Source: https://cgit.freebsd.org/src/tree/sbin/umbctl?h=stable/15

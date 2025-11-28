@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
+Name: ipfw
+Description: User interface for firewall, traffic shaper, packet scheduler, in-kernel NAT.
+URL: https://man.freebsd.org/cgi/man.cgi?query=ipfw&manpath=FreeBSD+15.0-RELEASE
+Version: 15.0
+License: NOASSERTION
+Source: https://cgit.freebsd.org/src/tree/sbin/ipfw?h=stable/15
+Requires: lib.csu \
+	lib.libalias.libalias \
+	lib.libc \
+	lib.libcompiler_rt \
+	lib.libjail \
+	lib.libutil

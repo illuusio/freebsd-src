@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
+Name: setpmac
+Description: run a command with a different MAC process label
+URL: https://man.freebsd.org/cgi/man.cgi?query=setpmac&manpath=FreeBSD+15.0-RELEASE
+Version: 15.0
+License: NOASSERTION
+Source: https://cgit.freebsd.org/src/tree/usr.sbin/setpmac?h=stable/15
+Requires: lib.csu \
+	lib.libc \
+	lib.libcompiler_rt

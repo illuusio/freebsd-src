@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
+Name: moused
+Description: pass mouse data to the console driver
+URL: https://man.freebsd.org/cgi/man.cgi?query=moused&manpath=FreeBSD+15.0-RELEASE
+Version: 15.0
+License: NOASSERTION
+Source: https://cgit.freebsd.org/src/tree/usr.sbin/moused/moused?h=stable/15

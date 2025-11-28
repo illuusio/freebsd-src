@@ -1,0 +1,16 @@
+# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
+Name: mkuzip
+Description: compress disk image for use with geom_uzip(4) class
+URL: https://man.freebsd.org/cgi/man.cgi?query=mkuzip&manpath=FreeBSD+15.0-RELEASE
+Version: 15.0
+License: NOASSERTION
+Source: https://cgit.freebsd.org/src/tree/usr.bin/mkuzip?h=stable/15
+Requires: lib.csu \
+	lib.libc \
+	lib.libcompiler_rt \
+	lib.liblzma \
+	lib.libmd \
+	lib.libthr \
+	lib.libz \
+	lib.libzstd \
+	lib.msun

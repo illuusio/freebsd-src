@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
+Name: bsnmpget
+Description: simple tools for querying SNMP agents
+URL: https://man.freebsd.org/cgi/man.cgi?query=bsnmpget&manpath=FreeBSD+15.0-RELEASE
+Version: 15.0
+License: NOASSERTION
+Source: https://cgit.freebsd.org/src/tree/usr.sbin/bsnmpd/tools/bsnmptools?h=stable/15
+Requires: lib.csu \
+	lib.libbsnmp.libbsnmp \
+	lib.libc \
+	lib.libcompiler_rt

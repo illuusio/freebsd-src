@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
+Name: traceroute6
+Description: print the route IPv6 packets will take to a network node
+URL: https://man.freebsd.org/cgi/man.cgi?query=traceroute6&manpath=FreeBSD+15.0-RELEASE
+Version: 15.0
+License: NOASSERTION
+Source: https://cgit.freebsd.org/src/tree/usr.sbin/traceroute6?h=stable/15
+Requires: lib.csu \
+	lib.libc \
+	lib.libcapsicum \
+	lib.libcasper.libcasper \
+	lib.libcasper.services.cap_dns \
+	lib.libcompiler_rt \
+	lib.libipsec

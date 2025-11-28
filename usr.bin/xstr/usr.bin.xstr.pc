@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
+Name: xstr
+Description: extract strings from C programs to implement shared strings
+URL: https://man.freebsd.org/cgi/man.cgi?query=xstr&manpath=FreeBSD+15.0-RELEASE
+Version: 15.0
+License: NOASSERTION
+Source: https://cgit.freebsd.org/src/tree/usr.bin/xstr?h=stable/15
+Requires: lib.csu \
+	lib.libc \
+	lib.libcompiler_rt

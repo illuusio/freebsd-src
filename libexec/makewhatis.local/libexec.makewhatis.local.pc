@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
+Name: makewhatis.local
+Description: start makewhatis for local file systems
+URL: https://man.freebsd.org/cgi/man.cgi?query=makewhatis.local&manpath=FreeBSD+15.0-RELEASE
+Version: 15.0
+License: NOASSERTION
+Source: https://cgit.freebsd.org/src/tree/libexec/makewhatis.local?h=stable/15
+Requires: 

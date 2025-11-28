@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
+Name: renice
+Description: alter priority of running processes
+URL: https://man.freebsd.org/cgi/man.cgi?query=renice&manpath=FreeBSD+15.0-RELEASE
+Version: 15.0
+License: NOASSERTION
+Source: https://cgit.freebsd.org/src/tree/usr.bin/renice?h=stable/15
+Requires: lib.csu \
+	lib.libc \
+	lib.libcompiler_rt

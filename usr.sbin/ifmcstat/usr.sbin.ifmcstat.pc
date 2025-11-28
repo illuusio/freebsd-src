@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
+Name: ifmcstat
+Description: dump multicast group management statistics per interface
+URL: https://man.freebsd.org/cgi/man.cgi?query=ifmcstat&manpath=FreeBSD+15.0-RELEASE
+Version: 15.0
+License: NOASSERTION
+Source: https://cgit.freebsd.org/src/tree/usr.sbin/ifmcstat?h=stable/15
+Requires: lib.csu \
+	lib.libc \
+	lib.libcompiler_rt

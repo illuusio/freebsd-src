@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
+Name: rfcomm_pppd
+Description: RFCOMM PPP daemon
+URL: https://man.freebsd.org/cgi/man.cgi?query=rfcomm_pppd&manpath=FreeBSD+15.0-RELEASE
+Version: 15.0
+License: NOASSERTION
+Source: https://cgit.freebsd.org/src/tree/usr.sbin/bluetooth/rfcomm_pppd?h=stable/15
+Requires: lib.csu \
+	lib.libbluetooth \
+	lib.libc \
+	lib.libcompiler_rt \
+	lib.libsdp

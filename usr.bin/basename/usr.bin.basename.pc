@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
+Name: basename
+Description: return filename or directory portion of pathname
+URL: https://man.freebsd.org/cgi/man.cgi?query=basename&manpath=FreeBSD+15.0-RELEASE
+Version: 15.0
+License: NOASSERTION
+Source: https://cgit.freebsd.org/src/tree/usr.bin/basename?h=stable/15
+Requires: lib.csu \
+	lib.libc \
+	lib.libcapsicum \
+	lib.libcasper.libcasper \
+	lib.libcompiler_rt

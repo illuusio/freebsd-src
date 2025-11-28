@@ -1,0 +1,16 @@
+# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
+Name: gstat
+Description: print statistics about GEOM disks
+URL: https://man.freebsd.org/cgi/man.cgi?query=gstat&manpath=FreeBSD+15.0-RELEASE
+Version: 15.0
+License: NOASSERTION
+Source: https://cgit.freebsd.org/src/tree/usr.sbin/gstat?h=stable/15
+Requires: lib.csu \
+	lib.libc \
+	lib.libcompiler_rt \
+	lib.libdevstat \
+	lib.libedit \
+	lib.libgeom \
+	lib.libkvm \
+	lib.ncurses.ncurses \
+	lib.ncurses.tinfo

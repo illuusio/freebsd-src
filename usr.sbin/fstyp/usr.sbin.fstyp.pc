@@ -1,0 +1,15 @@
+# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
+Name: fstyp
+Description: determine filesystem type
+URL: https://man.freebsd.org/cgi/man.cgi?query=fstyp&manpath=FreeBSD+15.0-RELEASE
+Version: 15.0
+License: NOASSERTION
+Source: https://cgit.freebsd.org/src/tree/usr.sbin/fstyp?h=stable/15
+Requires: lib.csu \
+	lib.libc \
+	lib.libcapsicum \
+	lib.libcasper.libcasper \
+	lib.libcompiler_rt \
+	lib.libgeom \
+	lib.libmd \
+	lib.libufs

@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
+Name: fsck
+Description: file system consistency check and interactive repair
+URL: https://man.freebsd.org/cgi/man.cgi?query=fsck&manpath=FreeBSD+15.0-RELEASE
+Version: 15.0
+License: NOASSERTION
+Source: https://cgit.freebsd.org/src/tree/sbin/fsck?h=stable/15
+Requires: lib.csu \
+	lib.libc \
+	lib.libcompiler_rt

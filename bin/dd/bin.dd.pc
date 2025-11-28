@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
+Name: dd
+Description: convert and copy a file
+URL: https://man.freebsd.org/cgi/man.cgi?query=dd&manpath=FreeBSD+15.0-RELEASE
+Version: 15.0
+License: NOASSERTION
+Source: https://cgit.freebsd.org/src/tree/bin/dd?h=stable/15
+Requires: lib.csu \
+	lib.libc \
+	lib.libcapsicum \
+	lib.libcasper.libcasper \
+	lib.libcompiler_rt \
+	lib.libutil

@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
+Name: locale
+Description: get locale-specific information
+URL: https://man.freebsd.org/cgi/man.cgi?query=locale&manpath=FreeBSD+15.0-RELEASE
+Version: 15.0
+License: NOASSERTION
+Source: https://cgit.freebsd.org/src/tree/usr.bin/locale?h=stable/15
+Requires: lib.csu \
+	lib.libc \
+	lib.libcompiler_rt \
+	lib.libsbuf

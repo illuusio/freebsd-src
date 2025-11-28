@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
+Name: decryptcore
+Description: decrypt a core dump of the operating system
+URL: https://man.freebsd.org/cgi/man.cgi?query=decryptcore&manpath=FreeBSD+15.0-RELEASE
+Version: 15.0
+License: NOASSERTION
+Source: https://cgit.freebsd.org/src/tree/sbin/decryptcore?h=stable/15
+Requires: lib.csu \
+	lib.libc \
+	lib.libcapsicum \
+	lib.libcasper.libcasper \
+	lib.libcompiler_rt \
+	lib.libpjdlog

@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
+Name: md5
+Description: calculate a message-digest fingerprint (checksum) for a file
+URL: https://man.freebsd.org/cgi/man.cgi?query=md5&manpath=FreeBSD+15.0-RELEASE
+Version: 15.0
+License: NOASSERTION
+Source: https://cgit.freebsd.org/src/tree/sbin/md5?h=stable/15
+Requires: lib.csu \
+	lib.libc \
+	lib.libcapsicum \
+	lib.libcasper.libcasper \
+	lib.libcasper.services.cap_fileargs \
+	lib.libcompiler_rt \
+	lib.libmd

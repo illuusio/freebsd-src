@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
+Name: cat
+Description: concatenate and print files
+URL: https://man.freebsd.org/cgi/man.cgi?query=cat&manpath=FreeBSD+15.0-RELEASE
+Version: 15.0
+License: NOASSERTION
+Source: https://cgit.freebsd.org/src/tree/bin/cat?h=stable/15
+Requires: lib.csu \
+	lib.libc \
+	lib.libcapsicum \
+	lib.libcasper.libcasper \
+	lib.libcasper.services.cap_fileargs \
+	lib.libcasper.services.cap_net \
+	lib.libcompiler_rt

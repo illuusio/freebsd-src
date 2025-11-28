@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
+Name: ssh-copy-id
+Description: copy public keys to a remote host
+URL: https://man.freebsd.org/cgi/man.cgi?query=ssh-copy-id&manpath=FreeBSD+15.0-RELEASE
+Version: 15.0
+License: NOASSERTION
+Source: https://cgit.freebsd.org/src/tree/usr.bin/ssh-copy-id?h=stable/15
+Requires: 

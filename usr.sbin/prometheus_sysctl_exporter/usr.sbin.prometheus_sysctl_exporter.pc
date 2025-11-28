@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
+Name: prometheus_sysctl_exporter
+Description: print kernel state as Prometheus metrics
+URL: https://man.freebsd.org/cgi/man.cgi?query=prometheus_sysctl_exporter&manpath=FreeBSD+15.0-RELEASE
+Version: 15.0
+License: NOASSERTION
+Source: https://cgit.freebsd.org/src/tree/usr.sbin/prometheus_sysctl_exporter?h=stable/15
+Requires: lib.csu \
+	lib.libc \
+	lib.libcompiler_rt \
+	lib.libz \
+	lib.msun

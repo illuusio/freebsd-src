@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
+Name: fsck_msdosfs
+Description: DOS/Windows (FAT) file system consistency checker
+URL: https://man.freebsd.org/cgi/man.cgi?query=fsck_msdosfs&manpath=FreeBSD+15.0-RELEASE
+Version: 15.0
+License: NOASSERTION
+Source: https://cgit.freebsd.org/src/tree/sbin/fsck_msdosfs?h=stable/15
+Requires: lib.csu \
+	lib.libc \
+	lib.libcompiler_rt \
+	lib.libutil

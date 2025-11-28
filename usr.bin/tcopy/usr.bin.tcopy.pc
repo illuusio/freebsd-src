@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
+Name: tcopy
+Description: read, write, copy and verify tapes
+URL: https://man.freebsd.org/cgi/man.cgi?query=tcopy&manpath=FreeBSD+15.0-RELEASE
+Version: 15.0
+License: NOASSERTION
+Source: https://cgit.freebsd.org/src/tree/usr.bin/tcopy?h=stable/15
+Requires: lib.csu \
+	lib.libc \
+	lib.libcompiler_rt

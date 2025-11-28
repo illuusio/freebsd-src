@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
+Name: mdmfs
+Description: configure and mount an in-memory file system using the md(4) driver or the tmpfs(4) filesystem
+URL: https://man.freebsd.org/cgi/man.cgi?query=mdmfs&manpath=FreeBSD+15.0-RELEASE
+Version: 15.0
+License: NOASSERTION
+Source: https://cgit.freebsd.org/src/tree/sbin/mdmfs?h=stable/15
+Requires: lib.csu \
+	lib.libc \
+	lib.libcompiler_rt

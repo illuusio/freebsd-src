@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
+Name: vigr
+Description: edit the group file
+URL: https://man.freebsd.org/cgi/man.cgi?query=vigr&manpath=FreeBSD+15.0-RELEASE
+Version: 15.0
+License: NOASSERTION
+Source: https://cgit.freebsd.org/src/tree/usr.sbin/vigr?h=stable/15
+Requires: 

@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
+Name: rtlbtfw
+Description: load firmware for Realtek 87XX/88XX Bluetooth USB devices
+URL: https://man.freebsd.org/cgi/man.cgi?query=rtlbtfw&manpath=FreeBSD+15.0-RELEASE
+Version: 15.0
+License: NOASSERTION
+Source: https://cgit.freebsd.org/src/tree/usr.sbin/bluetooth/rtlbtfw?h=stable/15

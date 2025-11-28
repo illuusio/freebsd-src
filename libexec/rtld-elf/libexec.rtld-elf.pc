@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
+Name: rtld
+Description: run-time link-editor
+URL: https://man.freebsd.org/cgi/man.cgi?query=rtld&manpath=FreeBSD+15.0-RELEASE
+Version: 15.0
+License: NOASSERTION
+Source: https://cgit.freebsd.org/src/tree/libexec/rtld-elf?h=stable/15
+Requires: lib.libc \
+	lib.libcompiler_rt

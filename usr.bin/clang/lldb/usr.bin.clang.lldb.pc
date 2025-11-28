@@ -1,0 +1,27 @@
+# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
+Name: lldb
+Description: LLDB Documentation
+URL: https://man.freebsd.org/cgi/man.cgi?query=lldb&manpath=FreeBSD+15.0-RELEASE
+Version: 15.0
+License: NOASSERTION
+Source: https://cgit.freebsd.org/src/tree/usr.bin/clang/lldb?h=stable/15
+Requires: lib.csu \
+	lib.clang.libclang \
+	lib.clang.liblldb \
+	lib.clang.libllvm \
+	lib.libc \
+	lib.libc++ \
+	lib.libcompiler_rt \
+	lib.libcxxrt \
+	lib.libedit \
+	lib.libexecinfo \
+	lib.libkvm \
+	lib.liblua \
+	lib.liblzma \
+	lib.libthr \
+	lib.libz \
+	lib.libzstd \
+	lib.msun \
+	lib.ncurses.ncurses \
+	lib.ncurses.panel \
+	lib.ncurses.tinfo
