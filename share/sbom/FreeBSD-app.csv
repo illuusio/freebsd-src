@@ -1,0 +1,940 @@
+bin/cat/cat.1|cat|bin/cat|cat|concatenate and print files
+bin/chflags/chflags.1|chflags|bin/chflags|chflags|change file flags
+bin/chio/chio.1|chio|bin/chio|chio|medium changer control utility
+bin/chmod/chmod.1|chmod|bin/chmod|chmod|change file modes
+bin/cp/cp.1|cp|bin/cp|cp|copy files
+bin/cpuset/cpuset.1|cpuset|bin/cpuset|cpuset|configure processor sets
+bin/date/date.1|date|bin/date|date|display or set date and time
+bin/dd/dd.1|dd|bin/dd|dd|convert and copy a file
+bin/df/df.1|df|bin/df|df|display free disk space
+bin/domainname/domainname.1|domainname|bin/domainname|domainname|set or print name of current YP/NIS domain
+bin/echo/echo.1|echo|bin/echo|echo|write arguments to the standard output
+bin/ed/ed.1|ed|bin/ed|ed, red|text editor
+bin/expr/expr.1|expr|bin/expr|expr|evaluate expression
+bin/freebsd-version/freebsd-version.1|freebsd-version|bin/freebsd-version|freebsd-version|print the version and patch level of the installed system
+bin/getfacl/getfacl.1|getfacl|bin/getfacl|getfacl|get ACL information
+bin/hostname/hostname.1|hostname|bin/hostname|hostname|set or print the name of current host system
+bin/kenv/kenv.1|kenv|bin/kenv|kenv|list or modify the kernel environment
+bin/kill/kill.1|kill|bin/kill|kill|terminate or signal a process
+bin/ln/ln.1|ln|bin/ln|ln, link|link files
+bin/ln/symlink.7|symlink.7|bin/ln|symlink|symbolic link handling
+bin/ls/ls.1|ls|bin/ls|ls|list directory contents
+bin/mkdir/mkdir.1|mkdir|bin/mkdir|mkdir|make directories
+bin/mv/mv.1|mv|bin/mv|mv|move files
+bin/nproc/nproc.1|nproc|bin/nproc|nproc|print the number of processors
+bin/pax/pax.1|pax|bin/pax|pax|read and write file archives and copy directory hierarchies
+bin/pkill/pkill.1|pkill|bin/pkill|pgrep, pkill|find or signal processes by name
+bin/ps/ps.1|ps|bin/ps|NAMEps|process status
+bin/pwait/pwait.1|pwait|bin/pwait|pwait|wait for processes to terminate
+bin/pwd/pwd.1|pwd|bin/pwd|pwd|return working directory name
+bin/realpath/realpath.1|realpath|bin/realpath|realpath|return resolved physical path
+bin/rmdir/rmdir.1|rmdir|bin/rmdir|rmdir|remove directories
+bin/rm/rm.1|rm|bin/rm|rm, unlink|remove directory entries
+bin/setfacl/setfacl.1|setfacl|bin/setfacl|setfacl|set ACL information
+bin/sh/sh.1|sh|bin/sh|sh|command interpreter (shell)
+bin/sleep/sleep.1|sleep|bin/sleep|sleep|suspend execution for an interval of time
+bin/stty/stty.1|stty|bin/stty|stty|set the options for a terminal device interface
+bin/sync/sync.8|sync|bin/sync|sync|force completion of pending disk writes (flush cache)
+bin/test/test.1|test|bin/test|test, [|condition evaluation utility
+bin/timeout/timeout.1|timeout|bin/timeout|timeout|run a command with a time limit
+bin/uuidgen/uuidgen.1|uuidgen|bin/uuidgen|uuidgen|generate universally unique identifiers
+libexec/bootpd/bootpd.8|bootpd|libexec/bootpd|bootpd, bootpgw|Internet Boot Protocol server/gateway
+libexec/bootpd/tools/bootpef/bootpef.8|bootpef|libexec/bootpd/tools/bootpef|bootpef|BOOTP Extension File compiler
+libexec/bootpd/tools/bootptest/bootptest.8|bootptest|libexec/bootpd/tools/bootptest|bootptest|send BOOTP queries and print responses
+libexec/comsat/comsat.8|comsat|libexec/comsat|comsat|biff server
+libexec/fingerd/fingerd.8|fingerd|libexec/fingerd|fingerd|remote user information server
+libexec/flua/flua.1|flua|libexec/flua|flua|Lua interpreter for the FreeBSD base system
+libexec/getty/getty.8|getty|libexec/getty|getty|set terminal mode
+libexec/makewhatis.local/makewhatis.local.8|makewhatis.local|libexec/makewhatis.local|makewhatis.local|start makewhatis for local file systems
+libexec/mknetid/mknetid.8|mknetid|libexec/mknetid|mknetid|generate netid map data
+libexec/nuageinit/nuageinit.7|nuageinit.7|libexec/nuageinit|nuageinit|initialize a cloud-init environment
+libexec/phttpget/phttpget.8|phttpget|libexec/phttpget|phttpget|retrieve multiple files via pipelined HTTP
+libexec/pppoed/pppoed.8|pppoed|libexec/pppoed|pppoed|handle incoming PPP over Ethernet connections
+libexec/rbootd/rbootd.8|rbootd|libexec/rbootd|rbootd|HP remote boot server
+libexec/revnetgroup/revnetgroup.8|revnetgroup|libexec/revnetgroup|revnetgroup|generate reverse netgroup data
+libexec/rpc.rquotad/rpc.rquotad.8|rpc.rquotad|libexec/rpc.rquotad|rpc.rquotad|remote quota server
+libexec/rpc.rstatd/rpc.rstatd.8|rpc.rstatd|libexec/rpc.rstatd|rpc.rstatd|kernel statistics server
+libexec/rpc.rusersd/rpc.rusersd.8|rpc.rusersd|libexec/rpc.rusersd|rpc.rusersd|logged in users server
+libexec/rpc.rwalld/rpc.rwalld.8|rpc.rwalld|libexec/rpc.rwalld|rpc.rwalld|write messages to users currently logged in server
+libexec/rpc.sprayd/rpc.sprayd.8|rpc.sprayd|libexec/rpc.sprayd|rpc.sprayd, sprayd|spray server
+libexec/rtld-elf/rtld.1|rtld|libexec/rtld-elf|ld-elf.so.1, ld.so, rtld|run-time link-editor
+libexec/save-entropy/save-entropy.8|save-entropy|libexec/save-entropy|save-entropy|Save bits of entropy to feed /dev/random at startup
+libexec/talkd/talkd.8|talkd|libexec/talkd|talkd|remote user communication server
+libexec/tftpd/tftpd.8|tftpd|libexec/tftpd|tftpd|Internet Trivial File Transfer Protocol server
+libexec/ypxfr/ypxfr.8|ypxfr|libexec/ypxfr|ypxfr|transfer NIS database from remote server to local host
+lib/geom/cache/gcache.8|gcache|lib/geom/cache|gcache|control utility for CACHE GEOM class
+lib/geom/concat/gconcat.8|gconcat|lib/geom/concat|gconcat|disk concatenation control utility
+lib/geom/eli/geli.8|geli|lib/geom/eli|geli|control utility for the cryptographic GEOM class
+lib/geom/journal/gjournal.8|gjournal|lib/geom/journal|gjournal|control utility for journaled devices
+lib/geom/label/glabel.8|glabel|lib/geom/label|glabel|disk labelization control utility
+lib/geom/mirror/gmirror.8|gmirror|lib/geom/mirror|gmirror|control utility for mirrored devices
+lib/geom/mountver/gmountver.8|gmountver|lib/geom/mountver|gmountver|control utility for disk mount verification GEOM class
+lib/geom/multipath/gmultipath.8|gmultipath|lib/geom/multipath|gmultipath|disk multipath control utility
+lib/geom/nop/gnop.8|gnop|lib/geom/nop|gnop|control utility for NOP GEOM class
+lib/geom/part/gpart.8|gpart|lib/geom/part|gpart|control utility for the disk partitioning GEOM class
+lib/geom/raid3/graid3.8|graid3|lib/geom/raid3|graid3|control utility for RAID3 devices
+lib/geom/raid/graid.8|graid|lib/geom/raid|graid|control utility for software RAID devices
+lib/geom/shsec/gshsec.8|gshsec|lib/geom/shsec|gshsec|control utility for shared secret devices
+lib/geom/stripe/gstripe.8|gstripe|lib/geom/stripe|gstripe|control utility for striped devices
+lib/geom/union/gunion.8|gunion|lib/geom/union|gunion|control utility for UNION GEOM class
+lib/geom/virstor/gvirstor.8|gvirstor|lib/geom/virstor|gvirstor|control utility for virtual data storage devices
+lib/libc/regex/re_format.7|re_format.7|lib/libc/regex|re_format|POSIX 1003.2 regular expressions
+lib/libpam/modules/pam_chroot/pam_chroot.8|pam_chroot|lib/libpam/modules/pam_chroot|pam_chroot|Chroot PAM module
+lib/libpam/modules/pam_deny/pam_deny.8|pam_deny|lib/libpam/modules/pam_deny|pam_deny|Deny PAM module
+lib/libpam/modules/pam_echo/pam_echo.8|pam_echo|lib/libpam/modules/pam_echo|pam_echo|Echo PAM module
+lib/libpam/modules/pam_exec/pam_exec.8|pam_exec|lib/libpam/modules/pam_exec|pam_exec|Exec PAM module
+lib/libpam/modules/pam_ftpusers/pam_ftpusers.8|pam_ftpusers|lib/libpam/modules/pam_ftpusers|pam_ftpusers|ftpusers PAM module
+lib/libpam/modules/pam_group/pam_group.8|pam_group|lib/libpam/modules/pam_group|pam_group|Group PAM module
+lib/libpam/modules/pam_guest/pam_guest.8|pam_guest|lib/libpam/modules/pam_guest|pam_guest|Guest PAM module
+lib/libpam/modules/pam_krb5/pam-krb5.8|pam-krb5|lib/libpam/modules/pam_krb5|pam_krb5|Kerberos PAM module
+lib/libpam/modules/pam_krb5/pam_krb5.8|pam_krb5|lib/libpam/modules/pam_krb5|pam_krb5|Kerberos 5 PAM module
+lib/libpam/modules/pam_ksu/pam_ksu.8|pam_ksu|lib/libpam/modules/pam_ksu|pam_ksu|Kerberos 5 SU PAM module
+lib/libpam/modules/pam_lastlog/pam_lastlog.8|pam_lastlog|lib/libpam/modules/pam_lastlog|pam_lastlog|login accounting PAM module
+lib/libpam/modules/pam_login_access/pam_login_access.8|pam_login_access|lib/libpam/modules/pam_login_access|pam_login_access|login.access PAM module
+lib/libpam/modules/pam_nologin/pam_nologin.8|pam_nologin|lib/libpam/modules/pam_nologin|pam_nologin|NoLogin PAM module
+lib/libpam/modules/pam_passwdqc/pam_passwdqc.8|pam_passwdqc|lib/libpam/modules/pam_passwdqc|pam_passwdqc|Password quality-control PAM module
+lib/libpam/modules/pam_permit/pam_permit.8|pam_permit|lib/libpam/modules/pam_permit|pam_permit|Promiscuous PAM module
+lib/libpam/modules/pam_radius/pam_radius.8|pam_radius|lib/libpam/modules/pam_radius|pam_radius|RADIUS authentication PAM module
+lib/libpam/modules/pam_rhosts/pam_rhosts.8|pam_rhosts|lib/libpam/modules/pam_rhosts|pam_rhosts|Rhosts PAM module
+lib/libpam/modules/pam_rootok/pam_rootok.8|pam_rootok|lib/libpam/modules/pam_rootok|pam_rootok|RootOK PAM module
+lib/libpam/modules/pam_securetty/pam_securetty.8|pam_securetty|lib/libpam/modules/pam_securetty|pam_securetty|SecureTTY PAM module
+lib/libpam/modules/pam_self/pam_self.8|pam_self|lib/libpam/modules/pam_self|pam_self|Self PAM module
+lib/libpam/modules/pam_ssh/pam_ssh.8|pam_ssh|lib/libpam/modules/pam_ssh|pam_ssh|authentication and session management with SSH private keys
+lib/libpam/modules/pam_tacplus/pam_tacplus.8|pam_tacplus|lib/libpam/modules/pam_tacplus|pam_tacplus|TACACS+ authentication PAM module
+lib/libpam/modules/pam_unix/pam_unix.8|pam_unix|lib/libpam/modules/pam_unix|pam_unix|UNIX PAM module
+lib/libpam/modules/pam_xdg/pam_xdg.8|pam_xdg|lib/libpam/modules/pam_xdg|pam_xdg|XDG PAM module
+lib/nss_tacplus/nss_tacplus.8|nss_tacplus|lib/nss_tacplus|nss_tacplus|TACACS+ nsswitch module
+sbin/adjkerntz/adjkerntz.8|adjkerntz|sbin/adjkerntz|adjkerntz|adjust real-time clock (rtc) and kernel timezone offset
+sbin/bectl/bectl.8|bectl|sbin/bectl|bectl|manage ZFS boot environments
+sbin/bsdlabel/bsdlabel.8|bsdlabel|sbin/bsdlabel|bsdlabel|read and write BSD label
+sbin/camcontrol/camcontrol.8|camcontrol|sbin/camcontrol|camcontrol|CAM control program
+sbin/ccdconfig/ccdconfig.8|ccdconfig|sbin/ccdconfig|ccdconfig|configuration utility for the concatenated disk driver
+sbin/clri/clri.8|clri|sbin/clri|clri|clear an inode
+sbin/comcontrol/comcontrol.8|comcontrol|sbin/comcontrol|comcontrol|control a special tty device
+sbin/conscontrol/conscontrol.8|conscontrol|sbin/conscontrol|conscontrol|control physical system video console devices
+sbin/ddb/ddb.8|ddb|sbin/ddb|ddb|configure DDB kernel debugger properties
+sbin/decryptcore/decryptcore.8|decryptcore|sbin/decryptcore|decryptcore|decrypt a core dump of the operating system
+sbin/devd/devd.8|devd|sbin/devd|devd|device state change daemon
+sbin/devfs/devfs.8|devfs|sbin/devfs|devfs|DEVFS control
+sbin/devmatch/devmatch.8|devmatch|sbin/devmatch|devmatch|print information about unattached devices
+sbin/dhclient/dhclient.8|dhclient|sbin/dhclient|dhclient|Dynamic Host Configuration Protocol (DHCP) client
+sbin/dhclient/dhclient-script.8|dhclient-script|sbin/dhclient|dhclient-script|DHCP client network configuration script
+sbin/dmesg/dmesg.8|dmesg|sbin/dmesg|dmesg|display the system message buffer
+sbin/dump/dump.8|dump|sbin/dump|dump, rdump|file system backup
+sbin/dumpfs/dumpfs.8|dumpfs|sbin/dumpfs|dumpfs|dump UFS file system information
+sbin/dumpon/dumpon.8|dumpon|sbin/dumpon|dumpon|specify a device for crash dumps
+sbin/etherswitchcfg/etherswitchcfg.8|etherswitchcfg|sbin/etherswitchcfg|etherswitchcfg|configure a built-in Ethernet switch
+sbin/fdisk/fdisk.8|fdisk|sbin/fdisk|fdisk|PC slice table maintenance utility
+sbin/ffsinfo/ffsinfo.8|ffsinfo|sbin/ffsinfo|ffsinfo|dump all meta information of an existing ufs file system
+sbin/fsck_ffs/fsck_ffs.8|fsck_ffs|sbin/fsck_ffs|fsck_ffs, fsck_ufs|file system consistency check and interactive repair
+sbin/fsck/fsck.8|fsck|sbin/fsck|fsck|file system consistency check and interactive repair
+sbin/fsck_msdosfs/fsck_msdosfs.8|fsck_msdosfs|sbin/fsck_msdosfs|fsck_msdosfs|DOS/Windows (FAT) file system consistency checker
+sbin/fsdb/fsdb.8|fsdb|sbin/fsdb|fsdb|FFS debugging/editing tool
+sbin/fsirand/fsirand.8|fsirand|sbin/fsirand|fsirand|randomize inode generation numbers
+sbin/geom/core/geom.8|geom|sbin/geom/core|geom|universal control utility for GEOM classes
+sbin/ggate/ggatec/ggatec.8|ggatec|sbin/ggate/ggatec|ggatec|GEOM Gate network client and control utility
+sbin/ggate/ggated/ggated.8|ggated|sbin/ggate/ggated|ggated|GEOM Gate network daemon
+sbin/ggate/ggatel/ggatel.8|ggatel|sbin/ggate/ggatel|ggatel|GEOM Gate local control utility
+sbin/growfs/growfs.8|growfs|sbin/growfs|growfs|expand an existing UFS file system
+sbin/hastctl/hastctl.8|hastctl|sbin/hastctl|hastctl|Highly Available Storage control utility
+sbin/hastd/hastd.8|hastd|sbin/hastd|hastd|Highly Available Storage daemon
+sbin/ifconfig/ifconfig.8|ifconfig|sbin/ifconfig|ifconfig|configure network interface parameters
+sbin/init/init.8|init|sbin/init|init|process control initialization
+sbin/ipf/ipf/ipf.8|ipf|sbin/ipf/ipf|ipf|alters packet filtering lists for IP packet input and output
+sbin/ipf/ipfs/ipfs.8|ipfs|sbin/ipf/ipfs|ipfs|saves and restores information for NAT and state tables.
+sbin/ipf/ipfstat/ipfstat.8|ipfstat|sbin/ipf/ipfstat|ipfstat|reports on packet filter statistics and filter list
+sbin/ipf/ipftest/ipftest.1|ipftest|sbin/ipf/ipftest|ipftest|test packet filter rules with arbitrary input.
+sbin/ipf/ipmon/ipmon.8|ipmon|sbin/ipf/ipmon|ipmon|monitors /dev/ipl for logged packets
+sbin/ipf/ipnat/ipnat.1|ipnat|sbin/ipf/ipnat|ipnat|user interface to the NAT
+sbin/ipf/ipnat/ipnat.8|ipnat|sbin/ipf/ipnat|ipnat|user interface to the NAT subsystem
+sbin/ipf/ippool/ippool.8|ippool|sbin/ipf/ippool|ippool|user interface to the IPFilter pools
+sbin/ipf/ipscan/ipscan.8|ipscan|sbin/ipf/ipscan|ipscan|user interface to the IPFilter content scanning
+sbin/ipf/ipsend/ipresend.1|ipresend|sbin/ipf/ipsend|ipresend|resend IP packets out to network
+sbin/ipf/ipsend/ipsend.1|ipsend|sbin/ipf/ipsend|ipsend|sends IP packets
+sbin/ipf/ipsend/iptest.1|iptest|sbin/ipf/ipsend|iptest|automatically generate a packets to test IP functionality
+sbin/ipfw/ipfw.8|ipfw|sbin/ipfw|ipfw, dnctl|User interface for firewall, traffic shaper, packet scheduler, in-kernel NAT.
+sbin/kldconfig/kldconfig.8|kldconfig|sbin/kldconfig|kldconfig|display or modify the kernel module search path
+sbin/kldload/kldload.8|kldload|sbin/kldload|kldload|load a file into the kernel
+sbin/kldstat/kldstat.8|kldstat|sbin/kldstat|kldstat|display status of dynamic kernel linker
+sbin/kldunload/kldunload.8|kldunload|sbin/kldunload|kldunload|unload a file from the kernel
+sbin/ldconfig/ldconfig.8|ldconfig|sbin/ldconfig|ldconfig|configure the dynamic linker search path for shared libraries
+sbin/md5/md5.1|md5|sbin/md5|md5,  sha1,  sha224,  sha256,  sha384,  sha512,  sha512t224, sha512t256, rmd160, skein256, skein512, skein1024, md5sum, sha1sum, sha224sum, sha256sum, sha384sum, sha512sum, sha512t224sum, sha512t256sum,rmd160sum, skein256sum, skein512sum, skein1024sum, shasum|calculate a message-digest fingerprint (checksum) for a file
+sbin/mdconfig/mdconfig.8|mdconfig|sbin/mdconfig|mdconfig|create and control memory disks
+sbin/mdmfs/mdmfs.8|mdmfs|sbin/mdmfs|mdmfs, mount_mfs|configure and mount an in-memory file system using the md(4) driver or the tmpfs(4) filesystem
+sbin/mknod/mknod.8|mknod|sbin/mknod|mknod|build special file
+sbin/mksnap_ffs/mksnap_ffs.8|mksnap_ffs|sbin/mksnap_ffs|mksnap_ffs|take a file system snapshot
+sbin/mount_cd9660/mount_cd9660.8|mount_cd9660|sbin/mount_cd9660|mount_cd9660|mount an ISO-9660 file system
+sbin/mount_fusefs/mount_fusefs.8|mount_fusefs|sbin/mount_fusefs|mount_fusefs|mount a Fuse file system daemon
+sbin/mount/mount.8|mount|sbin/mount|mount|mount file systems
+sbin/mount_msdosfs/mount_msdosfs.8|mount_msdosfs|sbin/mount_msdosfs|mount_msdosfs|mount an MS-DOS (FAT) file system
+sbin/mount_nfs/mount_nfs.8|mount_nfs|sbin/mount_nfs|mount_nfs|mount NFS file systems
+sbin/mount_nullfs/mount_nullfs.8|mount_nullfs|sbin/mount_nullfs|mount_nullfs|mount a loopback file system sub-tree; demonstrate the use of a null file system layer
+sbin/mount_udf/mount_udf.8|mount_udf|sbin/mount_udf|mount_udf|mount a UDF file system
+sbin/mount_unionfs/mount_unionfs.8|mount_unionfs|sbin/mount_unionfs|mount_unionfs|mount union file systems
+sbin/natd/natd.8|natd|sbin/natd|natd|Network Address Translation daemon
+sbin/newfs_msdos/newfs_msdos.8|newfs_msdos|sbin/newfs_msdos|newfs_msdos|construct a new MS-DOS (FAT) file system
+sbin/newfs/newfs.8|newfs|sbin/newfs|newfs|construct a new UFS1/UFS2 file system
+sbin/nfsiod/nfsiod.8|nfsiod|sbin/nfsiod|nfsiod|local NFS asynchronous I/O server
+sbin/nos-tun/nos-tun.8|nos-tun|sbin/nos-tun|nos-tun|implement ``nos'' or ``ka9q'' style IP over IP tunnel
+sbin/nvmecontrol/nvmecontrol.8|nvmecontrol|sbin/nvmecontrol|nvmecontrol|NVM Express control utility
+sbin/pfctl/pfctl.8|pfctl|sbin/pfctl|pfctl|control the packet filter (PF) device
+sbin/pfilctl/pfilctl.8|pfilctl|sbin/pfilctl|pfilctl|pfil(9) control utility
+sbin/pflowctl/pflowctl.8|pflowctl|sbin/pflowctl|pflowctl|control pflow data export
+sbin/ping/ping.8|ping|sbin/ping|ping|send ICMP or ICMPv6 ECHO_REQUEST packets to network hosts
+sbin/quotacheck/quotacheck.8|quotacheck|sbin/quotacheck|quotacheck|file system quota consistency checker
+sbin/rcorder/rcorder.8|rcorder|sbin/rcorder|rcorder|print a dependency ordering of interdependent files
+sbin/reboot/boot_i386.8|boot_i386|sbin/reboot|boot|system bootstrapping procedures
+sbin/reboot/nextboot.8|nextboot|sbin/reboot|nextboot|specify an alternate kernel and boot flags for the next reboot
+sbin/reboot/reboot.8|reboot|sbin/reboot|reboot, halt, fastboot, fasthalt|stopping and restarting the system
+sbin/recoverdisk/recoverdisk.1|recoverdisk|sbin/recoverdisk|recoverdisk|recover data from disk-like devices.
+sbin/restore/restore.8|restore|sbin/restore|restore, rrestore|restore files or file systems from backups made with dump
+sbin/routed/routed.8|routed|sbin/routed|routed, rdisc|network RIP and router discovery routing daemon
+sbin/routed/rtquery/rtquery.8|rtquery|sbin/routed/rtquery|rtquery|query routing daemons for their routing tables
+sbin/route/route.8|route|sbin/route|route|manually manipulate the routing tables
+sbin/savecore/savecore.8|savecore|sbin/savecore|savecore|save a core dump of the operating system
+sbin/setkey/setkey.8|setkey|sbin/setkey|setkey|manually manipulate the IPsec SA/SP database
+sbin/shutdown/shutdown.8|shutdown|sbin/shutdown|shutdown, poweroff|close down the system at a given time
+sbin/swapon/swapon.8|swapon|sbin/swapon|swapon, swapoff, swapctl|specify devices for paging and swapping
+sbin/sysctl/sysctl.8|sysctl|sbin/sysctl|sysctl|get or set kernel state
+sbin/tunefs/tunefs.8|tunefs|sbin/tunefs|tunefs|tune up an existing UFS file system
+sbin/umbctl/umbctl.8|umbctl|sbin/umbctl|umbctl|display or set MBIM cellular modem interface parameters (4G/LTE)
+sbin/umount/umount.8|umount|sbin/umount|umount|unmount file systems
+sbin/veriexec/veriexec.8|veriexec|sbin/veriexec|veriexec|manipulate state of mac_veriexec
+sbin/zfsbootcfg/zfsbootcfg.8|zfsbootcfg|sbin/zfsbootcfg|zfsbootcfg|specify zfsboot options for the next boot
+usr.bin/apply/apply.1|apply|usr.bin/apply|apply|apply a command to a set of arguments
+usr.bin/ar/ar.1|ar|usr.bin/ar|ar, ranlib|manage archives
+usr.bin/asa/asa.1|asa|usr.bin/asa|asa|interpret carriage-control characters
+usr.bin/awk/awk.1|awk|usr.bin/awk|awk|pattern-directed scanning and processing language
+usr.bin/backlight/backlight.8|backlight|usr.bin/backlight|backlight|configure backlight hardware
+usr.bin/basename/basename.1|basename|usr.bin/basename|basename, dirname|return filename or directory portion of pathname
+usr.bin/beep/beep.1|beep|usr.bin/beep|beep|play a beep sound
+usr.bin/biff/biff.1|biff|usr.bin/biff|biff|be notified if mail arrives and who it is from
+usr.bin/bintrans/bintrans.1|bintrans|usr.bin/bintrans|bintrans, uuencode, uudecode, b64encode, b64decode, base64|encode / decode a binary file
+usr.bin/bluetooth/bthost/bthost.1|bthost|usr.bin/bluetooth/bthost|bthost|look up Bluetooth host names and Protocol Service Multiplexor values
+usr.bin/bluetooth/btsockstat/btsockstat.1|btsockstat|usr.bin/bluetooth/btsockstat|btsockstat|show Bluetooth sockets information
+usr.bin/bluetooth/rfcomm_sppd/rfcomm_sppd.1|rfcomm_sppd|usr.bin/bluetooth/rfcomm_sppd|rfcomm_sppd|RFCOMM Serial Port Profile daemon
+usr.bin/brandelf/brandelf.1|brandelf|usr.bin/brandelf|brandelf|mark an ELF binary for a specific ABI
+usr.bin/bsdiff/bsdiff/bsdiff.1|bsdiff|usr.bin/bsdiff/bsdiff|bsdiff|generate a patch between two binary files
+usr.bin/bsdiff/bspatch/bspatch.1|bspatch|usr.bin/bsdiff/bspatch|bspatch|apply a patch built with bsdiff(1)
+usr.bin/c89/c89.1|c89|usr.bin/c89|c89|POSIX.2 C language compiler
+usr.bin/c99/c99.1|c99|usr.bin/c99|c99|standard C language compiler
+usr.bin/calendar/calendar.1|calendar|usr.bin/calendar|calendar|reminder service
+usr.bin/cap_mkdb/cap_mkdb.1|cap_mkdb|usr.bin/cap_mkdb|cap_mkdb|create capability database
+usr.bin/chat/chat.8|chat|usr.bin/chat|chat|Automated conversational script with a modem
+usr.bin/chpass/chpass.1|chpass|usr.bin/chpass|chpass, chfn, chsh, ypchpass, ypchfn, ypchsh|add or change user database information
+usr.bin/cksum/cksum.1|cksum|usr.bin/cksum|cksum, sum|display file checksums and block counts
+usr.bin/clang/bugpoint/bugpoint.1|bugpoint|usr.bin/clang/bugpoint|bugpoint|automatic test case reduction tool
+usr.bin/clang/clang/clang.1|clang|usr.bin/clang/clang|clang|the Clang C, C++, and Objective-C compiler
+usr.bin/clang/llc/llc.1|llc|usr.bin/clang/llc|llc|LLVM static compiler
+usr.bin/clang/lldb/lldb.1|lldb|usr.bin/clang/lldb|lldb|LLDB Documentation
+usr.bin/clang/lldb-server/lldb-server.1|lldb-server|usr.bin/clang/lldb-server|lldb-server|LLDB Documentation
+usr.bin/clang/lli/lli.1|lli|usr.bin/clang/lli|lli|directly execute programs from LLVM bitcode
+usr.bin/clang/llvm-ar/llvm-ar.1|llvm-ar|usr.bin/clang/llvm-ar|llvm-ar|LLVM archiver
+usr.bin/clang/llvm-ar/llvm-ranlib.1|llvm-ranlib|usr.bin/clang/llvm-ar|llvm-ranlib|generates an archive index
+usr.bin/clang/llvm-as/llvm-as.1|llvm-as|usr.bin/clang/llvm-as|llvm-as|LLVM assembler
+usr.bin/clang/llvm-bcanalyzer/llvm-bcanalyzer.1|llvm-bcanalyzer|usr.bin/clang/llvm-bcanalyzer|llvm-bcanalyzer|LLVM bitcode analyzer
+usr.bin/clang/llvm-cov/llvm-cov.1|llvm-cov|usr.bin/clang/llvm-cov|llvm-cov|emit coverage information
+usr.bin/clang/llvm-cxxfilt/llvm-cxxfilt.1|llvm-cxxfilt|usr.bin/clang/llvm-cxxfilt|llvm-cxxfilt|LLVM symbol name demangler
+usr.bin/clang/llvm-diff/llvm-diff.1|llvm-diff|usr.bin/clang/llvm-diff|llvm-diff|LLVM structural 'diff'
+usr.bin/clang/llvm-dis/llvm-dis.1|llvm-dis|usr.bin/clang/llvm-dis|llvm-dis|LLVM disassembler
+usr.bin/clang/llvm-dwarfdump/llvm-dwarfdump.1|llvm-dwarfdump|usr.bin/clang/llvm-dwarfdump|llvm-dwarfdump|dump and verify DWARF debug information
+usr.bin/clang/llvm-dwarfutil/llvm-dwarfutil.1|llvm-dwarfutil|usr.bin/clang/llvm-dwarfutil|llvm-dwarfutil|A tool to copy and manipulate debug info
+usr.bin/clang/llvm-extract/llvm-extract.1|llvm-extract|usr.bin/clang/llvm-extract|llvm-extract|extract a function from an LLVM module
+usr.bin/clang/llvm-link/llvm-link.1|llvm-link|usr.bin/clang/llvm-link|llvm-link|LLVM bitcode linker
+usr.bin/clang/llvm-mca/llvm-mca.1|llvm-mca|usr.bin/clang/llvm-mca|llvm-mca|LLVM Machine Code Analyzer
+usr.bin/clang/llvm-nm/llvm-nm.1|llvm-nm|usr.bin/clang/llvm-nm|llvm-nm|list LLVM bitcode and object file's symbol table
+usr.bin/clang/llvm-objcopy/llvm-objcopy.1|llvm-objcopy|usr.bin/clang/llvm-objcopy|llvm-objcopy|object copying and editing tool
+usr.bin/clang/llvm-objdump/llvm-objdump.1|llvm-objdump|usr.bin/clang/llvm-objdump|llvm-objdump|LLVM's object file dumper
+usr.bin/clang/llvm-pdbutil/llvm-pdbutil.1|llvm-pdbutil|usr.bin/clang/llvm-pdbutil|llvm-pdbutil|PDB File forensics and diagnostics
+usr.bin/clang/llvm-profdata/llvm-profdata.1|llvm-profdata|usr.bin/clang/llvm-profdata|llvm-profdata|Profile data tool
+usr.bin/clang/llvm-readobj/llvm-readelf.1|llvm-readelf|usr.bin/clang/llvm-readobj|llvm-readelf|GNU-style LLVM Object Reader
+usr.bin/clang/llvm-readobj/llvm-readobj.1|llvm-readobj|usr.bin/clang/llvm-readobj|llvm-readobj|LLVM Object Reader
+usr.bin/clang/llvm-size/llvm-size.1|llvm-size|usr.bin/clang/llvm-size|llvm-size|print size information
+usr.bin/clang/llvm-strings/llvm-strings.1|llvm-strings|usr.bin/clang/llvm-strings|llvm-strings|print strings
+usr.bin/clang/llvm-symbolizer/llvm-addr2line.1|llvm-addr2line|usr.bin/clang/llvm-symbolizer|llvm-addr2line|a drop-in replacement for addr2line
+usr.bin/clang/llvm-symbolizer/llvm-symbolizer.1|llvm-symbolizer|usr.bin/clang/llvm-symbolizer|llvm-symbolizer|convert addresses into source code locations
+usr.bin/clang/opt/opt.1|opt|usr.bin/clang/opt|opt|LLVM optimizer
+usr.bin/cmp/cmp.1|cmp|usr.bin/cmp|cmp|compare two files
+usr.bin/col/col.1|col|usr.bin/col|col|filter reverse line feeds from input
+usr.bin/colrm/colrm.1|colrm|usr.bin/colrm|colrm|remove columns from a file
+usr.bin/column/column.1|column|usr.bin/column|column|columnate lists
+usr.bin/comm/comm.1|comm|usr.bin/comm|comm|select or reject lines common to two files
+usr.bin/compress/compress.1|compress|usr.bin/compress|compress, uncompress|compress and expand data
+usr.bin/csplit/csplit.1|csplit|usr.bin/csplit|csplit|split files based on context
+usr.bin/ctags/ctags.1|ctags|usr.bin/ctags|ctags|create a tags file
+usr.bin/ctlstat/ctlstat.8|ctlstat|usr.bin/ctlstat|ctlstat|CAM Target Layer statistics utility
+usr.bin/cut/cut.1|cut|usr.bin/cut|cut|cut out selected portions of each line of a file
+usr.bin/diff3/diff3.1|diff3|usr.bin/diff3|diff3|3-way differential file comparison
+usr.bin/diff/diff.1|diff|usr.bin/diff|diff|differential file and directory comparator
+usr.bin/dpv/dpv.1|dpv|usr.bin/dpv|dpv|stream data from stdin or multiple paths with dialog progress view
+usr.bin/dtc/dtc.1|dtc|usr.bin/dtc|dtc|device tree compiler
+usr.bin/du/du.1|du|usr.bin/du|du|display disk usage statistics
+usr.bin/elfctl/elfctl.1|elfctl|usr.bin/elfctl|elfctl|change an ELF binary's feature control note
+usr.bin/elfdump/elfdump.1|elfdump|usr.bin/elfdump|elfdump|display information about ELF files
+usr.bin/enigma/enigma.1|enigma|usr.bin/enigma|enigma, crypt|very simple file encryption
+usr.bin/env/env.1|env|usr.bin/env|env|set environment and execute command, or print environment
+usr.bin/etdump/etdump.1|etdump|usr.bin/etdump|etdump|dump ISO-9660 El Torito boot catalog information
+usr.bin/expand/expand.1|expand|usr.bin/expand|expand, unexpand|expand tabs to spaces, and vice versa
+usr.bin/false/false.1|false|usr.bin/false|false|return false value
+usr.bin/fetch/fetch.1|fetch|usr.bin/fetch|fetch|retrieve a file by Uniform Resource Locator
+usr.bin/file2c/file2c.1|file2c|usr.bin/file2c|file2c|convert file to c-source
+usr.bin/find/find.1|find|usr.bin/find|find|walk a file hierarchy
+usr.bin/finger/finger.1|finger|usr.bin/finger|finger|user information lookup program
+usr.bin/fmt/fmt.1|fmt|usr.bin/fmt|fmt|simple text formatter
+usr.bin/fold/fold.1|fold|usr.bin/fold|fold|fold long lines for finite width output device
+usr.bin/fortune/strfile/strfile.8|strfile|usr.bin/fortune/strfile|strfile, unstr|create a random access file for storing strings
+usr.bin/from/from.1|from|usr.bin/from|from|print names of those who have sent mail
+usr.bin/fstat/fstat.1|fstat|usr.bin/fstat|fstat|identify active files
+usr.bin/fstat/fuser.1|fuser|usr.bin/fstat|fuser|list IDs of all processes that have one or more files open
+usr.bin/fsync/fsync.1|fsync|usr.bin/fsync|fsync|synchronize a file's in-core state with that on disk
+usr.bin/gcore/gcore.1|gcore|usr.bin/gcore|gcore|get core images of running process
+usr.bin/gencat/gencat.1|gencat|usr.bin/gencat|gencat|NLS catalog compiler
+usr.bin/genl/genl.1|genl|usr.bin/genl|genl|generic netlink
+usr.bin/getaddrinfo/getaddrinfo.1|getaddrinfo|usr.bin/getaddrinfo|getaddrinfo|resolve names to socket addresses
+usr.bin/getconf/getconf.1|getconf|usr.bin/getconf|getconf|retrieve standard configuration variables
+usr.bin/getent/getent.1|getent|usr.bin/getent|getent|get entries from administrative database
+usr.bin/getopt/getopt.1|getopt|usr.bin/getopt|getopt|parse command options
+usr.bin/gprof/gprof.1|gprof|usr.bin/gprof|gprof|display call graph profile data
+usr.bin/grep/grep.1|grep|usr.bin/grep|grep, egrep, fgrep, rgrep|file pattern searcher
+usr.bin/grep/zgrep.1|zgrep|usr.bin/grep|zgrep, zegrep, zfgrep, bzgrep, bzegrep, bzfgrep, lzgrep, lzegrep, lzfgrep, xzgrep, xzegrep, xzfgrep, zstdgrep, zstdegrep, zstdfgrep|grep compressed files
+usr.bin/gzip/gzexe.1|gzexe|usr.bin/gzip|gzexe|create auto-decompressing executables
+usr.bin/gzip/gzip.1|gzip|usr.bin/gzip|gzip, gunzip, zcat|compression/decompression tool using Lempel-Ziv coding (LZ77)
+usr.bin/gzip/zdiff.1|zdiff|usr.bin/gzip|zcmp, zdiff|compare compressed files
+usr.bin/gzip/zforce.1|zforce|usr.bin/gzip|zforce|force gzip files to have a .gz suffix
+usr.bin/gzip/zmore.1|zmore|usr.bin/gzip|zmore, zless|view compressed files
+usr.bin/gzip/znew.1|znew|usr.bin/gzip|znew|convert compressed files to gzipped files
+usr.bin/head/head.1|head|usr.bin/head|head|display first lines of a file
+usr.bin/hesinfo/hesinfo.1|hesinfo|usr.bin/hesinfo|hesinfo|find out what is stored in the Hesiod database
+usr.bin/hexdump/hexdump.1|hexdump|usr.bin/hexdump|hexdump, hd|ASCII, decimal, hexadecimal, octal dump
+usr.bin/hexdump/od.1|od|usr.bin/hexdump|od|octal, decimal, hex, ASCII dump
+usr.bin/iconv/iconv.1|iconv|usr.bin/iconv|iconv|codeset conversion utility
+usr.bin/ident/ident.1|ident|usr.bin/ident|ident|identify RCS keyword string in files
+usr.bin/id/groups.1|groups|usr.bin/id|groups|show group memberships
+usr.bin/id/id.1|id|usr.bin/id|id|return user identity
+usr.bin/id/whoami.1|whoami|usr.bin/id|whoami|display effective user id
+usr.bin/indent/indent.1|indent|usr.bin/indent|indent|indent and format C program source
+usr.bin/ipcrm/ipcrm.1|ipcrm|usr.bin/ipcrm|ipcrm|remove the specified message queues, semaphore sets, and shared segments
+usr.bin/ipcs/ipcs.1|ipcs|usr.bin/ipcs|ipcs|report System V interprocess communication facilities status
+usr.bin/iscsictl/iscsictl.8|iscsictl|usr.bin/iscsictl|iscsictl|iSCSI initiator management utility
+usr.bin/join/join.1|join|usr.bin/join|join|relational database operator
+usr.bin/jot/jot.1|jot|usr.bin/jot|jot|print sequential or random data
+usr.bin/kdump/kdump.1|kdump|usr.bin/kdump|kdump|display kernel trace data
+usr.bin/killall/killall.1|killall|usr.bin/killall|killall|kill processes by name
+usr.bin/ktrace/ktrace.1|ktrace|usr.bin/ktrace|ktrace|enable kernel process tracing
+usr.bin/ktrdump/ktrdump.8|ktrdump|usr.bin/ktrdump|ktrdump|print kernel ktr trace buffer
+usr.bin/lam/lam.1|lam|usr.bin/lam|lam|laminate files
+usr.bin/lastcomm/lastcomm.1|lastcomm|usr.bin/lastcomm|lastcomm|show last commands executed
+usr.bin/last/last.1|last|usr.bin/last|last|indicate last logins of users and ttys
+usr.bin/ldd/ldd.1|ldd|usr.bin/ldd|ldd|list dynamic object dependencies
+usr.bin/leave/leave.1|leave|usr.bin/leave|leave|remind you when you have to leave
+usr.bin/lex/lex.1|lex|usr.bin/lex|flex, lex|fast lexical analyzer generator
+usr.bin/limits/limits.1|limits|usr.bin/limits|limits|set or display process resource limits
+usr.bin/localedef/localedef.1|localedef|usr.bin/localedef|localedef|define locale environment
+usr.bin/locale/locale.1|locale|usr.bin/locale|locale|get locale-specific information
+usr.bin/locate/locate/locate.1|locate|usr.bin/locate/locate|locate|find filenames quickly
+usr.bin/locate/locate/locate.updatedb.8|locate.updatedb|usr.bin/locate/locate|locate.updatedb|update locate database
+usr.bin/lockf/lockf.1|lockf|usr.bin/lockf|lockf|execute a command while holding a file lock
+usr.bin/lock/lock.1|lock|usr.bin/lock|lock|reserve a terminal
+usr.bin/logger/logger.1|logger|usr.bin/logger|logger|make entries in the system log
+usr.bin/login/login.1|login|usr.bin/login|login|log into the computer
+usr.bin/logins/logins.1|logins|usr.bin/logins|logins|display account information
+usr.bin/logname/logname.1|logname|usr.bin/logname|logname|display user's login name
+usr.bin/look/look.1|look|usr.bin/look|look|display lines beginning with a given string
+usr.bin/lorder/lorder.1|lorder|usr.bin/lorder|lorder|list dependencies for object files
+usr.bin/lsvfs/lsvfs.1|lsvfs|usr.bin/lsvfs|lsvfs|list installed virtual file systems
+usr.bin/m4/m4.1|m4|usr.bin/m4|m4|macro language processor
+usr.bin/mail/mail.1|mail|usr.bin/mail|mail, Mail, mailx|send and receive mail
+usr.bin/man/man.1|man|usr.bin/man|man|display online manual documentation pages
+usr.bin/man/manpath.1|manpath|usr.bin/man|manpath|display search path for manual pages
+usr.bin/mdo/mdo.1|mdo|usr.bin/mdo|mdo|execute commands as another user
+usr.bin/mesg/mesg.1|mesg|usr.bin/mesg|mesg|display (do not display) messages from other users
+usr.bin/mididump/mididump.1|mididump|usr.bin/mididump|mididump|dump MIDI events
+usr.bin/ministat/ministat.1|ministat|usr.bin/ministat|ministat|statistics utility
+usr.bin/mkcsmapper/mkcsmapper.1|mkcsmapper|usr.bin/mkcsmapper|mkcsmapper|generates hashed conversion data for iconv(3)
+usr.bin/mkdep/mkdep.1|mkdep|usr.bin/mkdep|mkdep|construct Makefile dependency list
+usr.bin/mkesdb/mkesdb.1|mkesdb|usr.bin/mkesdb|mkesdb|generates conversion catalog for iconv(3)
+usr.bin/mkfifo/mkfifo.1|mkfifo|usr.bin/mkfifo|mkfifo|make fifos
+usr.bin/mkimg/mkimg.1|mkimg|usr.bin/mkimg|mkimg|utility to make disk images
+usr.bin/mkstr/mkstr.1|mkstr|usr.bin/mkstr|mkstr|create an error message file by massaging C source
+usr.bin/mktemp/mktemp.1|mktemp|usr.bin/mktemp|mktemp|make temporary file name (unique)
+usr.bin/mkuzip/mkuzip.8|mkuzip|usr.bin/mkuzip|mkuzip|compress disk image for use with geom_uzip(4) class
+usr.bin/msgs/msgs.1|msgs|usr.bin/msgs|msgs|system messages and junk mail program
+usr.bin/mt/mt.1|mt|usr.bin/mt|mt|magnetic tape manipulating program
+usr.bin/ncal/ncal.1|ncal|usr.bin/ncal|cal, ncal|displays a calendar and the date of Easter
+usr.bin/netstat/netstat.1|netstat|usr.bin/netstat|netstat|show network status and statistics
+usr.bin/newgrp/newgrp.1|newgrp|usr.bin/newgrp|newgrp|change to a new group
+usr.bin/nfsstat/nfsstat.1|nfsstat|usr.bin/nfsstat|nfsstat|display NFS statistics
+usr.bin/nice/nice.1|nice|usr.bin/nice|nice|execute a utility at an altered scheduling priority
+usr.bin/nl/nl.1|nl|usr.bin/nl|nl|line numbering filter
+usr.bin/nohup/nohup.1|nohup|usr.bin/nohup|nohup|invoke a utility immune to hangups
+usr.bin/pagesize/pagesize.1|pagesize|usr.bin/pagesize|pagesize|print system page size
+usr.bin/passwd/passwd.1|passwd|usr.bin/passwd|passwd, yppasswd|modify a user's password
+usr.bin/paste/paste.1|paste|usr.bin/paste|paste|merge corresponding or subsequent lines of files
+usr.bin/patch/patch.1|patch|usr.bin/patch|patch|apply a diff file to an original
+usr.bin/pathchk/pathchk.1|pathchk|usr.bin/pathchk|pathchk|check pathnames
+usr.bin/perror/perror.1|perror|usr.bin/perror|perror|print an error number as a string
+usr.bin/posixmqcontrol/posixmqcontrol.1|posixmqcontrol|usr.bin/posixmqcontrol|posixmqcontrol|Control POSIX mqueuefs message queues
+usr.bin/posixshmcontrol/posixshmcontrol.1|posixshmcontrol|usr.bin/posixshmcontrol|posixshmcontrol|Control POSIX shared memory segments
+usr.bin/printenv/printenv.1|printenv|usr.bin/printenv|printenv|print out the environment
+usr.bin/printf/printf.1|printf|usr.bin/printf|printf|formatted output
+usr.bin/proccontrol/proccontrol.1|proccontrol|usr.bin/proccontrol|proccontrol|Control some process execution aspects
+usr.bin/procstat/procstat.1|procstat|usr.bin/procstat|procstat|get detailed process information
+usr.bin/protect/protect.1|protect|usr.bin/protect|protect|protect processes from being killed when swap space is exhausted
+usr.bin/pr/pr.1|pr|usr.bin/pr|pr|print files
+usr.bin/quota/quota.1|quota|usr.bin/quota|quota|display disk usage and limits
+usr.bin/rctl/rctl.8|rctl|usr.bin/rctl|rctl|display and update resource limits database
+usr.bin/renice/renice.8|renice|usr.bin/renice|renice|alter priority of running processes
+usr.bin/resizewin/resizewin.1|resizewin|usr.bin/resizewin|resizewin|update terminal size
+usr.bin/revoke/revoke.1|revoke|usr.bin/revoke|revoke|revoke a character device
+usr.bin/rev/rev.1|rev|usr.bin/rev|rev|reverse lines of a file
+usr.bin/rpcgen/rpcgen.1|rpcgen|usr.bin/rpcgen|rpcgen|an RPC protocol compiler
+usr.bin/rpcinfo/rpcinfo.8|rpcinfo|usr.bin/rpcinfo|rpcinfo|report RPC information
+usr.bin/rs/rs.1|rs|usr.bin/rs|rs|reshape a data array
+usr.bin/runat/runat.1|runat|usr.bin/runat|runat|run a shell command on a named attribute directory
+usr.bin/rup/rup.1|rup|usr.bin/rup|rup|remote status display
+usr.bin/ruptime/ruptime.1|ruptime|usr.bin/ruptime|ruptime|show host status of local machines
+usr.bin/rusers/rusers.1|rusers|usr.bin/rusers|rusers|who is logged in to machines on local network
+usr.bin/rwall/rwall.1|rwall|usr.bin/rwall|rwall|send a message to users logged on a host
+usr.bin/rwho/rwho.1|rwho|usr.bin/rwho|rwho|who is logged in on local machines
+usr.bin/script/script.1|script|usr.bin/script|script|make typescript of terminal session
+usr.bin/sdiff/sdiff.1|sdiff|usr.bin/sdiff|sdiff|side-by-side diff
+usr.bin/sed/sed.1|sed|usr.bin/sed|sed|stream editor
+usr.bin/seq/seq.1|seq|usr.bin/seq|seq|print sequences of numbers
+usr.bin/showmount/showmount.8|showmount|usr.bin/showmount|showmount|show remote nfs mounts on host
+usr.bin/sockstat/sockstat.1|sockstat|usr.bin/sockstat|sockstat|list open sockets
+usr.bin/soelim/soelim.1|soelim|usr.bin/soelim|soelim|interpret .so requests in manpages
+usr.bin/split/split.1|split|usr.bin/split|split|split a file into pieces
+usr.bin/ssh-copy-id/ssh-copy-id.1|ssh-copy-id|usr.bin/ssh-copy-id|ssh-copy-id|copy public keys to a remote host
+usr.bin/stat/stat.1|stat|usr.bin/stat|stat, readlink|display file status
+usr.bin/stdbuf/stdbuf.1|stdbuf|usr.bin/stdbuf|stdbuf|change standard streams initial buffering
+usr.bin/su/su.1|su|usr.bin/su|su|substitute user identity
+usr.bin/systat/systat.1|systat|usr.bin/systat|systat|display system statistics
+usr.bin/tabs/tabs.1|tabs|usr.bin/tabs|tabs|set terminal tabs
+usr.bin/tail/tail.1|tail|usr.bin/tail|tail|display the last part of a file
+usr.bin/talk/talk.1|talk|usr.bin/talk|talk|talk to another user
+usr.bin/tcopy/tcopy.1|tcopy|usr.bin/tcopy|tcopy|read, write, copy and verify tapes
+usr.bin/tee/tee.1|tee|usr.bin/tee|tee|duplicate standard input
+usr.bin/tftp/tftp.1|tftp|usr.bin/tftp|tftp|trivial file transfer program
+usr.bin/time/time.1|time|usr.bin/time|time|time command execution
+usr.bin/tip/tip/cu.1|cu|usr.bin/tip/tip|cu|call UNIX over a serial line
+usr.bin/tip/tip/tip.1|tip|usr.bin/tip/tip|tip|connect to a remote system
+usr.bin/top/top.1|top|usr.bin/top|top|display and update information about the top cpu processes
+usr.bin/touch/touch.1|touch|usr.bin/touch|touch|change file access and modification times
+usr.bin/tr/tr.1|tr|usr.bin/tr|tr|translate characters
+usr.bin/true/true.1|true|usr.bin/true|true|return true value
+usr.bin/truncate/truncate.1|truncate|usr.bin/truncate|truncate|resize files or manage file space
+usr.bin/truss/truss.1|truss|usr.bin/truss|truss|trace system calls
+usr.bin/tsort/tsort.1|tsort|usr.bin/tsort|tsort|topological sort of a directed graph
+usr.bin/tty/tty.1|tty|usr.bin/tty|tty|return user's terminal name
+usr.bin/ul/ul.1|ul|usr.bin/ul|ul|do underlining
+usr.bin/uname/uname.1|uname|usr.bin/uname|uname|display information about the system
+usr.bin/uniq/uniq.1|uniq|usr.bin/uniq|uniq|report or filter out repeated lines in a file
+usr.bin/units/units.1|units|usr.bin/units|units|conversion calculator
+usr.bin/usbhidaction/usbhidaction.1|usbhidaction|usr.bin/usbhidaction|usbhidaction|perform actions according to USB HID controls
+usr.bin/usbhidctl/usbhidctl.1|usbhidctl|usr.bin/usbhidctl|usbhidctl|manipulate USB HID devices
+usr.bin/users/users.1|users|usr.bin/users|users|list current users
+usr.bin/vgrind/vgrind.1|vgrind|usr.bin/vgrind|vgrind|grind nice listings of programs
+usr.bin/vmstat/vmstat.8|vmstat|usr.bin/vmstat|vmstat|report virtual memory statistics
+usr.bin/vtfontcvt/vtfontcvt.8|vtfontcvt|usr.bin/vtfontcvt|vtfontcvt|convert font files for use by the video console
+usr.bin/wall/wall.1|wall|usr.bin/wall|wall|write a message to users
+usr.bin/wc/wc.1|wc|usr.bin/wc|wc|word, line, character, and byte count
+usr.bin/what/what.1|what|usr.bin/what|what|show what versions of object modules were used to construct a file
+usr.bin/whereis/whereis.1|whereis|usr.bin/whereis|whereis|locate programs
+usr.bin/which/which.1|which|usr.bin/which|which|locate a program file in the user's path
+usr.bin/whois/whois.1|whois|usr.bin/whois|whois|Internet domain name and network number directory service
+usr.bin/who/who.1|who|usr.bin/who|who|display who is on the system
+usr.bin/write/write.1|write|usr.bin/write|write|send a message to another user
+usr.bin/w/uptime.1|uptime|usr.bin/w|uptime|show how long system has been running
+usr.bin/w/w.1|w|usr.bin/w|w|display who is logged in and what they are doing
+usr.bin/xargs/xargs.1|xargs|usr.bin/xargs|xargs|construct argument list(s) and execute utility
+usr.bin/xinstall/install.1|install|usr.bin/xinstall|install|install binaries
+usr.bin/xstr/xstr.1|xstr|usr.bin/xstr|xstr|extract strings from C programs to implement shared strings
+usr.bin/yes/yes.1|yes|usr.bin/yes|yes|be repetitively affirmative
+usr.bin/ypcat/ypcat.1|ypcat|usr.bin/ypcat|ypcat|print the values of all keys in a NIS database
+usr.bin/ypmatch/ypmatch.1|ypmatch|usr.bin/ypmatch|ypmatch|print the values of one or more keys in a NIS database
+usr.bin/ypwhich/ypwhich.1|ypwhich|usr.bin/ypwhich|ypwhich|return hostname of NIS server of map master
+usr.sbin/ac/ac.8|ac|usr.sbin/ac|ac|connect time accounting
+usr.sbin/accton/accton.8|accton|usr.sbin/accton|accton|enable/disable system accounting
+usr.sbin/acpi/acpiconf/acpiconf.8|acpiconf|usr.sbin/acpi/acpiconf|acpiconf|control ACPI power management
+usr.sbin/acpi/acpidb/acpidb.8|acpidb|usr.sbin/acpi/acpidb|acpidb|ACPI DSDT debugger
+usr.sbin/acpi/acpidump/acpidump.8|acpidump|usr.sbin/acpi/acpidump|acpidump|dump ACPI tables and ASL
+usr.sbin/acpi/iasl/iasl.8|iasl|usr.sbin/acpi/iasl|iasl|Intel ACPI compiler/decompiler
+usr.sbin/adduser/adduser.8|adduser|usr.sbin/adduser|adduser|command for adding new users
+usr.sbin/adduser/rmuser.8|rmuser|usr.sbin/adduser|rmuser|remove users from the system
+usr.sbin/apm/apm.8|apm|usr.sbin/apm|apm|control the APM BIOS and display its information
+usr.sbin/apmd/apmd.8|apmd|usr.sbin/apmd|apmd|Advanced Power Management monitor daemon
+usr.sbin/arp/arp.8|arp|usr.sbin/arp|arp|address resolution display and control
+usr.sbin/autofs/automount.8|automount|usr.sbin/autofs|automount|update autofs mounts
+usr.sbin/autofs/automountd.8|automountd|usr.sbin/autofs|automountd|daemon handling autofs mount requests
+usr.sbin/autofs/autounmountd.8|autounmountd|usr.sbin/autofs|autounmountd|daemon unmounting automounted filesystems
+usr.sbin/bhyve/bhyve.8|bhyve|usr.sbin/bhyve|bhyve|run a guest operating system inside a virtual machine
+usr.sbin/bhyvectl/bhyvectl.8|bhyvectl|usr.sbin/bhyvectl|bhyvectl|control utility for bhyve instances
+usr.sbin/bhyveload/bhyveload.8|bhyveload|usr.sbin/bhyveload|bhyveload|load a FreeBSD guest inside a bhyve virtual machine
+usr.sbin/binmiscctl/binmiscctl.8|binmiscctl|usr.sbin/binmiscctl|binmiscctl|manage binary image activators
+usr.sbin/bluetooth/ath3kfw/ath3kfw.8|ath3kfw|usr.sbin/bluetooth/ath3kfw|ath3kfw|load firmware for Atheros AR3011/AR3012 Bluetooth USB devices
+usr.sbin/bluetooth/bcmfw/bcmfw.8|bcmfw|usr.sbin/bluetooth/bcmfw|bcmfw|load firmware for Broadcom BCM2033 Bluetooth USB devices
+usr.sbin/bluetooth/bluetooth-config/bluetooth-config.8|bluetooth-config|usr.sbin/bluetooth/bluetooth-config|bluetooth-config|a script to manage config files for the bluetooth sub system
+usr.sbin/bluetooth/bthidcontrol/bthidcontrol.8|bthidcontrol|usr.sbin/bluetooth/bthidcontrol|bthidcontrol|Bluetooth HID control utility
+usr.sbin/bluetooth/bthidd/bthidd.8|bthidd|usr.sbin/bluetooth/bthidd|bthidd|Bluetooth HID daemon
+usr.sbin/bluetooth/btpand/btpand.8|btpand|usr.sbin/bluetooth/btpand|btpand|Bluetooth PAN daemon
+usr.sbin/bluetooth/hccontrol/hccontrol.8|hccontrol|usr.sbin/bluetooth/hccontrol|hccontrol|Bluetooth HCI configuration utility
+usr.sbin/bluetooth/hcsecd/hcsecd.8|hcsecd|usr.sbin/bluetooth/hcsecd|hcsecd|control link keys and PIN codes for Bluetooth devices
+usr.sbin/bluetooth/iwmbtfw/iwmbtfw.8|iwmbtfw|usr.sbin/bluetooth/iwmbtfw|iwmbtfw|load firmware for Intel Wireless AC Bluetooth USB devices
+usr.sbin/bluetooth/l2control/l2control.8|l2control|usr.sbin/bluetooth/l2control|l2control|L2CAP configuration utility
+usr.sbin/bluetooth/l2ping/l2ping.8|l2ping|usr.sbin/bluetooth/l2ping|l2ping|send L2CAP ECHO_REQUEST to remote devices
+usr.sbin/bluetooth/rfcomm_pppd/rfcomm_pppd.8|rfcomm_pppd|usr.sbin/bluetooth/rfcomm_pppd|rfcomm_pppd|RFCOMM PPP daemon
+usr.sbin/bluetooth/rtlbtfw/rtlbtfw.8|rtlbtfw|usr.sbin/bluetooth/rtlbtfw|rtlbtfw|load firmware for Realtek 87XX/88XX Bluetooth USB devices
+usr.sbin/bluetooth/sdpcontrol/sdpcontrol.8|sdpcontrol|usr.sbin/bluetooth/sdpcontrol|sdpcontrol|Bluetooth Service Discovery Protocol query utility
+usr.sbin/bluetooth/sdpd/sdpd.8|sdpd|usr.sbin/bluetooth/sdpd|sdpd|Bluetooth Service Discovery Protocol daemon
+usr.sbin/boot0cfg/boot0cfg.8|boot0cfg|usr.sbin/boot0cfg|boot0cfg|boot manager installation/configuration utility
+usr.sbin/bootparamd/bootparamd/bootparamd.8|bootparamd|usr.sbin/bootparamd/bootparamd|bootparamd|boot parameter server
+usr.sbin/boottrace/boottrace.8|boottrace|usr.sbin/boottrace|boottrace|trace command execution with boottrace(4)
+usr.sbin/bsdconfig/bsdconfig.8|bsdconfig|usr.sbin/bsdconfig|bsdconfig|system configuration utility
+usr.sbin/bsdinstall/bsdinstall.8|bsdinstall|usr.sbin/bsdinstall|bsdinstall|system installer
+usr.sbin/bsdinstall/partedit/sade.8|sade|usr.sbin/bsdinstall/partedit|sade|sysadmins disk editor
+usr.sbin/bsnmpd/tools/bsnmptools/bsnmpget.1|bsnmpget|usr.sbin/bsnmpd/tools/bsnmptools|bsnmpget, bsnmpwalk, bsnmpset|simple tools for querying SNMP agents
+usr.sbin/btxld/btxld.8|btxld|usr.sbin/btxld|btxld|link editor for BTX clients
+usr.sbin/camdd/camdd.8|camdd|usr.sbin/camdd|camdd|CAM data transfer utility
+usr.sbin/cdcontrol/cdcontrol.1|cdcontrol|usr.sbin/cdcontrol|cdcontrol|compact disc control utility
+usr.sbin/certctl/certctl.8|certctl|usr.sbin/certctl|certctl|tool for managing trusted and untrusted TLS certificates
+usr.sbin/chkgrp/chkgrp.8|chkgrp|usr.sbin/chkgrp|chkgrp|check the syntax of the group file
+usr.sbin/chown/chgrp.1|chgrp|usr.sbin/chown|chgrp|change group
+usr.sbin/chown/chown.8|chown|usr.sbin/chown|chown|change file owner and group
+usr.sbin/chroot/chroot.8|chroot|usr.sbin/chroot|chroot|change root directory
+usr.sbin/ckdist/ckdist.1|ckdist|usr.sbin/ckdist|ckdist|check software distributions
+usr.sbin/clear_locks/clear_locks.8|clear_locks|usr.sbin/clear_locks|clear_locks|clear locks held on behalf of an NFS client
+usr.sbin/config/config.8|config|usr.sbin/config|config|build system configuration files
+usr.sbin/cpucontrol/cpucontrol.8|cpucontrol|usr.sbin/cpucontrol|cpucontrol|control utility for the cpuctl(4) device
+usr.sbin/crashinfo/crashinfo.8|crashinfo|usr.sbin/crashinfo|crashinfo|analyze a core dump of the operating system
+usr.sbin/cron/cron/cron.8|cron|usr.sbin/cron/cron|cron|daemon to execute scheduled commands (Vixie Cron)
+usr.sbin/cron/crontab/crontab.1|crontab|usr.sbin/cron/crontab|crontab|maintain crontab files for individual users (V3)
+usr.sbin/crunch/crunchgen/crunchgen.1|crunchgen|usr.sbin/crunch/crunchgen|crunchgen|generates build environment for a crunched binary
+usr.sbin/crunch/crunchide/crunchide.1|crunchide|usr.sbin/crunch/crunchide|crunchide|hides symbol names from ld, for crunching programs together
+usr.sbin/ctladm/ctladm.8|ctladm|usr.sbin/ctladm|ctladm|CAM Target Layer control utility
+usr.sbin/ctld/ctld.8|ctld|usr.sbin/ctld|ctld|CAM Target Layer / iSCSI target daemon
+usr.sbin/cxgbetool/cxgbetool.8|cxgbetool|usr.sbin/cxgbetool|cxgbetool|userspace companion to Chelsio cxgbe Ethernet driver
+usr.sbin/daemon/daemon.8|daemon|usr.sbin/daemon|daemon|run detached from the controlling terminal
+usr.sbin/dconschat/dconschat.8|dconschat|usr.sbin/dconschat|dconschat|user interface to dcons(4)
+usr.sbin/devctl/devctl.8|devctl|usr.sbin/devctl|devctl|device control utility
+usr.sbin/devinfo/devinfo.8|devinfo|usr.sbin/devinfo|devinfo|print information about system device configuration
+usr.sbin/diskinfo/diskinfo.8|diskinfo|usr.sbin/diskinfo|diskinfo|get information about disk device
+usr.sbin/dumpcis/dumpcis.8|dumpcis|usr.sbin/dumpcis|dumpcis|PC Card and Cardbus (PCMCIA) CIS display tool
+usr.sbin/edquota/edquota.8|edquota|usr.sbin/edquota|edquota|edit user quotas
+usr.sbin/efibootmgr/efibootmgr.8|efibootmgr|usr.sbin/efibootmgr|efibootmgr|manipulate the EFI Boot Manager
+usr.sbin/efidp/efidp.8|efidp|usr.sbin/efidp|efidp|UEFI Device Path manipulation
+usr.sbin/efitable/efitable.8|efitable|usr.sbin/efitable|efitable|dump UEFI tables
+usr.sbin/efivar/efivar.8|efivar|usr.sbin/efivar|efivar|UEFI environment variable interaction
+usr.sbin/efiwake/efiwake.8|efiwake|usr.sbin/efiwake|efiwake|manipulate the EFI wake timer
+usr.sbin/etcupdate/etcupdate.8|etcupdate|usr.sbin/etcupdate|etcupdate|manage updates to system files not updated by installworld
+usr.sbin/extattrctl/extattrctl.8|extattrctl|usr.sbin/extattrctl|extattrctl|manage UFS1 extended attributes
+usr.sbin/extattr/rmextattr.8|rmextattr|usr.sbin/extattr|getextattr, lsextattr, rmextattr, setextattr|manipulate extended attributes
+usr.sbin/fdcontrol/fdcontrol.8|fdcontrol|usr.sbin/fdcontrol|fdcontrol|display and modify floppy disk parameters
+usr.sbin/fdformat/fdformat.8|fdformat|usr.sbin/fdformat|fdformat|format floppy disks
+usr.sbin/fdread/fdread.1|fdread|usr.sbin/fdread|fdread|read floppy disks
+usr.sbin/fdwrite/fdwrite.1|fdwrite|usr.sbin/fdwrite|fdwrite|format and write floppy disks
+usr.sbin/fifolog/fifolog_create/fifolog.1|fifolog|usr.sbin/fifolog/fifolog_create|fifolog_create, fifolog_writer, fifolog_reader|initialize, write, seek and extract data from a fifolog
+usr.sbin/flowctl/flowctl.8|flowctl|usr.sbin/flowctl|flowctl|ng_netflow(4) control utility
+usr.sbin/freebsd-update/freebsd-update.8|freebsd-update|usr.sbin/freebsd-update|freebsd-update|fetch and install binary updates to FreeBSD
+usr.sbin/fstyp/fstyp.8|fstyp|usr.sbin/fstyp|fstyp|determine filesystem type
+usr.sbin/fwcontrol/fwcontrol.8|fwcontrol|usr.sbin/fwcontrol|fwcontrol|FireWire control utility
+usr.sbin/fwget/fwget.8|fwget|usr.sbin/fwget|fwget|install firmware packages for the running system
+usr.sbin/getfmac/getfmac.8|getfmac|usr.sbin/getfmac|getfmac|print MAC label for a file system object
+usr.sbin/getpmac/getpmac.8|getpmac|usr.sbin/getpmac|getpmac|print process-related MAC labels
+usr.sbin/gpioctl/gpioctl.8|gpioctl|usr.sbin/gpioctl|gpioctl|GPIO control utility
+usr.sbin/gssd/gssd.8|gssd|usr.sbin/gssd|gssd|Generic Security Services Daemon
+usr.sbin/gstat/gstat.8|gstat|usr.sbin/gstat|gstat|print statistics about GEOM disks
+usr.sbin/i2c/i2c.8|i2c|usr.sbin/i2c|i2c|test I2C bus and slave devices
+usr.sbin/ifmcstat/ifmcstat.8|ifmcstat|usr.sbin/ifmcstat|ifmcstat|dump multicast group management statistics per interface
+usr.sbin/inetd/inetd.8|inetd|usr.sbin/inetd|inetd|internet “super-server”
+usr.sbin/iostat/iostat.8|iostat|usr.sbin/iostat|iostat|report I/O statistics
+usr.sbin/iovctl/iovctl.8|iovctl|usr.sbin/iovctl|iovctl|PCI SR-IOV configuration utility
+usr.sbin/ip6addrctl/ip6addrctl.8|ip6addrctl|usr.sbin/ip6addrctl|ip6addrctl|configure address selection policy for IPv6 and IPv4
+usr.sbin/ipfwpcap/ipfwpcap.8|ipfwpcap|usr.sbin/ipfwpcap|ipfwpcap|copy diverted packets to a file in tcpdump format
+usr.sbin/iscsid/iscsid.8|iscsid|usr.sbin/iscsid|iscsid|iSCSI initiator daemon
+usr.sbin/jail/jail.8|jail|usr.sbin/jail|jail|manage system jails
+usr.sbin/jexec/jexec.8|jexec|usr.sbin/jexec|jexec|execute a command inside an existing jail
+usr.sbin/jls/jls.8|jls|usr.sbin/jls|jls|list jails
+usr.sbin/kbdcontrol/kbdcontrol.1|kbdcontrol|usr.sbin/kbdcontrol|kbdcontrol|system video console keyboard control/configuration utility
+usr.sbin/kbdmap/kbdmap.1|kbdmap|usr.sbin/kbdmap|kbdmap, vidfont|system video console keyboard map/font dialog utilities
+usr.sbin/kldxref/kldxref.8|kldxref|usr.sbin/kldxref|kldxref|generate hints for the kernel loader
+usr.sbin/lastlogin/lastlogin.8|lastlogin|usr.sbin/lastlogin|lastlogin|indicate last login time of users
+usr.sbin/lpr/chkprintcap/chkprintcap.8|chkprintcap|usr.sbin/lpr/chkprintcap|chkprintcap|check validity of entries in the print spooler database
+usr.sbin/lpr/lpc/lpc.8|lpc|usr.sbin/lpr/lpc|lpc|line printer control program
+usr.sbin/lpr/lpd/lpd.8|lpd|usr.sbin/lpr/lpd|lpd|line printer spooler daemon
+usr.sbin/lpr/lp/lp.1|lp|usr.sbin/lpr/lp|lp|front-end to the print spooler
+usr.sbin/lpr/lpq/lpq.1|lpq|usr.sbin/lpr/lpq|lpq|spool queue examination program
+usr.sbin/lpr/lpr/lpr.1|lpr|usr.sbin/lpr/lpr|lpr|off line print
+usr.sbin/lpr/lprm/lprm.1|lprm|usr.sbin/lpr/lprm|lprm|remove jobs from the line printer spooling queue
+usr.sbin/lpr/lptest/lptest.1|lptest|usr.sbin/lpr/lptest|lptest|generate lineprinter ripple pattern
+usr.sbin/lpr/pac/pac.8|pac|usr.sbin/lpr/pac|pac|printer/plotter accounting information
+usr.sbin/lptcontrol/lptcontrol.8|lptcontrol|usr.sbin/lptcontrol|lptcontrol|a utility for manipulating the lpt printer driver
+usr.sbin/mailwrapper/mailwrapper.8|mailwrapper|usr.sbin/mailwrapper|mailwrapper|invoke appropriate MTA software based on configuration file
+usr.sbin/makefs/makefs.8|makefs|usr.sbin/makefs|makefs|create a file system image from a directory tree or a mtree manifest
+usr.sbin/manctl/manctl.8|manctl|usr.sbin/manctl|manctl|manipulating manual pages
+usr.sbin/memcontrol/memcontrol.8|memcontrol|usr.sbin/memcontrol|memcontrol|control system cache behaviour with respect to memory
+usr.sbin/mfiutil/mfiutil.8|mfiutil|usr.sbin/mfiutil|mfiutil, mrsasutil|Utility for managing LSI MegaRAID SAS controllers
+usr.sbin/mixer/mixer.8|mixer|usr.sbin/mixer|mixer|manipulate soundcard mixer controls
+usr.sbin/mld6query/mld6query.8|mld6query|usr.sbin/mld6query|mld6query|send multicast listener query
+usr.sbin/mlx5tool/mlx5tool.8|mlx5tool|usr.sbin/mlx5tool|mlx5tool|Utility for managing Connect-X 4/5/6 Mellanox network adapters
+usr.sbin/mlxcontrol/mlxcontrol.8|mlxcontrol|usr.sbin/mlxcontrol|mlxcontrol|Mylex DAC-family RAID management utility
+usr.sbin/mountd/mountd.8|mountd|usr.sbin/mountd|mountd|service remote NFS mount requests
+usr.sbin/moused/moused/moused.8|moused|usr.sbin/moused/moused|moused|pass mouse data to the console driver
+usr.sbin/moused/msconvd/msconvd.8|msconvd|usr.sbin/moused/msconvd|msconvd|mouse protocol conversion daemon
+usr.sbin/mpsutil/mpsutil.8|mpsutil|usr.sbin/mpsutil|mpsutil, mprutil|Utility for managing LSI Fusion-MPT 2/3 controllers
+usr.sbin/mptable/mptable.1|mptable|usr.sbin/mptable|mptable|display MP configuration table
+usr.sbin/mptutil/mptutil.8|mptutil|usr.sbin/mptutil|mptutil|Utility for managing LSI Fusion-MPT controllers
+usr.sbin/mtest/mtest.8|mtest|usr.sbin/mtest|mtest|test multicast socket operations
+usr.sbin/ndp/ndp.8|ndp|usr.sbin/ndp|ndp|control/diagnose IPv6 neighbor discovery protocol
+usr.sbin/newsyslog/newsyslog.8|newsyslog|usr.sbin/newsyslog|newsyslog|maintain system log files to manageable sizes
+usr.sbin/nfscbd/nfscbd.8|nfscbd|usr.sbin/nfscbd|nfscbd|NFSv4 client side callback daemon
+usr.sbin/nfsd/nfsd.8|nfsd|usr.sbin/nfsd|nfsd|remote NFS server
+usr.sbin/nfsdumpstate/nfsdumpstate.8|nfsdumpstate|usr.sbin/nfsdumpstate|nfsdumpstate|display NFSv4 open/lock state
+usr.sbin/nfsrevoke/nfsrevoke.8|nfsrevoke|usr.sbin/nfsrevoke|nfsrevoke|revoke NFS V4 client
+usr.sbin/nfsuserd/nfsuserd.8|nfsuserd|usr.sbin/nfsuserd|nfsuserd|load user and group information into the kernel for NFSv4 services plus support manage-gids for all NFS versions
+usr.sbin/ngctl/ngctl.8|ngctl|usr.sbin/ngctl|ngctl|netgraph control utility
+usr.sbin/nghook/nghook.8|nghook|usr.sbin/nghook|nghook|connect to a netgraph(4) node
+usr.sbin/nologin/nologin.8|nologin|usr.sbin/nologin|nologin|politely refuse a login
+usr.sbin/nscd/nscd.8|nscd|usr.sbin/nscd|nscd|name service caching daemon
+usr.sbin/ntp/doc/ntpdate.8|ntpdate|usr.sbin/ntp/doc|ntpdate|set the date and time via NTP
+usr.sbin/ntp/doc/ntptime.8|ntptime|usr.sbin/ntp/doc|ntptime|read kernel time variables
+usr.sbin/ntp/doc/ntptrace.8|ntptrace|usr.sbin/ntp/doc|ntptrace|Trace peers of an NTP server
+usr.sbin/nvram/nvram.8|nvram|usr.sbin/nvram|nvram|display or modify contents of the EEPROM or NVRAM
+usr.sbin/ofwdump/ofwdump.8|ofwdump|usr.sbin/ofwdump|ofwdump|examine the Open Firmware device tree
+usr.sbin/pciconf/pciconf.8|pciconf|usr.sbin/pciconf|pciconf|diagnostic utility for the PCI bus
+usr.sbin/periodic/periodic.8|periodic|usr.sbin/periodic|periodic|run periodic system functions
+usr.sbin/pkg/pkg.7|pkg.7|usr.sbin/pkg|pkg|a utility for manipulating packages
+usr.sbin/pmcannotate/pmcannotate.8|pmcannotate|usr.sbin/pmcannotate|pmcannotate|sources printout with inlined profiling
+usr.sbin/pmccontrol/pmccontrol.8|pmccontrol|usr.sbin/pmccontrol|pmccontrol|control hardware performance monitoring counters
+usr.sbin/pmcstat/pmcstat.8|pmcstat|usr.sbin/pmcstat|pmcstat|performance measurement with performance monitoring hardware
+usr.sbin/pmcstudy/pmcstudy.8|pmcstudy|usr.sbin/pmcstudy|pmcstudy|Perform various studies on a system's overall PMCs
+usr.sbin/pnfsdscopymr/pnfsdscopymr.8|pnfsdscopymr|usr.sbin/pnfsdscopymr|pnfsdscopymr|copy or move a data storage file for a MDS file to a different DS
+usr.sbin/pnfsdsfile/pnfsdsfile.8|pnfsdsfile|usr.sbin/pnfsdsfile|pnfsdsfile|display a pNFS data storage file's location(s) and/or modify the “pnfsd.dsfile” extended attribute for them
+usr.sbin/pnfsdskill/pnfsdskill.8|pnfsdskill|usr.sbin/pnfsdskill|pnfsdskill|disables a pNFS data storage server (DS)
+usr.sbin/powerd/powerd.8|powerd|usr.sbin/powerd|powerd|system power control utility
+usr.sbin/pppctl/pppctl.8|pppctl|usr.sbin/pppctl|pppctl|PPP control program
+usr.sbin/ppp/ppp.8|ppp|usr.sbin/ppp|ppp|Point to Point Protocol (a.k.a. user-ppp)
+usr.sbin/prometheus_sysctl_exporter/prometheus_sysctl_exporter.8|prometheus_sysctl_exporter|usr.sbin/prometheus_sysctl_exporter|prometheus_sysctl_exporter|print kernel state as Prometheus metrics
+usr.sbin/pstat/pstat.8|pstat|usr.sbin/pstat|pstat, swapinfo|display system data structures
+usr.sbin/pwd_mkdb/pwd_mkdb.8|pwd_mkdb|usr.sbin/pwd_mkdb|pwd_mkdb|generate the password databases
+usr.sbin/pwm/pwm.8|pwm|usr.sbin/pwm|pwm|configure PWM (Pulse Width Modulation) hardware
+usr.sbin/pw/pw.8|pw|usr.sbin/pw|pw|create, remove, modify & display system users and groups
+usr.sbin/quotaon/quotaon.8|quotaon|usr.sbin/quotaon|quotaon, quotaoff|turn file system quotas on and off
+usr.sbin/quot/quot.8|quot|usr.sbin/quot|quot|display disk space occupied by each user
+usr.sbin/rarpd/rarpd.8|rarpd|usr.sbin/rarpd|rarpd|reverse ARP daemon
+usr.sbin/repquota/repquota.8|repquota|usr.sbin/repquota|repquota|summarize quotas for a file system
+usr.sbin/rip6query/rip6query.8|rip6query|usr.sbin/rip6query|rip6query|RIPng debugging tool
+usr.sbin/rmt/rmt.8|rmt|usr.sbin/rmt|rmt|remote magtape protocol module
+usr.sbin/route6d/route6d.8|route6d|usr.sbin/route6d|route6d|RIP6 Routing Daemon
+usr.sbin/rpcbind/rpcbind.8|rpcbind|usr.sbin/rpcbind|rpcbind|universal addresses to RPC program number mapper
+usr.sbin/rpc.lockd/rpc.lockd.8|rpc.lockd|usr.sbin/rpc.lockd|rpc.lockd|NFS file locking daemon
+usr.sbin/rpc.statd/rpc.statd.8|rpc.statd|usr.sbin/rpc.statd|rpc.statd|host status monitoring daemon
+usr.sbin/rpc.tlsclntd/rpc.tlsclntd.8|rpc.tlsclntd|usr.sbin/rpc.tlsclntd|rpc.tlsclntd|Sun RPC over TLS Client Daemon
+usr.sbin/rpc.tlsservd/rpc.tlsservd.8|rpc.tlsservd|usr.sbin/rpc.tlsservd|rpc.tlsservd|Sun RPC over TLS Server Daemon
+usr.sbin/rpc.umntall/rpc.umntall.8|rpc.umntall|usr.sbin/rpc.umntall|rpc.umntall|notify NFS servers about unmounted NFS file systems
+usr.sbin/rpc.yppasswdd/rpc.yppasswdd.8|rpc.yppasswdd|usr.sbin/rpc.yppasswdd|rpc.yppasswdd|server for updating NIS passwords
+usr.sbin/rpc.ypxfrd/rpc.ypxfrd.8|rpc.ypxfrd|usr.sbin/rpc.ypxfrd|rpc.ypxfrd|NIS map transfer server
+usr.sbin/rrenumd/rrenumd.8|rrenumd|usr.sbin/rrenumd|rrenumd|router renumbering daemon
+usr.sbin/rtadvctl/rtadvctl.8|rtadvctl|usr.sbin/rtadvctl|rtadvctl|control program for rtadvd(8) daemon
+usr.sbin/rtadvd/rtadvd.8|rtadvd|usr.sbin/rtadvd|rtadvd|router advertisement daemon
+usr.sbin/rtprio/rtprio.1|rtprio|usr.sbin/rtprio|rtprio, idprio|execute, examine or modify a utility's or process's realtime or idletime scheduling priority
+usr.sbin/rtsold/rtsold.8|rtsold|usr.sbin/rtsold|rtsold, rtsol|router solicitation daemon
+usr.sbin/rwhod/rwhod.8|rwhod|usr.sbin/rwhod|rwhod|system status server
+usr.sbin/sa/sa.8|sa|usr.sbin/sa|sa|print system accounting statistics
+usr.sbin/service/service.8|service|usr.sbin/service|service|control (start/stop/etc.) or list system services
+usr.sbin/services_mkdb/services_mkdb.8|services_mkdb|usr.sbin/services_mkdb|services_mkdb|generate the services database
+usr.sbin/sesutil/sesutil.8|sesutil|usr.sbin/sesutil|sesutil|Utility for managing SCSI Enclosure Services (SES) device
+usr.sbin/setaudit/setaudit.8|setaudit|usr.sbin/setaudit|setaudit|specify audit configurations on a process
+usr.sbin/setfib/setfib.1|setfib|usr.sbin/setfib|setfib|execute a utility with an altered default network view
+usr.sbin/setfmac/setfmac.8|setfmac|usr.sbin/setfmac|setfmac|set MAC label for a file system object
+usr.sbin/setfmac/setfsmac.8|setfsmac|usr.sbin/setfmac|setfsmac|set MAC label for a file hierarchy
+usr.sbin/setpmac/setpmac.8|setpmac|usr.sbin/setpmac|setpmac|run a command with a different MAC process label
+usr.sbin/smbmsg/smbmsg.8|smbmsg|usr.sbin/smbmsg|smbmsg|send or receive messages over an SMBus
+usr.sbin/snapinfo/snapinfo.8|snapinfo|usr.sbin/snapinfo|snapinfo|show snapshot location on UFS file systems
+usr.sbin/sndctl/sndctl.8|sndctl|usr.sbin/sndctl|sndctl|list and modify soundcard properties
+usr.sbin/spi/spi.8|spi|usr.sbin/spi|spi|communicate on SPI bus with slave devices
+usr.sbin/spkrtest/spkrtest.8|spkrtest|usr.sbin/spkrtest|spkrtest|test script for the speaker driver
+usr.sbin/spray/spray.8|spray|usr.sbin/spray|spray|send many packets to host
+usr.sbin/syslogd/syslogd.8|syslogd|usr.sbin/syslogd|syslogd|log systems messages
+usr.sbin/sysrc/sysrc.8|sysrc|usr.sbin/sysrc|sysrc|safely edit system rc files
+usr.sbin/tcpdrop/tcpdrop.8|tcpdrop|usr.sbin/tcpdrop|tcpdrop|drop TCP connections
+usr.sbin/tcpsso/tcpsso.8|tcpsso|usr.sbin/tcpsso|tcpsso|set a socket option on a TCP endpoint
+usr.sbin/traceroute6/traceroute6.8|traceroute6|usr.sbin/traceroute6|traceroute6|print the route IPv6 packets will take to a network node
+usr.sbin/traceroute/traceroute.8|traceroute|usr.sbin/traceroute|traceroute|print the route packets take to network host
+usr.sbin/trim/trim.8|trim|usr.sbin/trim|trim|erase device blocks that have no needed contents
+usr.sbin/tzsetup/tzsetup.8|tzsetup|usr.sbin/tzsetup|tzsetup|set local timezone
+usr.sbin/uathload/uathload.8|uathload|usr.sbin/uathload|uathload|load firmware for Atheros USB wireless devices
+usr.sbin/uefisign/uefisign.8|uefisign|usr.sbin/uefisign|uefisign|UEFI Secure Boot signing utility
+usr.sbin/ugidfw/ugidfw.8|ugidfw|usr.sbin/ugidfw|ugidfw|firewall-like access controls for file system objects
+usr.sbin/uhsoctl/uhsoctl.1|uhsoctl|usr.sbin/uhsoctl|uhsoctl|connection utility for Option based devices
+usr.sbin/usbconfig/usbconfig.8|usbconfig|usr.sbin/usbconfig|usbconfig|configure the USB subsystem
+usr.sbin/usbdump/usbdump.8|usbdump|usr.sbin/usbdump|usbdump|dump traffic on USB host controller
+usr.sbin/utx/utx.8|utx|usr.sbin/utx|utx|manage the user accounting database
+usr.sbin/valectl/valectl.8|valectl|usr.sbin/valectl|valectl|manage VALE network switches provided by netmap
+usr.sbin/vidcontrol/vidcontrol.1|vidcontrol|usr.sbin/vidcontrol|vidcontrol|system video console control and configuration utility
+usr.sbin/vigr/vigr.8|vigr|usr.sbin/vigr|vigr|edit the group file
+usr.sbin/vipw/vipw.8|vipw|usr.sbin/vipw|vipw|edit the password file
+usr.sbin/virtual_oss/virtual_bt_speaker/virtual_bt_speaker.8|virtual_bt_speaker|usr.sbin/virtual_oss/virtual_bt_speaker|virtual_bt_speaker|virtual bluetooth speaker
+usr.sbin/virtual_oss/virtual_equalizer/virtual_equalizer.8|virtual_equalizer|usr.sbin/virtual_oss/virtual_equalizer|virtual_equalizer|audio equalizer
+usr.sbin/virtual_oss/virtual_oss_cmd/virtual_oss_cmd.8|virtual_oss_cmd|usr.sbin/virtual_oss/virtual_oss_cmd|virtual_oss_cmd|modify a running virtual_oss(8) instance's options
+usr.sbin/virtual_oss/virtual_oss/virtual_oss.8|virtual_oss|usr.sbin/virtual_oss/virtual_oss|virtual_oss|daemon to multiplex and demultiplex an OSS device
+usr.sbin/wake/wake.8|wake|usr.sbin/wake|wake|send Wake on LAN frames to hosts on a local Ethernet network
+usr.sbin/watchdogd/watchdog.8|watchdog|usr.sbin/watchdogd|watchdog|watchdog control program
+usr.sbin/watchdogd/watchdogd.8|watchdogd|usr.sbin/watchdogd|watchdogd|watchdog daemon
+usr.sbin/watch/watch.8|watch|usr.sbin/watch|watch|snoop on another tty line
+usr.sbin/wlandebug/wlandebug.8|wlandebug|usr.sbin/wlandebug|wlandebug|set/query 802.11 wireless debugging messages
+usr.sbin/wlanstat/wlanstat.8|wlanstat|usr.sbin/wlanstat|wlanstat|query 802.11 wireless network statistics
+usr.sbin/wpa/hostapd_cli/hostapd_cli.8|hostapd_cli|usr.sbin/wpa/hostapd_cli|hostapd_cli|text-based frontend program for interacting with hostapd(8)
+usr.sbin/wpa/hostapd/hostapd.8|hostapd|usr.sbin/wpa/hostapd|hostapd|authenticator for IEEE 802.11 networks
+usr.sbin/wpa/wpa_cli/wpa_cli.8|wpa_cli|usr.sbin/wpa/wpa_cli|wpa_cli|console utility for WiFi authentication with wpa_supplicant
+usr.sbin/wpa/wpa_passphrase/wpa_passphrase.8|wpa_passphrase|usr.sbin/wpa/wpa_passphrase|wpa_passphrase|utility for generating a 256-bit pre-shared WPA key from an ASCII passphrase
+usr.sbin/wpa/wpa_supplicant/wpa_supplicant.8|wpa_supplicant|usr.sbin/wpa/wpa_supplicant|wpa_supplicant|WPA/802.11i Supplicant for wireless network devices
+usr.sbin/ypbind/ypbind.8|ypbind|usr.sbin/ypbind|ypbind|NIS domain binding daemon
+usr.sbin/ypldap/ypldap.8|ypldap|usr.sbin/ypldap|ypldap|YP map server using LDAP backend
+usr.sbin/yp_mkdb/yp_mkdb.8|yp_mkdb|usr.sbin/yp_mkdb|yp_mkdb|generate the NIS databases
+usr.sbin/yppoll/yppoll.8|yppoll|usr.sbin/yppoll|yppoll|ask version of NIS map from NIS server
+usr.sbin/yppush/yppush.8|yppush|usr.sbin/yppush|yppush|force propagation of updated NIS databases
+usr.sbin/ypserv/ypinit.8|ypinit|usr.sbin/ypserv|ypinit|build and install NIS databases
+usr.sbin/ypserv/ypserv.8|ypserv|usr.sbin/ypserv|ypserv|NIS database server
+usr.sbin/ypset/ypset.8|ypset|usr.sbin/ypset|ypset|tell ypbind(8) which NIS server process to use
+usr.sbin/zonectl/zonectl.8|zonectl|usr.sbin/zonectl|zonectl|Shingled Magnetic Recording Zone Control utility
+usr.sbin/zzz/zzz.8|zzz|usr.sbin/zzz|zzz|suspend an ACPI or APM system
+lib/atf/libatf-c++/Makefile.depend|libatf-c++|lib/atf/libatf-c++|libatf-c++|Library missing description
+lib/atf/libatf-c/Makefile.depend|libatf-c|lib/atf/libatf-c|libatf-c|Library missing description
+lib/clang/headers/Makefile.depend|headers|lib/clang/headers|headers|Library missing description
+lib/clang/libclang/Makefile.depend|libclang|lib/clang/libclang|libclang|Library missing description
+lib/clang/liblldb/Makefile.depend|liblldb|lib/clang/liblldb|liblldb|Library missing description
+lib/clang/libllvm/Makefile.depend|libllvm|lib/clang/libllvm|libllvm|Library missing description
+lib/clang/libllvmminimal/Makefile.depend|libllvmminimal|lib/clang/libllvmminimal|libllvmminimal|Library missing description
+lib/csu/Makefile.depend|csu|lib/csu|csu|Library missing description
+lib/csu/aarch64/Makefile.depend|aarch64|lib/csu/aarch64|aarch64|Library missing description
+lib/csu/amd64/Makefile.depend|amd64|lib/csu/amd64|amd64|Library missing description
+lib/csu/arm/Makefile.depend|arm|lib/csu/arm|arm|Library missing description
+lib/csu/i386/Makefile.depend|i386|lib/csu/i386|i386|Library missing description
+lib/csu/powerpc64/Makefile.depend|powerpc64|lib/csu/powerpc64|powerpc64|Library missing description
+lib/csu/powerpc/Makefile.depend|powerpc|lib/csu/powerpc|powerpc|Library missing description
+lib/csu/riscv/Makefile.depend|riscv|lib/csu/riscv|riscv|Library missing description
+libexec/atf/atf-check/Makefile.depend|atf-check|libexec/atf/atf-check|atf-check|Library missing description
+libexec/atf/atf-pytest-wrapper/Makefile.depend|atf-pytest-wrapper|libexec/atf/atf-pytest-wrapper|atf-pytest-wrapper|Library missing description
+libexec/atf/atf-sh/Makefile.depend|atf-sh|libexec/atf/atf-sh|atf-sh|Library missing description
+libexec/atrun/Makefile.depend|atrun|libexec/atrun|atrun|Library missing description
+libexec/blocklistd-helper/Makefile.depend|blocklistd-helper|libexec/blocklistd-helper|blocklistd-helper|Library missing description
+libexec/bootpd/bootpgw/Makefile.depend|bootpgw|libexec/bootpd/bootpgw|bootpgw|Library missing description
+libexec/bootpd/Makefile.depend|bootpd|libexec/bootpd|bootpd|Library missing description
+libexec/dma/dmagent/Makefile.depend|dmagent|libexec/dma/dmagent|dmagent|Library missing description
+libexec/dma/dma-mbox-create/Makefile.depend|dma-mbox-create|libexec/dma/dma-mbox-create|dma-mbox-create|Library missing description
+libexec/hyperv/Makefile.depend|hyperv|libexec/hyperv|hyperv|Library missing description
+libexec/mail.local/Makefile.depend|mail.local|libexec/mail.local|mail.local|Library missing description
+libexec/nuageinit/Makefile.depend|nuageinit|libexec/nuageinit|nuageinit|Library missing description
+libexec/smrsh/Makefile.depend|smrsh|libexec/smrsh|smrsh|Library missing description
+libexec/tcpd/Makefile.depend|tcpd|libexec/tcpd|tcpd|Library missing description
+libexec/tftp-proxy/Makefile.depend|tftp-proxy|libexec/tftp-proxy|tftp-proxy|Library missing description
+libexec/ulog-helper/Makefile.depend|ulog-helper|libexec/ulog-helper|ulog-helper|Library missing description
+lib/lib80211/Makefile.depend|lib80211|lib/lib80211|lib80211|Library missing description
+lib/lib9p/Makefile.depend|lib9p|lib/lib9p|lib9p|Library missing description
+lib/libalias/libalias/Makefile.depend|libalias|lib/libalias/libalias|libalias|Library missing description
+lib/libalias/modules/dummy/Makefile.depend|dummy|lib/libalias/modules/dummy|dummy|Library missing description
+lib/libalias/modules/ftp/Makefile.depend|ftp|lib/libalias/modules/ftp|ftp|Library missing description
+lib/libalias/modules/irc/Makefile.depend|irc|lib/libalias/modules/irc|irc|Library missing description
+lib/libalias/modules/nbt/Makefile.depend|nbt|lib/libalias/modules/nbt|nbt|Library missing description
+lib/libalias/modules/pptp/Makefile.depend|pptp|lib/libalias/modules/pptp|pptp|Library missing description
+lib/libalias/modules/skinny/Makefile.depend|skinny|lib/libalias/modules/skinny|skinny|Library missing description
+lib/libalias/modules/smedia/Makefile.depend|smedia|lib/libalias/modules/smedia|smedia|Library missing description
+lib/libarchive/Makefile.depend|libarchive|lib/libarchive|libarchive|Library missing description
+lib/libauditd/Makefile.depend|libauditd|lib/libauditd|libauditd|Library missing description
+lib/libbearssl/Makefile.depend|libbearssl|lib/libbearssl|libbearssl|Library missing description
+lib/libbegemot/Makefile.depend|libbegemot|lib/libbegemot|libbegemot|Library missing description
+lib/libbe/Makefile.depend|libbe|lib/libbe|libbe|Library missing description
+lib/libblacklist/Makefile.depend|libblacklist|lib/libblacklist|libblacklist|Library missing description
+lib/libblocklist/Makefile.depend|libblocklist|lib/libblocklist|libblocklist|Library missing description
+lib/libblocksruntime/Makefile.depend|libblocksruntime|lib/libblocksruntime|libblocksruntime|Library missing description
+lib/libbluetooth/Makefile.depend|libbluetooth|lib/libbluetooth|libbluetooth|Library missing description
+lib/libbsddialog/Makefile.depend|libbsddialog|lib/libbsddialog|libbsddialog|Library missing description
+lib/libbsdstat/Makefile.depend|libbsdstat|lib/libbsdstat|libbsdstat|Library missing description
+lib/libbsm/Makefile.depend|libbsm|lib/libbsm|libbsm|Library missing description
+lib/libbsnmp/libbsnmp/Makefile.depend|libbsnmp|lib/libbsnmp/libbsnmp|libbsnmp|Library missing description
+lib/libbz2/Makefile.depend|libbz2|lib/libbz2|libbz2|Library missing description
+lib/libcalendar/Makefile.depend|libcalendar|lib/libcalendar|libcalendar|Library missing description
+lib/libcam/Makefile.depend|libcam|lib/libcam|libcam|Library missing description
+lib/libcapsicum/Makefile.depend|libcapsicum|lib/libcapsicum|libcapsicum|Library missing description
+lib/libcasper/libcasper/Makefile.depend|libcasper|lib/libcasper/libcasper|libcasper|Library missing description
+lib/libcasper/services/cap_dns/Makefile.depend|cap_dns|lib/libcasper/services/cap_dns|cap_dns|Library missing description
+lib/libcasper/services/cap_fileargs/Makefile.depend|cap_fileargs|lib/libcasper/services/cap_fileargs|cap_fileargs|Library missing description
+lib/libcasper/services/cap_grp/Makefile.depend|cap_grp|lib/libcasper/services/cap_grp|cap_grp|Library missing description
+lib/libcasper/services/cap_netdb/Makefile.depend|cap_netdb|lib/libcasper/services/cap_netdb|cap_netdb|Library missing description
+lib/libcasper/services/cap_net/Makefile.depend|cap_net|lib/libcasper/services/cap_net|cap_net|Library missing description
+lib/libcasper/services/cap_pwd/Makefile.depend|cap_pwd|lib/libcasper/services/cap_pwd|cap_pwd|Library missing description
+lib/libcasper/services/cap_sysctl/Makefile.depend|cap_sysctl|lib/libcasper/services/cap_sysctl|cap_sysctl|Library missing description
+lib/libcasper/services/cap_syslog/Makefile.depend|cap_syslog|lib/libcasper/services/cap_syslog|cap_syslog|Library missing description
+lib/libcasper/services/Makefile.depend|services|lib/libcasper/services|services|Library missing description
+lib/libcbor/Makefile.depend|libcbor|lib/libcbor|libcbor|Library missing description
+lib/libc++experimental/Makefile.depend|libc++experimental|lib/libc++experimental|libc++experimental|Library missing description
+lib/libclang_rt/asan_cxx/Makefile.depend|asan_cxx|lib/libclang_rt/asan_cxx|asan_cxx|Library missing description
+lib/libclang_rt/asan_dynamic/Makefile.depend|asan_dynamic|lib/libclang_rt/asan_dynamic|asan_dynamic|Library missing description
+lib/libclang_rt/asan/Makefile.depend|asan|lib/libclang_rt/asan|asan|Library missing description
+lib/libclang_rt/asan-preinit/Makefile.depend|asan-preinit|lib/libclang_rt/asan-preinit|asan-preinit|Library missing description
+lib/libclang_rt/profile/Makefile.depend|profile|lib/libclang_rt/profile|profile|Library missing description
+lib/libclang_rt/safestack/Makefile.depend|safestack|lib/libclang_rt/safestack|safestack|Library missing description
+lib/libclang_rt/stats_client/Makefile.depend|stats_client|lib/libclang_rt/stats_client|stats_client|Library missing description
+lib/libclang_rt/stats/Makefile.depend|stats|lib/libclang_rt/stats|stats|Library missing description
+lib/libclang_rt/ubsan_standalone_cxx/Makefile.depend|ubsan_standalone_cxx|lib/libclang_rt/ubsan_standalone_cxx|ubsan_standalone_cxx|Library missing description
+lib/libclang_rt/ubsan_standalone/Makefile.depend|ubsan_standalone|lib/libclang_rt/ubsan_standalone|ubsan_standalone|Library missing description
+lib/libc++/Makefile.depend|libc++|lib/libc++|libc++|Library missing description
+lib/libc/Makefile.depend|libc|lib/libc|libc|Library missing description
+lib/libc_nonshared/Makefile.depend|libc_nonshared|lib/libc_nonshared|libc_nonshared|Library missing description
+lib/libcom_err/Makefile.depend|libcom_err|lib/libcom_err|libcom_err|Library missing description
+lib/libcompat/Makefile.depend|libcompat|lib/libcompat|libcompat|Library missing description
+lib/libcompiler_rt/Makefile.depend|libcompiler_rt|lib/libcompiler_rt|libcompiler_rt|Library missing description
+lib/libcrypt/Makefile.depend|libcrypt|lib/libcrypt|libcrypt|Library missing description
+lib/libcuse/Makefile.depend|libcuse|lib/libcuse|libcuse|Library missing description
+lib/libcxxrt/Makefile.depend|libcxxrt|lib/libcxxrt|libcxxrt|Library missing description
+lib/libdevctl/Makefile.depend|libdevctl|lib/libdevctl|libdevctl|Library missing description
+lib/libdevdctl/Makefile.depend|libdevdctl|lib/libdevdctl|libdevdctl|Library missing description
+lib/libdevinfo/Makefile.depend|libdevinfo|lib/libdevinfo|libdevinfo|Library missing description
+lib/libdevstat/Makefile.depend|libdevstat|lib/libdevstat|libdevstat|Library missing description
+lib/libdl/Makefile.depend|libdl|lib/libdl|libdl|Library missing description
+lib/libdpv/Makefile.depend|libdpv|lib/libdpv|libdpv|Library missing description
+lib/libdwarf/Makefile.depend|libdwarf|lib/libdwarf|libdwarf|Library missing description
+lib/libedit/Makefile.depend|libedit|lib/libedit|libedit|Library missing description
+lib/libedit/readline/Makefile.depend|readline|lib/libedit/readline|readline|Library missing description
+lib/libefivar/Makefile.depend|libefivar|lib/libefivar|libefivar|Library missing description
+lib/libelf/Makefile.depend|libelf|lib/libelf|libelf|Library missing description
+lib/libelftc/Makefile.depend|libelftc|lib/libelftc|libelftc|Library missing description
+lib/libevent1/Makefile.depend|libevent1|lib/libevent1|libevent1|Library missing description
+lib/libexecinfo/Makefile.depend|libexecinfo|lib/libexecinfo|libexecinfo|Library missing description
+lib/libexpat/Makefile.depend|libexpat|lib/libexpat|libexpat|Library missing description
+lib/libfetch/Makefile.depend|libfetch|lib/libfetch|libfetch|Library missing description
+lib/libfido2/Makefile.depend|libfido2|lib/libfido2|libfido2|Library missing description
+lib/libfigpar/Makefile.depend|libfigpar|lib/libfigpar|libfigpar|Library missing description
+lib/libgcc_eh/Makefile.depend|libgcc_eh|lib/libgcc_eh|libgcc_eh|Library missing description
+lib/libgcc_s/Makefile.depend|libgcc_s|lib/libgcc_s|libgcc_s|Library missing description
+lib/libgeom/Makefile.depend|libgeom|lib/libgeom|libgeom|Library missing description
+lib/libgpio/Makefile.depend|libgpio|lib/libgpio|libgpio|Library missing description
+lib/libgssapi/Makefile.depend|libgssapi|lib/libgssapi|libgssapi|Library missing description
+lib/libiconv_modules/BIG5/Makefile.depend|BIG5|lib/libiconv_modules/BIG5|BIG5|Library missing description
+lib/libiconv_modules/DECHanyu/Makefile.depend|DECHanyu|lib/libiconv_modules/DECHanyu|DECHanyu|Library missing description
+lib/libiconv_modules/EUC/Makefile.depend|EUC|lib/libiconv_modules/EUC|EUC|Library missing description
+lib/libiconv_modules/EUCTW/Makefile.depend|EUCTW|lib/libiconv_modules/EUCTW|EUCTW|Library missing description
+lib/libiconv_modules/GBK2K/Makefile.depend|GBK2K|lib/libiconv_modules/GBK2K|GBK2K|Library missing description
+lib/libiconv_modules/HZ/Makefile.depend|HZ|lib/libiconv_modules/HZ|HZ|Library missing description
+lib/libiconv_modules/iconv_none/Makefile.depend|iconv_none|lib/libiconv_modules/iconv_none|iconv_none|Library missing description
+lib/libiconv_modules/iconv_std/Makefile.depend|iconv_std|lib/libiconv_modules/iconv_std|iconv_std|Library missing description
+lib/libiconv_modules/ISO2022/Makefile.depend|ISO2022|lib/libiconv_modules/ISO2022|ISO2022|Library missing description
+lib/libiconv_modules/JOHAB/Makefile.depend|JOHAB|lib/libiconv_modules/JOHAB|JOHAB|Library missing description
+lib/libiconv_modules/mapper_646/Makefile.depend|mapper_646|lib/libiconv_modules/mapper_646|mapper_646|Library missing description
+lib/libiconv_modules/mapper_none/Makefile.depend|mapper_none|lib/libiconv_modules/mapper_none|mapper_none|Library missing description
+lib/libiconv_modules/mapper_parallel/Makefile.depend|mapper_parallel|lib/libiconv_modules/mapper_parallel|mapper_parallel|Library missing description
+lib/libiconv_modules/mapper_serial/Makefile.depend|mapper_serial|lib/libiconv_modules/mapper_serial|mapper_serial|Library missing description
+lib/libiconv_modules/mapper_std/Makefile.depend|mapper_std|lib/libiconv_modules/mapper_std|mapper_std|Library missing description
+lib/libiconv_modules/mapper_zone/Makefile.depend|mapper_zone|lib/libiconv_modules/mapper_zone|mapper_zone|Library missing description
+lib/libiconv_modules/MSKanji/Makefile.depend|MSKanji|lib/libiconv_modules/MSKanji|MSKanji|Library missing description
+lib/libiconv_modules/UES/Makefile.depend|UES|lib/libiconv_modules/UES|UES|Library missing description
+lib/libiconv_modules/UTF1632/Makefile.depend|UTF1632|lib/libiconv_modules/UTF1632|UTF1632|Library missing description
+lib/libiconv_modules/UTF7/Makefile.depend|UTF7|lib/libiconv_modules/UTF7|UTF7|Library missing description
+lib/libiconv_modules/UTF8/Makefile.depend|UTF8|lib/libiconv_modules/UTF8|UTF8|Library missing description
+lib/libiconv_modules/VIQR/Makefile.depend|VIQR|lib/libiconv_modules/VIQR|VIQR|Library missing description
+lib/libiconv_modules/ZW/Makefile.depend|ZW|lib/libiconv_modules/ZW|ZW|Library missing description
+lib/libifconfig/Makefile.depend|libifconfig|lib/libifconfig|libifconfig|Library missing description
+lib/libipsec/Makefile.depend|libipsec|lib/libipsec|libipsec|Library missing description
+lib/libipt/Makefile.depend|libipt|lib/libipt|libipt|Library missing description
+lib/libiscsiutil/Makefile.depend|libiscsiutil|lib/libiscsiutil|libiscsiutil|Library missing description
+lib/libjail/Makefile.depend|libjail|lib/libjail|libjail|Library missing description
+lib/libkiconv/Makefile.depend|libkiconv|lib/libkiconv|libkiconv|Library missing description
+lib/libkldelf/Makefile.depend|libkldelf|lib/libkldelf|libkldelf|Library missing description
+lib/libkvm/Makefile.depend|libkvm|lib/libkvm|libkvm|Library missing description
+lib/libldns/Makefile.depend|libldns|lib/libldns|libldns|Library missing description
+lib/liblua/Makefile.depend|liblua|lib/liblua|liblua|Library missing description
+lib/liblutok/Makefile.depend|liblutok|lib/liblutok|liblutok|Library missing description
+lib/liblzma/Makefile.depend|liblzma|lib/liblzma|liblzma|Library missing description
+lib/libmagic/Makefile.depend|libmagic|lib/libmagic|libmagic|Library missing description
+lib/libmd/Makefile.depend|libmd|lib/libmd|libmd|Library missing description
+lib/libmemstat/Makefile.depend|libmemstat|lib/libmemstat|libmemstat|Library missing description
+lib/libmilter/Makefile.depend|libmilter|lib/libmilter|libmilter|Library missing description
+lib/libmixer/Makefile.depend|libmixer|lib/libmixer|libmixer|Library missing description
+lib/libmp/Makefile.depend|libmp|lib/libmp|libmp|Library missing description
+lib/libmt/Makefile.depend|libmt|lib/libmt|libmt|Library missing description
+lib/libnetbsd/Makefile.depend|libnetbsd|lib/libnetbsd|libnetbsd|Library missing description
+lib/libnetgraph/Makefile.depend|libnetgraph|lib/libnetgraph|libnetgraph|Library missing description
+lib/libnetmap/Makefile.depend|libnetmap|lib/libnetmap|libnetmap|Library missing description
+lib/libnv/Makefile.depend|libnv|lib/libnv|libnv|Library missing description
+lib/libnvmf/Makefile.depend|libnvmf|lib/libnvmf|libnvmf|Library missing description
+lib/libomp/Makefile.depend|libomp|lib/libomp|libomp|Library missing description
+lib/libopenbsd/Makefile.depend|libopenbsd|lib/libopenbsd|libopenbsd|Library missing description
+lib/libopencsd/Makefile.depend|libopencsd|lib/libopencsd|libopencsd|Library missing description
+lib/libpam/libpam/Makefile.depend|libpam|lib/libpam/libpam|libpam|Library missing description
+lib/libpam/static_libpam/Makefile.depend|static_libpam|lib/libpam/static_libpam|static_libpam|Library missing description
+lib/libpathconv/Makefile.depend|libpathconv|lib/libpathconv|libpathconv|Library missing description
+lib/libpcap/Makefile.depend|libpcap|lib/libpcap|libpcap|Library missing description
+lib/libpe/Makefile.depend|libpe|lib/libpe|libpe|Library missing description
+lib/libpfctl/Makefile.depend|libpfctl|lib/libpfctl|libpfctl|Library missing description
+lib/libpjdlog/Makefile.depend|libpjdlog|lib/libpjdlog|libpjdlog|Library missing description
+lib/libpmc/Makefile.depend|libpmc|lib/libpmc|libpmc|Library missing description
+lib/libpmc/pmu-events/Makefile.depend|pmu-events|lib/libpmc/pmu-events|pmu-events|Library missing description
+lib/libpmcstat/Makefile.depend|libpmcstat|lib/libpmcstat|libpmcstat|Library missing description
+lib/libproc/Makefile.depend|libproc|lib/libproc|libproc|Library missing description
+lib/libprocstat/Makefile.depend|libprocstat|lib/libprocstat|libprocstat|Library missing description
+lib/libradius/Makefile.depend|libradius|lib/libradius|libradius|Library missing description
+lib/libregex/Makefile.depend|libregex|lib/libregex|libregex|Library missing description
+lib/librpcsec_gss/Makefile.depend|librpcsec_gss|lib/librpcsec_gss|librpcsec_gss|Library missing description
+lib/librpcsvc/Makefile.depend|librpcsvc|lib/librpcsvc|librpcsvc|Library missing description
+lib/librss/Makefile.depend|librss|lib/librss|librss|Library missing description
+lib/librtld_db/Makefile.depend|librtld_db|lib/librtld_db|librtld_db|Library missing description
+lib/librt/Makefile.depend|librt|lib/librt|librt|Library missing description
+lib/libsbuf/Makefile.depend|libsbuf|lib/libsbuf|libsbuf|Library missing description
+lib/libsdp/Makefile.depend|libsdp|lib/libsdp|libsdp|Library missing description
+lib/libsecureboot/Makefile.depend|libsecureboot|lib/libsecureboot|libsecureboot|Library missing description
+lib/libsmb/Makefile.depend|libsmb|lib/libsmb|libsmb|Library missing description
+lib/libsmdb/Makefile.depend|libsmdb|lib/libsmdb|libsmdb|Library missing description
+lib/libsm/Makefile.depend|libsm|lib/libsm|libsm|Library missing description
+lib/libsmutil/Makefile.depend|libsmutil|lib/libsmutil|libsmutil|Library missing description
+lib/libsqlite3/Makefile.depend|libsqlite3|lib/libsqlite3|libsqlite3|Library missing description
+lib/libssp/Makefile.depend|libssp|lib/libssp|libssp|Library missing description
+lib/libssp_nonshared/Makefile.depend|libssp_nonshared|lib/libssp_nonshared|libssp_nonshared|Library missing description
+lib/libstats/Makefile.depend|libstats|lib/libstats|libstats|Library missing description
+lib/libstdbuf/Makefile.depend|libstdbuf|lib/libstdbuf|libstdbuf|Library missing description
+lib/libstdthreads/Makefile.depend|libstdthreads|lib/libstdthreads|libstdthreads|Library missing description
+lib/libsysdecode/Makefile.depend|libsysdecode|lib/libsysdecode|libsysdecode|Library missing description
+lib/libsys/Makefile.depend|libsys|lib/libsys|libsys|Library missing description
+lib/libtacplus/Makefile.depend|libtacplus|lib/libtacplus|libtacplus|Library missing description
+lib/libtelnet/Makefile.depend|libtelnet|lib/libtelnet|libtelnet|Library missing description
+lib/libthread_db/Makefile.depend|libthread_db|lib/libthread_db|libthread_db|Library missing description
+lib/libthr/Makefile.depend|libthr|lib/libthr|libthr|Library missing description
+lib/libucl/Makefile.depend|libucl|lib/libucl|libucl|Library missing description
+lib/libufs/Makefile.depend|libufs|lib/libufs|libufs|Library missing description
+lib/libugidfw/Makefile.depend|libugidfw|lib/libugidfw|libugidfw|Library missing description
+lib/libulog/Makefile.depend|libulog|lib/libulog|libulog|Library missing description
+lib/libunbound/Makefile.depend|libunbound|lib/libunbound|libunbound|Library missing description
+lib/libusbhid/Makefile.depend|libusbhid|lib/libusbhid|libusbhid|Library missing description
+lib/libusb/Makefile.depend|libusb|lib/libusb|libusb|Library missing description
+lib/libutil/Makefile.depend|libutil|lib/libutil|libutil|Library missing description
+lib/libveriexec/Makefile.depend|libveriexec|lib/libveriexec|libveriexec|Library missing description
+lib/libvgl/Makefile.depend|libvgl|lib/libvgl|libvgl|Library missing description
+lib/libvmmapi/Makefile.depend|libvmmapi|lib/libvmmapi|libvmmapi|Library missing description
+lib/libwrap/Makefile.depend|libwrap|lib/libwrap|libwrap|Library missing description
+lib/libxo/encoder/csv/Makefile.depend|csv|lib/libxo/encoder/csv|csv|Library missing description
+lib/libxo/encoder/Makefile.depend|encoder|lib/libxo/encoder|encoder|Library missing description
+lib/libxo/libxo/Makefile.depend|libxo|lib/libxo/libxo|libxo|Library missing description
+lib/libxo/Makefile.depend|libxo|lib/libxo|libxo|Library missing description
+lib/liby/Makefile.depend|liby|lib/liby|liby|Library missing description
+lib/libypclnt/Makefile.depend|libypclnt|lib/libypclnt|libypclnt|Library missing description
+lib/libz/Makefile.depend|libz|lib/libz|libz|Library missing description
+lib/libzstd/Makefile.depend|libzstd|lib/libzstd|libzstd|Library missing description
+lib/msun/Makefile.depend|msun|lib/msun|msun|Library missing description
+lib/ncurses/form/Makefile.depend|form|lib/ncurses/form|form|Library missing description
+lib/ncurses/menu/Makefile.depend|menu|lib/ncurses/menu|menu|Library missing description
+lib/ncurses/ncurses/Makefile.depend|ncurses|lib/ncurses/ncurses|ncurses|Library missing description
+lib/ncurses/ncurses/Makefile.depend|ncursesw|lib/ncurses/ncurses|ncursesw|Library missing description
+lib/ncurses/panel/Makefile.depend|panel|lib/ncurses/panel|panel|Library missing description
+lib/ncurses/tinfo/Makefile.depend|tinfo|lib/ncurses/tinfo|tinfo|Library missing description
+lib/ofed/complib/Makefile.depend|complib|lib/ofed/complib|complib|Library missing description
+lib/ofed/libcxgb4/Makefile.depend|libcxgb4|lib/ofed/libcxgb4|libcxgb4|Library missing description
+lib/ofed/libibcm/Makefile.depend|libibcm|lib/ofed/libibcm|libibcm|Library missing description
+lib/ofed/libibmad/Makefile.depend|libibmad|lib/ofed/libibmad|libibmad|Library missing description
+lib/ofed/libibnetdisc/Makefile.depend|libibnetdisc|lib/ofed/libibnetdisc|libibnetdisc|Library missing description
+lib/ofed/libibverbs/Makefile.depend|libibverbs|lib/ofed/libibverbs|libibverbs|Library missing description
+lib/ofed/libirdma/Makefile.depend|libirdma|lib/ofed/libirdma|libirdma|Library missing description
+lib/ofed/libmlx4/Makefile.depend|libmlx4|lib/ofed/libmlx4|libmlx4|Library missing description
+lib/ofed/libmlx5/Makefile.depend|libmlx5|lib/ofed/libmlx5|libmlx5|Library missing description
+lib/ofed/libopensm/Makefile.depend|libopensm|lib/ofed/libopensm|libopensm|Library missing description
+lib/ofed/librdmacm/Makefile.depend|librdmacm|lib/ofed/librdmacm|librdmacm|Library missing description
+lib/ofed/libvendor/Makefile.depend|libvendor|lib/ofed/libvendor|libvendor|Library missing description
+lib/ofed/libibumad/Makefile.depend|libibumad|lib/ofed/libibumad|libibumad|Library missing description
