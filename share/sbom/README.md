@@ -2,21 +2,6 @@
 
 This directory contains Lua applications designed to parse the `FreeBSD-apps.csv` file and create Pkgconfig files in subdirectories. The following steps have been tested with Flua and Lua 5.4.
 
-## Steps to Create Pkgconf Files
-
-1. **Navigate to the Git Root Directory:**
-   Ensure you are in the root directory of your git repository.
-
-2. **Run the Lua Script:**
-   Execute the Lua script using the following command:
-   ```bash
-   lua5.4 share/sbom/create_sbom_pc_files.lua share/sbom/FreeBSD-apps.csv
-   ```
-   Note: Some libraries such as `secure.*`, `kerberos5.*`, `cddl.*`, and `gnu.*` are not yet added and need to be included manually.
-
-4. **Proceed with Next Steps:**
-   The exported Pkgconf files are placed in directories that can now be used for further steps.
-
 ## Creating an SBOM
 
 To create a correct SPDX Lite 3.0 Software Bill of Materials (SBOM), follow these instructions:
@@ -326,4 +311,10 @@ done
 ```
 
 Manual tuning is necessary to ensure everything is correct. This will be addressed in future updates.
+```
+
+# License extraction
+Licenses were extracted with this shell script (Only from files that have SPDX header)
+```
+grep -r SPDX-License-Identifier sbin bin usr.* | grep -E "\.c|\.h" | grep -v "\.conf" | grep -v "SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM" | sed -e "s#: \* #|#" -e "s#:// #|#" -e "s#: \*\* #|#" -e "s#:  #|#" -e "s#SPDX-License-Identifier: ##"
 ```

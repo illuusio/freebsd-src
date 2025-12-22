@@ -17,14 +17,14 @@ bin/hostname/hostname.1|hostname|bin/hostname|hostname|set or print the name of 
 bin/kenv/kenv.1|kenv|bin/kenv|kenv|list or modify the kernel environment
 bin/kill/kill.1|kill|bin/kill|kill|terminate or signal a process
 bin/ln/ln.1|ln|bin/ln|ln, link|link files
-bin/ln/symlink.7|symlink.7|bin/ln|symlink|symbolic link handling
+bin/ln/symlink.7|symlink|bin/ln|symlink|symbolic link handling
 bin/ls/ls.1|ls|bin/ls|ls|list directory contents
 bin/mkdir/mkdir.1|mkdir|bin/mkdir|mkdir|make directories
 bin/mv/mv.1|mv|bin/mv|mv|move files
 bin/nproc/nproc.1|nproc|bin/nproc|nproc|print the number of processors
 bin/pax/pax.1|pax|bin/pax|pax|read and write file archives and copy directory hierarchies
 bin/pkill/pkill.1|pkill|bin/pkill|pgrep, pkill|find or signal processes by name
-bin/ps/ps.1|ps|bin/ps|NAMEps|process status
+bin/ps/ps.1|ps|bin/ps|ps|process status
 bin/pwait/pwait.1|pwait|bin/pwait|pwait|wait for processes to terminate
 bin/pwd/pwd.1|pwd|bin/pwd|pwd|return working directory name
 bin/realpath/realpath.1|realpath|bin/realpath|realpath|return resolved physical path
@@ -47,7 +47,7 @@ libexec/flua/flua.1|flua|libexec/flua|flua|Lua interpreter for the FreeBSD base 
 libexec/getty/getty.8|getty|libexec/getty|getty|set terminal mode
 libexec/makewhatis.local/makewhatis.local.8|makewhatis.local|libexec/makewhatis.local|makewhatis.local|start makewhatis for local file systems
 libexec/mknetid/mknetid.8|mknetid|libexec/mknetid|mknetid|generate netid map data
-libexec/nuageinit/nuageinit.7|nuageinit.7|libexec/nuageinit|nuageinit|initialize a cloud-init environment
+libexec/nuageinit/nuageinit.7|nuageinit|libexec/nuageinit|nuageinit|initialize a cloud-init environment
 libexec/phttpget/phttpget.8|phttpget|libexec/phttpget|phttpget|retrieve multiple files via pipelined HTTP
 libexec/pppoed/pppoed.8|pppoed|libexec/pppoed|pppoed|handle incoming PPP over Ethernet connections
 libexec/rbootd/rbootd.8|rbootd|libexec/rbootd|rbootd|HP remote boot server
@@ -78,7 +78,7 @@ lib/geom/shsec/gshsec.8|gshsec|lib/geom/shsec|gshsec|control utility for shared 
 lib/geom/stripe/gstripe.8|gstripe|lib/geom/stripe|gstripe|control utility for striped devices
 lib/geom/union/gunion.8|gunion|lib/geom/union|gunion|control utility for UNION GEOM class
 lib/geom/virstor/gvirstor.8|gvirstor|lib/geom/virstor|gvirstor|control utility for virtual data storage devices
-lib/libc/regex/re_format.7|re_format.7|lib/libc/regex|re_format|POSIX 1003.2 regular expressions
+lib/libc/regex/re_format.7|re_format|lib/libc/regex|re_format|POSIX 1003.2 regular expressions
 lib/libpam/modules/pam_chroot/pam_chroot.8|pam_chroot|lib/libpam/modules/pam_chroot|pam_chroot|Chroot PAM module
 lib/libpam/modules/pam_deny/pam_deny.8|pam_deny|lib/libpam/modules/pam_deny|pam_deny|Deny PAM module
 lib/libpam/modules/pam_echo/pam_echo.8|pam_echo|lib/libpam/modules/pam_echo|pam_echo|Echo PAM module
@@ -602,7 +602,7 @@ usr.sbin/nvram/nvram.8|nvram|usr.sbin/nvram|nvram|display or modify contents of 
 usr.sbin/ofwdump/ofwdump.8|ofwdump|usr.sbin/ofwdump|ofwdump|examine the Open Firmware device tree
 usr.sbin/pciconf/pciconf.8|pciconf|usr.sbin/pciconf|pciconf|diagnostic utility for the PCI bus
 usr.sbin/periodic/periodic.8|periodic|usr.sbin/periodic|periodic|run periodic system functions
-usr.sbin/pkg/pkg.7|pkg.7|usr.sbin/pkg|pkg|a utility for manipulating packages
+usr.sbin/pkg/pkg.7|pkg|usr.sbin/pkg|pkg|a utility for manipulating packages
 usr.sbin/pmcannotate/pmcannotate.8|pmcannotate|usr.sbin/pmcannotate|pmcannotate|sources printout with inlined profiling
 usr.sbin/pmccontrol/pmccontrol.8|pmccontrol|usr.sbin/pmccontrol|pmccontrol|control hardware performance monitoring counters
 usr.sbin/pmcstat/pmcstat.8|pmcstat|usr.sbin/pmcstat|pmcstat|performance measurement with performance monitoring hardware
