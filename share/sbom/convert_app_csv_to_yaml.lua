@@ -2,12 +2,12 @@
 
 -- SPDX-License-Identifier: BSD-2-Clause
 --
--- Copyright(c) 2025 The FreeBSD Foundation.
+-- Copyright(c) 2025-2026 The FreeBSD Foundation.
 --
 -- This software was developed by Tuukka Pasanen <tuukka.pasanen@ilmi.fi>
 -- under sponsorship from the FreeBSD Foundation.
 --
--- Convert CSV SBOM files to YAML for easier reading and writing
+-- Convert CSV files to YAML for easier reading and writing
 -- One needs database from:
 -- https://github.com/FreeBSDFoundation/alpha-omega-beach-cleaning/blob/main/database.yml
 --
@@ -122,7 +122,7 @@ for line in io.lines() do
 	local name_str_section = splitted_table[2]
 	-- local dir_name = splitted_table[3]
 	-- local another_name_str = splitted_table[4]
-	local desc_str = splitted_table[5]
+	local desc_str = splitted_table[3]
 	local man_section = nil
 
 	local name_ext = string.sub(location_str, -1)
@@ -181,7 +181,6 @@ for line in io.lines() do
 		whole_packages[name_str] = cur_table
 	end
 end
-
 
 for _, value in pairs(whole_packages) do
 	value["is_database_yml"] = nil

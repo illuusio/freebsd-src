@@ -18,7 +18,7 @@ local yaml = require("lyaml")
 local pkgconf = require("pkgconf")
 
 local function convert_license_descending(a, b)
-    return a > b
+	return a > b
 end
 
 if #arg <= 2 then
@@ -83,50 +83,50 @@ for line in io.lines() do
 	local splitted_table = pkgconf.split_line(line, "|")
 	local location_str = splitted_table[1]
 	local location_directory = location_str:match("(.*)/.*$")
-    -- local location_filename = location_str:match(".*/(.*)$")
+	-- local location_filename = location_str:match(".*/(.*)$")
 	local license_str = splitted_table[2]
 
-    if cur_dir == nil then
-        cur_dir = location_directory
-        -- cur_app = location_filename
-    end
+	if cur_dir == nil then
+		cur_dir = location_directory
+		-- cur_app = location_filename
+	end
 
-    -- If directory is same then just add license if it's not found
-    if cur_dir == location_directory then
-        local is_found = false
+	-- If directory is same then just add license if it's not found
+	if cur_dir == location_directory then
+		local is_found = false
 
-        for _, value in ipairs(cur_license_table) do
-            if value == license_str then
-                is_found = true
-            end
-        end
+		for _, value in ipairs(cur_license_table) do
+			if value == license_str then
+				is_found = true
+			end
+		end
 
-        if is_found == false then
-            table.insert(cur_license_table, license_str)
-        end
-    elseif cur_dir ~= nil and cur_dir ~= location_directory then
-        table.sort(cur_license_table, convert_license_descending)
+		if is_found == false then
+			table.insert(cur_license_table, license_str)
+		end
+	elseif cur_dir ~= nil and cur_dir ~= location_directory then
+		table.sort(cur_license_table, convert_license_descending)
 
-        if whole_packages ~= nil and whole_packages[cur_dir] ~= nil then
-            print("Found '" .. cur_dir .. "' license: ".. table.concat(cur_license_table, " AND "))
-            if  whole_packages[cur_dir]["license"] ~= nil then
-                whole_packages[cur_dir]["license"] = table.concat(cur_license_table, " AND ")
-            end
-        else
-            print("Not Found '" .. cur_dir .. "' license: ".. table.concat(cur_license_table, " AND "))
-        end
+		if whole_packages ~= nil and whole_packages[cur_dir] ~= nil then
+			print("Found '" .. cur_dir .. "' license: " .. table.concat(cur_license_table, " AND "))
+			if whole_packages[cur_dir]["license"] ~= nil then
+				whole_packages[cur_dir]["license"] = table.concat(cur_license_table, " AND ")
+			end
+		else
+			print("Not Found '" .. cur_dir .. "' license: " .. table.concat(cur_license_table, " AND "))
+		end
 
-        cur_dir = nil
-        -- cur_app = nil
-        cur_license_table = {}
-        table.insert(cur_license_table, license_str)
-    end
+		cur_dir = nil
+		-- cur_app = nil
+		cur_license_table = {}
+		table.insert(cur_license_table, license_str)
+	end
 end
 
 if whole_packages ~= nil then
-    for _, value in pairs(whole_packages) do
-        value["is_database_yml"] = nil
-    end
+	for _, value in pairs(whole_packages) do
+		value["is_database_yml"] = nil
+	end
 end
 
 io.write(yaml.dump({ yaml_obj }))
