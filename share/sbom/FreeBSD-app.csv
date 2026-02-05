@@ -17,7 +17,6 @@ bin/hostname/hostname.1|hostname|bin/hostname|hostname|set or print the name of 
 bin/kenv/kenv.1|kenv|bin/kenv|kenv|list or modify the kernel environment
 bin/kill/kill.1|kill|bin/kill|kill|terminate or signal a process
 bin/ln/ln.1|ln|bin/ln|ln, link|link files
-bin/ln/symlink.7|symlink|bin/ln|symlink|symbolic link handling
 bin/ls/ls.1|ls|bin/ls|ls|list directory contents
 bin/mkdir/mkdir.1|mkdir|bin/mkdir|mkdir|make directories
 bin/mv/mv.1|mv|bin/mv|mv|move files
@@ -183,7 +182,6 @@ sbin/pflowctl/pflowctl.8|pflowctl|sbin/pflowctl|pflowctl|control pflow data expo
 sbin/ping/ping.8|ping|sbin/ping|ping|send ICMP or ICMPv6 ECHO_REQUEST packets to network hosts
 sbin/quotacheck/quotacheck.8|quotacheck|sbin/quotacheck|quotacheck|file system quota consistency checker
 sbin/rcorder/rcorder.8|rcorder|sbin/rcorder|rcorder|print a dependency ordering of interdependent files
-sbin/reboot/boot_i386.8|boot_i386|sbin/reboot|boot|system bootstrapping procedures
 sbin/reboot/nextboot.8|nextboot|sbin/reboot|nextboot|specify an alternate kernel and boot flags for the next reboot
 sbin/reboot/reboot.8|reboot|sbin/reboot|reboot, halt, fastboot, fasthalt|stopping and restarting the system
 sbin/recoverdisk/recoverdisk.1|recoverdisk|sbin/recoverdisk|recoverdisk|recover data from disk-like devices.
