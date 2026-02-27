@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
+Name: cat
+Description: Concatenate and print files
+URL: https://man.freebsd.org/cgi/man.cgi?query=cat(1)
+Version: 15.0
+Source: https://cgit.freebsd.org/src/tree/bin/cat
+License: BSD-3-Clause
+License.file: LICENSE.791687bc1
+Copyright: 1989\, 1993 The Regents of the University of California
+Requires: csu, libc, libcapsicum, libcasper, libcasper.services.cap_fileargs, libcasper.services.cap_net, libcompiler_rt
