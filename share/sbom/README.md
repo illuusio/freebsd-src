@@ -318,3 +318,13 @@ Licenses were extracted with this shell script (Only from files that have SPDX h
 ```
 grep -r SPDX-License-Identifier sbin bin usr.* | grep -E "\.c|\.h" | grep -v "\.conf" | grep -v "SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM" | sed -e "s#: \* #|#" -e "s#:// #|#" -e "s#: \*\* #|#" -e "s#:  #|#" -e "s#SPDX-License-Identifier: ##"
 ```
+
+# Using scancode-toolkit
+```
+scancode --info --copyright --license --license-text --ignore "test*" --ignore "*.1" --ignore "*.2" --ignore "*.3" --ignore "*.4" --ignore "*.5" --ignore "*.6" --ignore "*.7" --ignore "*.8" --ignore "*.sh" --ignore "*.pc" --ignore "*.json" --ignore "Makefile*" --include "*.c" --include "*.h" --include "*.cc" --include "*.hh" --strip-root --license-score 95 --json-pp input.json bin lib
+```
+
+## Scancode JSON convert to usable
+```
+lua5.4 share/sbom/read_scancode_yaml.lua scancode/input.json scancode/output.yaml
+```

@@ -20,6 +20,7 @@
 -- share/sbom/convert_csv_to_json.lua share/sbom/FreeBSD-apps.csv output.yaml database_directory/database.yml
 
 local yaml = require("lyaml")
+local ucl = require("ucl")
 
 local function scancode_split_line(line, sep)
 	local rtn_table = {}
@@ -79,11 +80,25 @@ end
 io.input(input_handle)
 io.output(output_handle)
 
-local yaml_content = input_handle:read("*all")
-input_handle:close()
+local yaml_obj = nil
 
-local yaml_obj = yaml.load(yaml_content)
-yaml_content = nil
+if input_name:match("%.json$") then
+	input_handle:close()
+	local parser = ucl.parser()
+	local is_error, err = parser:parse_file(input_name)
+
+	if is_error == false then
+		print("pkgconf.open_yaml: Can't parse JSON file " .. location .. ": " .. err)
+		return nil
+	end
+
+	yaml_obj = parser:get_object()
+else
+	local yaml_content = input_handle:read("*all")
+	input_handle:close()
+	yaml_obj = yaml.load(yaml_content)
+	yaml_content = nil
+end
 
 local license_texts = {}
 
@@ -113,24 +128,22 @@ for _, cur_obj in pairs(yaml_obj["files"]) do
 	if cur_obj["type"] == "file" then
 		local spdx_header = false
 		local license_expression_spdx = ""
-		local from_file = ""
-		local cur_table = nil
+		local from_file = cur_obj["path"]
+		local dir_name = from_file:match("^(.+)%/.+$"):gsub("%/", ".")
+		local file_name = from_file:match("^.+%/(.+)$")
+		if license_table[dir_name] == nil then
+			license_table[dir_name] = {}
+		end
+		if license_table[dir_name][file_name] == nil then
+			license_table[dir_name][file_name] = {}
+		end
+		local cur_table = license_table[dir_name][file_name]
+		cur_table["licenses"] = {}
+		cur_table["license_expression_spdx"] = "NOASSERTION"
 		for _, license_detections_obj in pairs(cur_obj["license_detections"]) do
 			for _, matches_obj in pairs(license_detections_obj["matches"]) do
 				license_expression_spdx = matches_obj["license_expression_spdx"]
-				from_file = matches_obj["from_file"]
-				local dir_name = from_file:match("^(.+)%/.+$"):gsub("%/", ".")
-				local file_name = from_file:match("^.+%/(.+)$")
-				print(from_file .. " > " .. dir_name)
-				if license_table[dir_name] == nil then
-					license_table[dir_name] = {}
-				end
-				if license_table[dir_name][file_name] == nil then
-					license_table[dir_name][file_name] = {}
-				end
 
-				cur_table = license_table[dir_name][file_name]
-				cur_table["license_expression_spdx"] = license_expression_spdx
 				if matches_obj["matcher"] == "1-spdx-id" then
 					cur_table["spdx_license_identifier_match"] = matches_obj["matched_text"]
 					cur_table["spdx_license_identifier_incorrect"] = false
@@ -144,10 +157,10 @@ for _, cur_obj in pairs(yaml_obj["files"]) do
 						)
 						cur_table["spdx_license_identifier_incorrect"] = true
 					end
+					cur_table["license_expression_spdx"] = license_expression_spdx
 					spdx_header = true
 				end
 				if matches_obj["matcher"] ~= "1-spdx-id" then
-					print(from_file .. ": " .. license_expression_spdx)
 					local license_text = matches_obj["matched_text"]
 						:gsub("\n %* ", "\n")
 						:gsub("\n %*\t", "\n\t")
@@ -165,19 +178,42 @@ for _, cur_obj in pairs(yaml_obj["files"]) do
 						:gsub(" $", "")
 					-- Changes this as just for comparing
 					local license_author = license_text_without_enter:match('PROVIDED BY%s(.+)%s"AS')
-					print(license_author)
 					local license_acknowledgements = "NOASSERTION"
 					local license_promote = "NOASSERTION"
-					if license_expression_spdx == "BSD-4-Clause" then
+					if license_expression_spdx == "BSD-4-Clause" or license_expression_spdx == "BSD-4-Clause-UC" then
 						license_acknowledgements =
-							license_text_without_enter:match("following acknowledgements:%s(.+)%s4%.")
+							license_text_without_enter:match("display the following acknow.+%:%s(.+)%s4%.")
+						license_promote = license_text_without_enter:match("4%.%sNeither the name of%s(.+)%smay be")
+						if license_promote == nil then
+							license_promote = license_text_without_enter:match("4%.%s(.+)%smay")
+						end
+						if license_acknowledgements == nil then
+							license_acknowledgements = license_text_without_enter:match("3%.%s(.+)%s4%.")
+						end
+						print(license_expression_spdx .. "|" .. from_file .. ": " .. license_text_without_enter)
+						print(
+							from_file
+								.. ": "
+								.. license_expression_spdx
+								.. " (acknowledgement: '"
+								.. license_acknowledgements
+								.. "' promote: '"
+								.. license_promote
+								.. "')"
+						)
 					end
 					if license_expression_spdx == "BSD-3-Clause" then
 						license_promote = license_text_without_enter:match("Neither the name of%s(.+)%smay be used to")
 						if license_promote == nil then
-							license_promote = license_text_without_enter:match("[34]%.%s(.+)%smay not be used to")
-							print("<<<<" .. license_promote .. ">>>>")
+							license_promote = license_text_without_enter:match("[34]%.%s(.+)%smay not")
 						end
+						if license_promote == nil then
+							print(from_file .. ": " .. license_text_without_enter)
+						end
+						print(from_file .. ": " .. license_expression_spdx .. " (promote: '" .. license_promote .. "')")
+					end
+					if license_acknowledgements == "NOASSERTION" and license_promote == "NOASSERTION" then
+						print(from_file .. ": " .. license_expression_spdx)
 					end
 					local license_text_without_enter = license_text_without_enter
 						:gsub('PROVIDED BY%s.+%s"AS', 'PROVIDED BY <AUTHOR> "AS')
@@ -193,21 +229,35 @@ for _, cur_obj in pairs(yaml_obj["files"]) do
 
 					-- Fix BSD-4-Clause style expression
 					if license_expression_spdx == "BSD-3-Clause" then
-						print("KUKKELI")
 						license_text_without_enter = license_text_without_enter:gsub(
 							"3%.(.+)may not be used to",
 							"3. Neither the name of <PROMOTE> may be used to"
 						)
 					end
 
-					cur_table["license_original"] = license_text
-					cur_table["license_normalized"] = license_text_without_enter
-					cur_table["license_match"] = matches_obj["match_coverage"]
-					cur_table["license_author"] = license_author
-					cur_table["license_acknowledgements"] = license_acknowledgements
-					cur_table["license_promote"] = license_promote
+					if license_promote == nil then
+						license_promote = "NOASSERTION"
+					end
+					if license_acknowledgements == nil then
+						license_acknowledgements = "NOASSERTION"
+					end
+					local cur_license = {}
+					cur_license["license_expression_spdx"] = license_expression_spdx
+					cur_license["license_original"] = license_text
+					cur_license["license_normalized"] = license_text_without_enter
+					cur_license["license_match"] = matches_obj["match_coverage"]
+					cur_license["license_author"] = license_author
+					cur_license["license_acknowledgements"] = license_acknowledgements
+					cur_license["license_promote"] = license_promote
+					table.insert(cur_table["licenses"], cur_license)
 				end
 			end
+		end
+
+		cur_table["copyrights"] = {}
+		for _, copyright_obj in pairs(cur_obj["copyrights"]) do
+			local copyright_str = copyright_obj["copyright"]:gsub("Copyright %(c%) ", "")
+			table.insert(cur_table["copyrights"], copyright_str)
 		end
 
 		if
@@ -222,7 +272,6 @@ for _, cur_obj in pairs(yaml_obj["files"]) do
 				or license_expression_spdx == "BSD-3-Clause"
 				or license_expression_spdx == "BSD-4-Clause"
 			then
-				-- print(cur_table["license_normalized"])
 				local rtn_string =
 					scancode_compare_strings(license_texts[license_expression_spdx], cur_table["license_normalized"])
 				if rtn_string ~= nil then
@@ -254,18 +303,11 @@ for _, cur_obj in pairs(yaml_obj["files"]) do
 					end
 				end
 
-				cur_table["copyrights"] = {}
-				for _, copyright_obj in pairs(cur_obj["copyrights"]) do
-					copyright_str = copyright_obj["copyright"]:gsub("Copyright %(c%) ", "")
-					table.insert(cur_table["copyrights"], copyright_str)
-				end
 				if spdx_header == false then
 					cur_table["spdx_license_identifier"] = "License-Missing"
 					cur_table["spdx_license_identifier_incorrect"] = true
 				end
 			end
-		else
-			print("No SPDX: " .. cur_obj["type"] .. " " .. cur_obj["path"])
 		end
 	end
 end

@@ -59,6 +59,7 @@ end
 
 if arg[2] == nil or arg[2] == "pkgconf" then
 	local meta_package = {}
+	local dep_libraries = {}
 
 	for key, value in pairs(whole_packages) do
 		local dir_name = "pkgconfig"
@@ -90,48 +91,95 @@ if arg[2] == nil or arg[2] == "pkgconf" then
 			output_filename = string.gsub(dir_name, "/", ".") .. ".pc"
 		end
 		local output_full = dir_name .. "/" .. output_filename
-		table.insert(meta_package, string.lower(name_str))
 		local copyright_table = {}
-		local license_table = {}
 		local license_file_table = {}
+		local license_expression_spdx = {}
 
 		if license_yaml_obj ~= nil and license_yaml_obj[cur_dir] ~= nil then
 			local cur_obj = license_yaml_obj[cur_dir]
+			local is_first = true
 			for _, subvalue in pairs(cur_obj) do
 				if subvalue["copyrights"] ~= nil then
-					for _, subbervalue in ipairs(subvalue["copyrights"]) do
-						pkgconf.add_string_to_table(copyright_table, subbervalue:gsub("%,", "\\,"))
+					for _, copyrights_value in ipairs(subvalue["copyrights"]) do
+						pkgconf.add_string_to_table(copyright_table, copyrights_value)
 					end
 				end
-				if subvalue["license_original"] ~= nil then
-					pkgconf.add_string_to_table(license_table, subvalue["license_original"])
+				if subvalue["licenses"] ~= nil then
+					for _, license_value in ipairs(subvalue["licenses"]) do
+						local license_normalized = pkgconf.nomalize_license(license_value["license_original"])
+						local hash_cmd = "echo -n '" .. license_normalized .. "' | " .. "openssl dgst -sha256 -"
+						local hash_value = pkgconf.run_cmd(hash_cmd):sub(18, 26)
+						local license_file = license_value["license_expression_spdx"] .. "." .. hash_value .. ".txt"
+						pkgconf.add_string_to_table(license_expression_spdx, license_value["license_expression_spdx"])
+						pkgconf.add_string_to_table(license_file_table, "LICENSES/" .. license_file)
+						if pkgconf.file_exists(license_file) == false then
+							pkgconf.write_file(
+								dir_name .. "/LICENSES/" .. license_file,
+								license_value["license_original"]
+							)
+						end
+						is_first = false
+					end
 				end
 			end
+			if value["license"] == "NOASSERTION" and #license_expression_spdx > 0 then
+				table.sort(license_expression_spdx)
+				value["license"] = table.concat(license_expression_spdx, " AND ")
+			end
 
-			for _, subvalue in ipairs(license_table) do
-				local license_normalized = pkgconf.nomalize_license(subvalue)
-				local hash_cmd = "echo -n '" .. license_normalized .. "' | " .. "openssl dgst -sha256 -"
-				local hash_value = pkgconf.run_cmd(hash_cmd):sub(18, 26)
-				local license_file = "LICENSE." .. hash_value
-				table.insert(license_file_table, license_file)
-				pkgconf.write_file(dir_name .. "/" .. license_file, subvalue)
+			print("Write to PC-file to '" .. output_full .. "'")
+			pkgconf.write_pkgconfig(
+				output_full,
+				name_str,
+				value["description"],
+				value["homepage"],
+				value["version"],
+				value["license"],
+				value["source"],
+				value["depends"],
+				value["owner"],
+				copyright_table,
+				license_file_table
+			)
+			pkgconf.add_string_to_table(meta_package, string.lower(name_str))
+
+			if value["depends"] ~= nil then
+				-- Add depends to dep_libraries
+				for _, dep_name in ipairs(value["depends"]) do
+					pkgconf.add_string_to_table(dep_libraries, dep_name)
+					pkgconf.add_string_to_table(meta_package, string.lower(dep_name))
+				end
 			end
 		end
-		print("Write to PC-file to '" .. output_full .. "'")
-		pkgconf.write_pkgconfig(
-			output_full,
-			name_str,
-			value["description"],
-			value["homepage"],
-			value["version"],
-			value["license"],
-			value["source"],
-			value["depends"],
-			value["owner"],
-			copyright_table,
-			license_file_table
-		)
 	end
+	-- Create dep packages
+	for _, dep_name in ipairs(dep_libraries) do
+		if whole_packages[dep_name] ~= nil then
+			local package = whole_packages[dep_name]
+			local output_filename = dep_name .. ".pc"
+			local output_full = "pkgconfig/" .. output_filename
+			pkgconf.write_pkgconfig(
+				output_full,
+				dep_name,
+				package["description"],
+				package["homepage"],
+				package["version"],
+				package["license"],
+				package["source"],
+				package["depends"],
+				package["owner"],
+				nil,
+				nil
+			)
+			if package["depends"] ~= nil then
+				for _, new_dep in ipairs(package["depends"]) do
+					pkgconf.add_string_to_table(dep_libraries, new_dep)
+					pkgconf.add_string_to_table(meta_package, string.lower(new_dep))
+				end
+			end
+		end
+	end
+
 	-- Write FreeBSD metapackage which holds every pkgconfig and make sure that
 	-- that we can create whole SBOM
 	table.sort(meta_package)
@@ -273,10 +321,8 @@ elseif arg[2] ~= nil and arg[2] == "apps" then
 				for _, innervalue in ipairs(value["directory"]) do
 					output_str = output_str .. " / " .. innervalue
 				end
-				-- print(output_str)
 			else
 				local directory_str = value["directory"]:gsub("%.", "/")
-				-- print(key .. " / " .. directory_str)
 
 				if directory_str:find("usr/sbin") then
 					local cur_dir = "usr/sbin/" .. key
@@ -353,10 +399,6 @@ elseif arg[2] ~= nil and arg[2] == "ucl" then
 			if string.match(value["license"], " AND ") then
 				-- for i in string.gmatch(value["license"], " AND ") do
 				print(value["license"])
-				-- for i in each(value["license"]:split(" AND "))  do
-				-- print the substring
-				--	print(i)
-				-- end
 				local first_index = 1
 				local start_index = nil
 				local end_index = nil

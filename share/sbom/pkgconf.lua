@@ -9,6 +9,7 @@
 --
 
 local lib_yaml = require("lyaml")
+local ucl = require("ucl")
 
 local git_url = "https://cgit.freebsd.org/src/tree/"
 -- local git_url_addition = "?h=stable/15"
@@ -19,6 +20,14 @@ local man_url = "https://man.freebsd.org/cgi/man.cgi?query="
 local man_url_addition = ""
 
 local pkgconf = {}
+
+local pc_license_text = [[
+# SPDX-License-Identifier: BSD-2-Clause AND LicenseRef-FreeBSD-SBOM
+# SPDX-FileCopyrightText: 2026 The FreeBSD Foundation.
+#
+# Copyright(c) 2026 The FreeBSD Foundation.
+#
+]]
 
 -------------------------------------------------------------------------------
 -- Helper function to create comma separated value from table
@@ -89,15 +98,15 @@ function pkgconf.add_value(orig_str, name, value, is_markdown)
 	end
 
 	if local_name == nil then
-		local_name = "Could not parse name"
+		return orig_str
 	end
 
 	if local_value == nil then
-		local_value = "Could not parse value"
+		return orig_str
 	end
 
 	if type(local_value) == "table" then
-		local_value = ""
+		return orig_str
 	end
 
 	local rtn_str = orig_str .. local_name .. ": " .. local_value .. "\n"
@@ -131,7 +140,7 @@ function pkgconf.pkgconfig(
 	copyright_table,
 	license_table
 )
-	local pc_str = "# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM\n"
+	local pc_str = pc_license_text
 	pc_str = pkgconf.add_value(pc_str, "Name", name)
 	pc_str = pkgconf.add_value(pc_str, "Description", description)
 	pc_str = pkgconf.add_value(pc_str, "URL", url)
@@ -156,6 +165,28 @@ function pkgconf.pkgconfig(
 	end
 
 	return pc_str
+end
+
+-------------------------------------------------------------------------------
+-- Does file exist and can it be opened and read
+-- @param filename Filename to be checked
+-- @return False if file does not exist and true is it does
+-------------------------------------------------------------------------------
+function pkgconf.file_exists(filename)
+	local is_present = true
+	-- Opens a file
+	local handle = io.open(filename)
+
+	-- if file is not present, f will be nil
+	if not handle then
+		is_present = false
+	else
+		-- close the file
+		handle:close()
+	end
+
+	-- return status
+	return is_present
 end
 
 -------------------------------------------------------------------------------
@@ -388,6 +419,8 @@ function pkgconf.nomalize_license(license)
 	end
 
 	local license_text = license
+		:gsub("\\n", "\n")
+		:gsub("\\t", " ")
 		:gsub("\n %* ", "\n")
 		:gsub("\n %*\t", "\n\t")
 		:gsub("^ %* ", "")
@@ -422,19 +455,32 @@ end
 -- @return Return YAML object tree or nil if can't do it
 -------------------------------------------------------------------------------
 function pkgconf.open_yaml(location)
-	local yaml_file = io.open(location, "r")
+	if location:match("%.json$") then
+		local parser = ucl.parser()
+		local is_error, err = parser:parse_file(location)
 
-	if yaml_file == nil then
-		return nil
+		if is_error == false then
+			print("pkgconf.open_yaml: Can't parse JSON file " .. location .. ": " .. err)
+			return nil
+		end
+
+		return parser:get_object()
+	else
+		local yaml_file = io.open(location, "r")
+
+		if yaml_file == nil then
+			print("pkgconf.open_yaml: Can't parse YAML file: " .. location)
+			return nil
+		end
+
+		local yaml_content = yaml_file:read("*all")
+		yaml_file:close()
+
+		local yaml_obj = lib_yaml.load(yaml_content)
+		yaml_content = nil
+
+		return yaml_obj
 	end
-
-	local yaml_content = yaml_file:read("*all")
-	yaml_file:close()
-
-	local yaml_obj = lib_yaml.load(yaml_content)
-	yaml_content = nil
-
-	return yaml_obj
 end
 
 -------------------------------------------------------------------------------
