@@ -1,4 +1,6 @@
 /*-
+ * SPDX-License-Identifier: BSD-2-Clause
+ *
  * Copyright (c) 2015 Nathanial Sloss <nathanialsloss@yahoo.com.au>
  *
  *		This software is dedicated to the memory of -

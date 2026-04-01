@@ -1,6 +1,8 @@
 /* $NetBSD$ */
 
 /*-
+ * SPDX-License-Identifier: BSD-2-Clause
+ *
  * Copyright (c) 2015-2016 Nathanial Sloss <nathanialsloss@yahoo.com.au>
  * Copyright (c) 2016-2019 Hans Petter Selasky <hps@selasky.org>
  * Copyright (c) 2019 Google LLC, written by Richard Kralovic <riso@google.com>
