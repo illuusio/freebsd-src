@@ -1,4 +1,6 @@
 /*
+ * SPDX-License-Identifier: BSD-2-Clause
+ *
  * Copyright (c) 1997 Shigio Yamaguchi. All rights reserved.
  * Copyright (c) 1999 Tama Communications Corporation. All rights reserved.
  *
