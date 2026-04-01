@@ -1,4 +1,6 @@
 /*-
+ * SPDX-License-Identifier: BSD-2-Clause
+ *
  * Copyright (c) 2003-2008 Joseph Koshy
  * Copyright (c) 2017 Ruslan Bukin <br@bsdpad.com>
  * All rights reserved.
