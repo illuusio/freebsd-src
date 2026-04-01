@@ -1,6 +1,8 @@
 /* Parse event JSON files */
 
 /*
+ * SPDX-License-Identifier: BSD-2-Clause
+ *
  * Copyright (c) 2014, Intel Corporation
  * All rights reserved.
  *
