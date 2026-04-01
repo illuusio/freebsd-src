@@ -1,4 +1,6 @@
 /*-
+ * SPDX-License-Identifier: BSD-2-Clause
+ *
  * Copyright (c) 2016 John H. Baldwin <jhb@FreeBSD.org>
  *
  * Redistribution and use in source and binary forms, with or without
