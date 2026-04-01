@@ -1,4 +1,6 @@
 /*-
+ * SPDX-License-Identifier: BSD-2-Clause
+ *
  * Copyright (c) 2014, Alexander V. Chernikov
  * Copyright (c) 2020, Ryan Moeller <freqlabs@FreeBSD.org>
  *
