@@ -1,4 +1,6 @@
 /*-
+ * SPDX-License-Identifier: BSD-2-Clause
+ *
  * Copyright (c) 2014 John Baldwin <jhb@FreeBSD.org>
  *
  * Redistribution and use in source and binary forms, with or without
@@ -158,7 +160,8 @@ devctl_thaw(void)
 }
 
 int
-devctl_reset(const char *device, bool detach)
+devctl_reset(const char *device, bool detach)lib/libdevctl/devctl.c	BSD-2-Clause
+
 {
 
 	return (devctl_simple_request(DEV_RESET, device, detach ?
