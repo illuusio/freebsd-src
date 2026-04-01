@@ -1,4 +1,6 @@
 /*-
+ * SPDX-License-Identifier: BSD-2-Clause
+ *
  * Copyright (c) 2012 Stephen Montgomery-Smith <stephen@FreeBSD.ORG>
  * Copyright (c) 2017 Mahdi Mokhtari <mmokhi@FreeBSD.org>
  * All rights reserved.
