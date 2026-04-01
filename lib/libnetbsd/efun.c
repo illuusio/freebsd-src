@@ -1,6 +1,8 @@
 /*	$NetBSD: efun.c,v 1.10 2015/07/26 02:20:30 kamil Exp $	*/
 
 /*-
+ * SPDX-License-Identifier: BSD-2-Clause
+ *
  * Copyright (c) 2006 The NetBSD Foundation, Inc.
  * All rights reserved.
  *

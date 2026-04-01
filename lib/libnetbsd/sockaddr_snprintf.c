@@ -1,6 +1,8 @@
 /*	$NetBSD: sockaddr_snprintf.c,v 1.14 2016/12/29 18:30:55 christos Exp $	*/
 
 /*-
+ * SPDX-License-Identifier: BSD-2-Clause
+ *
  * Copyright (c) 2004, 2016 The NetBSD Foundation, Inc.
  * All rights reserved.
  *
