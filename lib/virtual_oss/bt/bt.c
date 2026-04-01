@@ -1,4 +1,6 @@
 /*-
+ * SPDX-License-Identifier: BSD-2-Clause
+ *
  * Copyright (c) 2015-2019 Hans Petter Selasky
  * Copyright (c) 2015 Nathanial Sloss <nathanialsloss@yahoo.com.au>
  * Copyright (c) 2006 Itronix Inc
