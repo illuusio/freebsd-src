@@ -1,5 +1,7 @@
 /* LINTLIBRARY */
 /*-
+ * SPDX-License-Identifier: BSD-2-Clause
+ *
  * Copyright 1996-1998 John D. Polstra.
  * Copyright 2014 Andrew Turner.
  * Copyright 2014-2015 The FreeBSD Foundation.

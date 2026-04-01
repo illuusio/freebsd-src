@@ -1,5 +1,7 @@
 /* LINTLIBRARY */
 /*-
+ * SPDX-License-Identifier: BSD-2-Clause
+ *
  * Copyright 1996-1998 John D. Polstra.
  * Copyright (c) 2015-2017 Ruslan Bukin <br@bsdpad.com>
  * All rights reserved.
