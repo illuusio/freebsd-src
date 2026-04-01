@@ -1,4 +1,6 @@
 /*
+ * SPDX-License-Identifier: BSD-3-Clause
+ *
  * Copyright (c) 1983, 1993
  *  The Regents of the University of California.  All rights reserved.
  * Copyright (c) 2016-2017, Marie Helene Kvello-Aune.  All rights reserved.
