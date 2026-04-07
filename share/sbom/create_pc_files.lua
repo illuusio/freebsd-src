@@ -111,7 +111,7 @@ if arg[2] == nil or arg[2] == "pkgconf" then
 						local hash_value = pkgconf.run_cmd(hash_cmd):sub(18, 26)
 						local license_file = license_value["license_expression_spdx"] .. "." .. hash_value .. ".txt"
 						pkgconf.add_string_to_table(license_expression_spdx, license_value["license_expression_spdx"])
-						pkgconf.add_string_to_table(license_file_table, "LICENSES/" .. license_file)
+						pkgconf.add_string_to_table(license_file_table, "${pcfiledir}/LICENSES/" .. license_file)
 						if pkgconf.file_exists(license_file) == false then
 							pkgconf.write_file(
 								dir_name .. "/LICENSES/" .. license_file,
