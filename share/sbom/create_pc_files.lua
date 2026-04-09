@@ -95,9 +95,14 @@ if arg[2] == nil or arg[2] == "pkgconf" then
 		local license_file_table = {}
 		local license_expression_spdx = {}
 
-		if license_yaml_obj ~= nil and license_yaml_obj[cur_dir] ~= nil then
+		if
+			value["directory"] ~= nil
+			and type(value["directory"]) == "string"
+			and string.find(value["directory"], "bin/") ~= nil
+			and license_yaml_obj ~= nil
+			and license_yaml_obj[cur_dir] ~= nil
+		then
 			local cur_obj = license_yaml_obj[cur_dir]
-			local is_first = true
 			for _, subvalue in pairs(cur_obj) do
 				if subvalue["copyrights"] ~= nil then
 					for _, copyrights_value in ipairs(subvalue["copyrights"]) do
@@ -108,8 +113,12 @@ if arg[2] == nil or arg[2] == "pkgconf" then
 					for _, license_value in ipairs(subvalue["licenses"]) do
 						local license_normalized = pkgconf.nomalize_license(license_value["license_original"])
 						local hash_cmd = "echo -n '" .. license_normalized .. "' | " .. "openssl dgst -sha256 -"
-						local hash_value = pkgconf.run_cmd(hash_cmd):sub(18, 26)
-						local license_file = license_value["license_expression_spdx"] .. "." .. hash_value .. ".txt"
+						local hash_value = pkgconf.run_cmd(hash_cmd):sub(18, 25)
+						local license_file = string.gsub(
+							license_value["license_expression_spdx"] .. "." .. hash_value .. ".txt",
+							"%s",
+							"_"
+						)
 						pkgconf.add_string_to_table(license_expression_spdx, license_value["license_expression_spdx"])
 						pkgconf.add_string_to_table(license_file_table, "${pcfiledir}/LICENSES/" .. license_file)
 						if pkgconf.file_exists(license_file) == false then
@@ -118,7 +127,6 @@ if arg[2] == nil or arg[2] == "pkgconf" then
 								license_value["license_original"]
 							)
 						end
-						is_first = false
 					end
 				end
 			end
