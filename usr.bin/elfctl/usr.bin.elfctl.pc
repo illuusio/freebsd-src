@@ -1,7 +1,0 @@
-# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
-Name: elfctl
-Description: change an ELF binary's feature control note
-URL: https://man.freebsd.org/cgi/man.cgi?query=elfctl&manpath=FreeBSD+15.0-RELEASE
-Version: 15.0
-License: NOASSERTION
-Source: https://cgit.freebsd.org/src/tree/usr.bin/elfctl?h=stable/15

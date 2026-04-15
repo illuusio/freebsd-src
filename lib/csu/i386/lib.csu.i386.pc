@@ -1,8 +1,0 @@
-# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
-Name: i386
-Description: Library missing description
-URL: https://man.freebsd.org/cgi/man.cgi?query=i386&manpath=FreeBSD+15.0-RELEASE
-Version: 15.0
-License: NOASSERTION
-Source: https://cgit.freebsd.org/src/tree/lib/csu/i386?h=stable/15
-Requires: 

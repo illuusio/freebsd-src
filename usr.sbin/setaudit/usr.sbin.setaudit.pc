@@ -1,7 +1,0 @@
-# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
-Name: setaudit
-Description: specify audit configurations on a process
-URL: https://man.freebsd.org/cgi/man.cgi?query=setaudit&manpath=FreeBSD+15.0-RELEASE
-Version: 15.0
-License: NOASSERTION
-Source: https://cgit.freebsd.org/src/tree/usr.sbin/setaudit?h=stable/15

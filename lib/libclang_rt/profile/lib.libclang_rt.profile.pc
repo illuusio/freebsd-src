@@ -1,8 +1,0 @@
-# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
-Name: profile
-Description: Library missing description
-URL: https://man.freebsd.org/cgi/man.cgi?query=profile&manpath=FreeBSD+15.0-RELEASE
-Version: 15.0
-License: NOASSERTION
-Source: https://cgit.freebsd.org/src/tree/lib/libclang_rt/profile?h=stable/15
-Requires: lib.libc++

@@ -1,9 +1,0 @@
-# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
-Name: libpmcstat
-Description: Library missing description
-URL: https://man.freebsd.org/cgi/man.cgi?query=libpmcstat&manpath=FreeBSD+15.0-RELEASE
-Version: 15.0
-License: NOASSERTION
-Source: https://cgit.freebsd.org/src/tree/lib/libpmcstat?h=stable/15
-Requires: lib.libelf \
-	lib.libpmc

@@ -1,7 +1,0 @@
-# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
-Name: etdump
-Description: dump ISO-9660 El Torito boot catalog information
-URL: https://man.freebsd.org/cgi/man.cgi?query=etdump&manpath=FreeBSD+15.0-RELEASE
-Version: 15.0
-License: NOASSERTION
-Source: https://cgit.freebsd.org/src/tree/usr.bin/etdump?h=stable/15

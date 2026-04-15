@@ -1,8 +1,0 @@
-# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
-Name: spkrtest
-Description: test script for the speaker driver
-URL: https://man.freebsd.org/cgi/man.cgi?query=spkrtest&manpath=FreeBSD+15.0-RELEASE
-Version: 15.0
-License: NOASSERTION
-Source: https://cgit.freebsd.org/src/tree/usr.sbin/spkrtest?h=stable/15
-Requires: 

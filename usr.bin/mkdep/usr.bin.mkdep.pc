@@ -1,8 +1,0 @@
-# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
-Name: mkdep
-Description: construct Makefile dependency list
-URL: https://man.freebsd.org/cgi/man.cgi?query=mkdep&manpath=FreeBSD+15.0-RELEASE
-Version: 15.0
-License: NOASSERTION
-Source: https://cgit.freebsd.org/src/tree/usr.bin/mkdep?h=stable/15
-Requires: 

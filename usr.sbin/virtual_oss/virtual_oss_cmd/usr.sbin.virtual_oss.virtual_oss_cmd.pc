@@ -1,7 +1,0 @@
-# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
-Name: virtual_oss_cmd
-Description: modify a running virtual_oss(8) instance's options
-URL: https://man.freebsd.org/cgi/man.cgi?query=virtual_oss_cmd&manpath=FreeBSD+15.0-RELEASE
-Version: 15.0
-License: NOASSERTION
-Source: https://cgit.freebsd.org/src/tree/usr.sbin/virtual_oss/virtual_oss_cmd?h=stable/15

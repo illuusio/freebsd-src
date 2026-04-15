@@ -1,7 +1,0 @@
-# SPDX-License-Identifier: FreeBSD-DOC and LicenseRef-FreeBSD-SBOM
-Name: runat
-Description: run a shell command on a named attribute directory
-URL: https://man.freebsd.org/cgi/man.cgi?query=runat&manpath=FreeBSD+15.0-RELEASE
-Version: 15.0
-License: NOASSERTION
-Source: https://cgit.freebsd.org/src/tree/usr.bin/runat?h=stable/15
