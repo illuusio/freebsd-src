@@ -98,8 +98,7 @@ if arg[2] == nil or arg[2] == "pkgconf" then
 		if
 			value["directory"] ~= nil
 			and type(value["directory"]) == "string"
-			and (string.find(value["directory"], "sbin/") ~= nil
-			or string.find(value["directory"], "lib/geom") ~= nil)
+			and string.find(value["directory"], "usr.bin/") ~= nil
 			and license_yaml_obj ~= nil
 			and license_yaml_obj[cur_dir] ~= nil
 		then

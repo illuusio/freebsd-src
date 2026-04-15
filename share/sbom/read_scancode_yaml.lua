@@ -209,6 +209,7 @@ for _, cur_obj in pairs(yaml_obj["files"]) do
 						end
 						if license_promote == nil then
 							print(from_file .. ": " .. license_text_without_enter)
+							license_promote = "NOASSERTION"
 						end
 						print(from_file .. ": " .. license_expression_spdx .. " (promote: '" .. license_promote .. "')")
 					end
