@@ -55667,6 +55667,13 @@
       "license_expression_spdx": "NOASSERTION"
     }
   },
+  "contrib.lua": {
+    "nofile.c": {
+      "licenses": [],
+      "copyrights": [],
+      "license_expression_spdx": "NOASSERTION"
+    }
+  },
   "contrib.one-true-awk": {
     "nofile.c": {
       "licenses": [],
@@ -61238,35 +61245,35 @@
       "licenses": [
         {
           "license_match": 100,
-          "license_original": "| Several people have asked me on what basis I claim that indent is in\n| the public domain.  I knew I would be sorry I made that posting.",
+          "license_original": "Several people have asked me on what basis I claim that indent is in\nthe public domain.  I knew I would be sorry I made that posting.",
           "license_promote": "NOASSERTION",
           "license_expression_spdx": "LicenseRef-scancode-public-domain",
           "license_acknowledgements": "NOASSERTION",
-          "license_normalized": "| Several people have asked me on what basis I claim that indent is in | the public domain. I knew I would be sorry I made that posting."
+          "license_normalized": "Several people have asked me on what basis I claim that indent is in the public domain. I knew I would be sorry I made that posting."
         },
         {
           "license_match": 100,
-          "license_original": "| on an ARPA contract, it was in the public domain.",
+          "license_original": "on an ARPA contract, it was in the public domain.",
           "license_promote": "NOASSERTION",
           "license_expression_spdx": "LicenseRef-scancode-public-domain",
           "license_acknowledgements": "NOASSERTION",
-          "license_normalized": "| on an ARPA contract, it was in the public domain."
+          "license_normalized": "on an ARPA contract, it was in the public domain."
         },
         {
           "license_match": 100,
-          "license_original": "| indent was in the public domain.  They wanted to include it in their",
+          "license_original": "indent was in the public domain.  They wanted to include it in their",
           "license_promote": "NOASSERTION",
           "license_expression_spdx": "LicenseRef-scancode-public-domain",
           "license_acknowledgements": "NOASSERTION",
-          "license_normalized": "| indent was in the public domain. They wanted to include it in their"
+          "license_normalized": "indent was in the public domain. They wanted to include it in their"
         },
         {
           "license_match": 100,
-          "license_original": "| the UofI copyright, is in the public domain, and worth every penny.",
+          "license_original": "the UofI copyright, is in the public domain, and worth every penny.",
           "license_promote": "NOASSERTION",
           "license_expression_spdx": "LicenseRef-scancode-public-domain",
           "license_acknowledgements": "NOASSERTION",
-          "license_normalized": "| the UofI copyright, is in the public domain, and worth every penny."
+          "license_normalized": "the UofI copyright, is in the public domain, and worth every penny."
         }
       ],
       "copyrights": [],
