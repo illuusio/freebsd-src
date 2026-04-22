@@ -169,7 +169,15 @@ for _, cur_obj in pairs(yaml_obj["files"]) do
 						:gsub("\n%*", "\n")
 						:gsub("^%* ", "")
 						:gsub("\n %*\n", "\n")
-					local license_text_without_enter = license_text
+						:gsub("%/%*%s+", "")
+						:gsub("%s+%*%/\n", "\n")
+						:gsub("%s+%*%/", "")
+						:gsub("%|%*%s+", "")
+						:gsub("%s+%*%|\n", "\n")
+						:gsub("%s+%*%|", "")
+						:gsub("#\n", "\n")
+						:gsub("#%s+", "")
+						local license_text_without_enter = license_text
 						:gsub("\n", " ")
 						:gsub("\t", " ")
 						:gsub("%s+", " ")

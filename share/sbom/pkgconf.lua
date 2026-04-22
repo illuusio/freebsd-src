@@ -22,10 +22,10 @@ local man_url_addition = ""
 local pkgconf = {}
 
 local pc_license_text = [[
+# Copyright (c) 2026 The FreeBSD Foundation.
+#
 # SPDX-License-Identifier: BSD-2-Clause AND LicenseRef-FreeBSD-SBOM
 # SPDX-FileCopyrightText: 2026 The FreeBSD Foundation.
-#
-# Copyright(c) 2026 The FreeBSD Foundation.
 #
 ]]
 

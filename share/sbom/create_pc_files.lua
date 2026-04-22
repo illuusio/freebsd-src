@@ -57,6 +57,50 @@ if addition_name ~= nil then
 	license_yaml_obj = pkgconf.open_yaml(addition_name)
 end
 
+local allowed_dirs = {
+	"bin/",
+	"cddl/contrib/opensolaris/tools/ctf/cvt",
+	"contrib/bc",
+	"contrib/bmake",
+	"contrib/bsddialog",
+	"contrib/byacc",
+	"contrib/bzip2",
+	"contrib/com_err",
+	"contrib/diff",
+	"contrib/ee",
+	"contrib/elftoolchain",
+	"contrib/file",
+	"contrib/flex",
+	"contrib/kyua",
+	"contrib/ldns",
+	"contrib/less",
+	"contrib/libarchive",
+	"contrib/libxo",
+	"contrib/mandoc",
+	"contrib/ncurses",
+	"contrib/netcat",
+	"contrib/ntp",
+	"contrib/nvi",
+	"contrib/ofed",
+	"contrib/one%-true%-awk",
+	"contrib/sendmail",
+	"contrib/smbfs",
+	"contrib/telnet",
+	"contrib/tnftp",
+	"contrib/ts",
+	"contrib/unifdef",
+	"contrib/wireguard%-tools",
+	"contrib/xz",
+	"crypto/krb5",
+	"crypto/openssh",
+	"lib/geom",
+	"sbin/",
+	"sys/contrib/openzfs",
+	"sys/contrib/zstd",
+	"usr.bin/",
+	"usr.sbin/"
+}
+
 if arg[2] == nil or arg[2] == "pkgconf" then
 	local meta_package = {}
 	local dep_libraries = {}
@@ -95,15 +139,26 @@ if arg[2] == nil or arg[2] == "pkgconf" then
 		local license_file_table = {}
 		local license_expression_spdx = {}
 
-		if
-			value["directory"] ~= nil
-			and type(value["directory"]) == "string"
-			and (string.find(value["directory"], "sbin/") ~= nil
-			or string.find(value["directory"], "lib/geom") ~= nil
-		    or string.find(value["directory"], "usr.bin/") ~= nil)
-			and license_yaml_obj ~= nil
-			and license_yaml_obj[cur_dir] ~= nil
-		then
+		if key == "file" then
+			print(">>>>>>" .. value["directory"] .. ":" .. cur_dir)
+			-- print(license_yaml_obj[cur_dir])
+		end
+
+		local is_correct = false
+
+		if value["directory"] ~= nil and type(value["directory"]) == "string" then
+			for _, searchvalue in ipairs(allowed_dirs) do
+				if string.find(value["directory"], searchvalue) ~= nil then
+					is_correct = true
+					break
+				end
+			end
+		end
+
+		if is_correct == true and license_yaml_obj ~= nil and license_yaml_obj[cur_dir] ~= nil then
+			if key == "file" then
+				print("***" .. value["directory"])
+			end
 			local cur_obj = license_yaml_obj[cur_dir]
 			for _, subvalue in pairs(cur_obj) do
 				if subvalue["copyrights"] ~= nil then
