@@ -72,6 +72,7 @@ local allowed_dirs = {
 	"contrib/file",
 	"contrib/flex",
 	"contrib/kyua",
+	"contrib/lua",
 	"contrib/ldns",
 	"contrib/less",
 	"contrib/libarchive",
