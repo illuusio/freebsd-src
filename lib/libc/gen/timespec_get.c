@@ -1,6 +1,8 @@
 /*	$NetBSD: timespec_get.c,v 1.2 2016/10/04 12:48:15 christos Exp $	*/
 
 /*-
+ * SPDX-License-Identifier: BSD-2-Clause
+ *
  * Copyright (c) 2016 The NetBSD Foundation, Inc.
  * All rights reserved.
  *
