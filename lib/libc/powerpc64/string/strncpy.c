@@ -1,4 +1,6 @@
 /*-
+ * SPDX-License-Identifier: BSD-3-Clause
+ *
  * Copyright (c) 2019 Leandro Lupori
  *
  * Redistribution and use in source and binary forms, with or without
