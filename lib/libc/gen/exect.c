@@ -1,4 +1,6 @@
 /*-
+ * SPDX-License-Identifier: BSD-2-Clause
+ *
  * Copyright (c) 2018 Ali Mashtizadeh <ali@mashtizadeh.com>
  * All rights reserved.
  *

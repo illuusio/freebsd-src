@@ -1,4 +1,6 @@
 /*-
+ * SPDX-License-Identifier: BSD-2-Clause
+ *
  * Copyright (c) 2016 Mahdi Mokhtari <mokhi64@gmail.com>
  * Copyright (c) 2016, 2017 The FreeBSD Foundation
  * All rights reserved.
