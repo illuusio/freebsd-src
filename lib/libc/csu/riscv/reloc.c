@@ -1,4 +1,6 @@
 /*-
+ * SPDX-License-Identifier: BSD-1-Clause
+ *
  * Copyright (c) 2019 Leandro Lupori
  * Copyright (c) 2024 Jessica Clarke <jrtc27@FreeBSD.org>
  *
