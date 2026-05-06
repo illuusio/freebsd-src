@@ -55625,7 +55625,35 @@
       "license_expression_spdx": "NOASSERTION"
     }
   },
+  "cddl.contrib.opensolaris.cmd.dtrace": {
+    "nofile.c": {
+      "licenses": [],
+      "copyrights": [],
+      "license_expression_spdx": "NOASSERTION"
+    }
+  },
   "cddl.contrib.opensolaris.tools.ctf.cvt": {
+    "nofile.c": {
+      "licenses": [],
+      "copyrights": [],
+      "license_expression_spdx": "NOASSERTION"
+    }
+  },
+  "cddl.usr.sbin.dwatch": {
+    "nofile.c": {
+      "licenses": [],
+      "copyrights": [],
+      "license_expression_spdx": "NOASSERTION"
+    }
+  },
+  "contrib.tcpdump": {
+    "nofile.c": {
+      "licenses": [],
+      "copyrights": [],
+      "license_expression_spdx": "NOASSERTION"
+    }
+  },
+  "contrib.tcp_wrappers": {
     "nofile.c": {
       "licenses": [],
       "copyrights": [],
@@ -55675,6 +55703,76 @@
     }
   },
   "contrib.one-true-awk": {
+    "nofile.c": {
+      "licenses": [],
+      "copyrights": [],
+      "license_expression_spdx": "NOASSERTION"
+    }
+  },
+  "contrib.wpa": {
+    "nofile.c": {
+      "licenses": [],
+      "copyrights": [],
+      "license_expression_spdx": "NOASSERTION"
+    }
+  },
+  "contrib.pf.ftp-proxy": {
+    "nofile.c": {
+      "licenses": [],
+      "copyrights": [],
+      "license_expression_spdx": "NOASSERTION"
+    }
+  },
+  "contrib.tzcode": {
+    "nofile.c": {
+      "licenses": [],
+      "copyrights": [],
+      "license_expression_spdx": "NOASSERTION"
+    }
+  },
+  "usr.sbin.crashinfo": {
+    "nofile.c": {
+      "licenses": [],
+      "copyrights": [],
+      "license_expression_spdx": "NOASSERTION"
+    }
+  },
+  "usr.sbin.etcupdate": {
+    "nofile.c": {
+      "licenses": [],
+      "copyrights": [],
+      "license_expression_spdx": "NOASSERTION"
+    }
+  },
+  "usr.sbin.freebsd-update": {
+    "nofile.c": {
+      "licenses": [],
+      "copyrights": [],
+      "license_expression_spdx": "NOASSERTION"
+    }
+  },
+  "usr.sbin.spkrtest": {
+    "nofile.c": {
+      "licenses": [],
+      "copyrights": [],
+      "license_expression_spdx": "NOASSERTION"
+    }
+  },
+  "usr.sbin.sysrc": {
+    "nofile.c": {
+      "licenses": [],
+      "copyrights": [],
+      "license_expression_spdx": "NOASSERTION"
+    }
+  },
+  "usr.sbin.vigr": {
+    "nofile.c": {
+      "licenses": [],
+      "copyrights": [],
+      "license_expression_spdx": "NOASSERTION"
+    }
+  },
+  "usr.sbin.zzz": {
     "nofile.c": {
       "licenses": [],
       "copyrights": [],

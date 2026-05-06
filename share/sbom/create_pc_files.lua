@@ -60,6 +60,8 @@ end
 local allowed_dirs = {
 	"bin/",
 	"cddl/contrib/opensolaris/tools/ctf/cvt",
+	"cddl/contrib/opensolaris/cmd/dtrace",
+	"cddl/usr.sbin/dwatch",
 	"contrib/bc",
 	"contrib/bmake",
 	"contrib/bsddialog",
@@ -84,13 +86,18 @@ local allowed_dirs = {
 	"contrib/nvi",
 	"contrib/ofed",
 	"contrib/one%-true%-awk",
+	"contrib/pf/ftp%-proxy",
 	"contrib/sendmail",
 	"contrib/smbfs",
+	"contrib/tcpdump",
+	"contrib/tcp_wrappers",
 	"contrib/telnet",
 	"contrib/tnftp",
 	"contrib/ts",
+	"contrib/tzcode",
 	"contrib/unifdef",
 	"contrib/wireguard%-tools",
+	"contrib/wpa",
 	"contrib/xz",
 	"crypto/krb5",
 	"crypto/openssh",
@@ -140,8 +147,8 @@ if arg[2] == nil or arg[2] == "pkgconf" then
 		local license_file_table = {}
 		local license_expression_spdx = {}
 
-		if key == "file" then
-			print(">>>>>>" .. value["directory"] .. ":" .. cur_dir)
+		if key == "zdump" then
+			print(">>>>>> " .. value["directory"] .. " | " .. cur_dir)
 			-- print(license_yaml_obj[cur_dir])
 		end
 
@@ -157,8 +164,8 @@ if arg[2] == nil or arg[2] == "pkgconf" then
 		end
 
 		if is_correct == true and license_yaml_obj ~= nil and license_yaml_obj[cur_dir] ~= nil then
-			if key == "file" then
-				print("***" .. value["directory"])
+			if key == "zdump" then
+				print("*** " .. value["directory"])
 			end
 			local cur_obj = license_yaml_obj[cur_dir]
 			for _, subvalue in pairs(cur_obj) do
