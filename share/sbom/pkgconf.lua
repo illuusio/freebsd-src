@@ -397,6 +397,10 @@ end
 -------------------------------------------------------------------------------
 function pkgconf.split_line(line, sep)
 	local rtn_table = {}
+	if line == nil then
+		return {}
+	end
+
 	if sep == nil then
 		sep = "|"
 	end
@@ -413,31 +417,201 @@ end
 -- @param license licese text to normalize
 -- @return Return nil or nomalized text
 -------------------------------------------------------------------------------
+function pkgconf.remove_commenting(license)
+	local output_text = license
+		:gsub("\n%s%*\n", "\n\n")
+		:gsub("^%s%*%s", "")
+		:gsub("\n%s%*%s", "\n")
+		:gsub("\n%s%*%*%s", "\n")
+		:gsub("%s+%*%*", "")
+		:gsub("\n%s+", "\n")
+		:gsub("^%s+", "")
+		:gsub("/%*%s+", "")
+		:gsub("%s+%*/", "\n")
+		:gsub("^%/%/%s", "")
+		:gsub("\n%/%/%s", "")
+		:gsub("\n%#\n", "\n\n")
+		:gsub("\n%#%s", "\n")
+		:gsub("^%#%s", "")
+	return output_text
+end
+
+-------------------------------------------------------------------------------
+-- Remove * at the begining and other variants
+-- Also remove double spaces and tabs and replace
+-- with one space
+-- @param license licese text to normalize
+-- @return Return nil or nomalized text
+-------------------------------------------------------------------------------
 function pkgconf.nomalize_license(license)
 	if license == nil then
 		return nil
 	end
 
-	local license_text = license
+	local uncommeted_text = pkgconf.remove_commenting(license)
+
+	local license_text = uncommeted_text
 		:gsub("\\n", "\n")
 		:gsub("\\t", " ")
-		:gsub("\n %* ", "\n")
-		:gsub("\n %*\t", "\n\t")
-		:gsub("^ %* ", "")
-		:gsub("\n%* ", "\n")
-		:gsub("\n%*", "\n")
-		:gsub("^%* ", "")
-		:gsub("\n %*\n", "\n")
 		:gsub("\n", " ")
 		:gsub("\t", " ")
 		:gsub("%s+", " ")
-		:gsub("`", "'")
-		:gsub("%'+", '"')
+		:gsub("([%a%d])%-%s([%a%d])", "%1%2")
 		:gsub(" $", "")
 
 	return license_text
 end
 
+-------------------------------------------------------------------------------
+-- Remove * at the begining and other variants
+-- Also remove double spaces and tabs and replace
+-- with one space
+-- @param license licese text to normalize
+-- @return Return nil or nomalized text
+-------------------------------------------------------------------------------
+function pkgconf.escape_regex(regex_string)
+	if regex_string == nil then
+		return nil
+	end
+
+	local rtn_str = regex_string
+		:gsub("%(", "%%(")
+		:gsub("%)", "%%)")
+		:gsub("%[", "%%[")
+		:gsub("%]", "%%]")
+		:gsub("%.", "%%.")
+		:gsub("%,", "%%,")
+		:gsub("%-", "%%-")
+	return rtn_str
+end
+
+local function seek_pattern(text_str, pattern_table)
+	local match_str = nil
+	for _, pattern in ipairs(pattern_table) do
+		match_str = text_str:match(pattern)
+		if match_str ~= nil then
+			break
+		end
+	end
+	return match_str
+end
+
+-------------------------------------------------------------------------------
+-- Remove * at the begining and other variants
+-- Also remove double spaces and tabs and replace
+-- with one space
+-- @param license licese text to normalize
+-- @return Return nil or nomalized text
+-------------------------------------------------------------------------------
+function pkgconf.get_acknowledgements(license)
+	if license == nil then
+		return nil
+	end
+	local regex_strings = {
+		"display the following acknow.+%:%s(.+)%s4%.",
+		'the following acknowledgement%:%s"(.+)"%sNeither',
+		"3%.%s(.+)%s4%.",
+	}
+
+	return seek_pattern(license, regex_strings)
+end
+
+-------------------------------------------------------------------------------
+-- Remove * at the begining and other variants
+-- Also remove double spaces and tabs and replace
+-- with one space
+-- @param license licese text to normalize
+-- @return Return nil or nomalized text
+-------------------------------------------------------------------------------
+function pkgconf.get_promote(license)
+	if license == nil then
+		return nil
+	end
+
+	local regex_strings = {
+		"Neither the name of%s(.+)%smay be used to",
+		"%s4%.%s(.+)%smay not",
+		"%s3%.%s(.+)%smay not",
+	}
+
+	return seek_pattern(license, regex_strings)
+end
+
+-------------------------------------------------------------------------------
+-- Remove * at the begining and other variants
+-- Also remove double spaces and tabs and replace
+-- with one space
+-- @param license licese text to normalize
+-- @return Return nil or nomalized text
+-------------------------------------------------------------------------------
+function pkgconf.get_author(license)
+	if license == nil then
+		return nil
+	end
+
+	local regex_strings = {
+		'PROVIDED BY%s(.+)%s"AS',
+		'PROVIDED BY%s(.+)"AS',
+		"PROVIDED BY%s(.+)%s%`%`AS",
+		"PROVIDED BY%s(.+)%`%`AS",
+		"PROVIDED BY%s(.+)%s''AS",
+		"PROVIDED BY%s(.+)''AS",
+		"PROVIDED BY%s(.+)%sAS",
+		"PROVIDED BY%s(.+)%s%`AS",
+	}
+
+	return seek_pattern(license, regex_strings)
+end
+
+-------------------------------------------------------------------------------
+-- Remove * at the begining and other variants
+-- Also remove double spaces and tabs and replace
+-- with one space
+-- @param license licese text to normalize
+-- @return Return nil or nomalized text
+-------------------------------------------------------------------------------
+function pkgconf.get_event(license)
+	if license == nil then
+		return nil
+	end
+
+	local regex_strings = {
+		"IN NO EVENT SHALL%s(.+)%sBE",
+	}
+
+	return seek_pattern(license, regex_strings)
+end
+-------------------------------------------------------------------------------
+-- Remove * at the begining and other variants
+-- Also remove double spaces and tabs and replace
+-- with one space
+-- @param license licese text to normalize
+-- @return Return nil or nomalized text
+-------------------------------------------------------------------------------
+function pkgconf.calculate_sha256(input)
+	if input == nil then
+		return nil
+	end
+	local hash_value = nil
+	local license_normalized = pkgconf.nomalize_license(input)
+	if license_normalized ~= nil then
+		local hash_cmd = 'echo -n "'
+			.. license_normalized:gsub('"', '\\"'):gsub("`", "\\`")
+			.. '" | '
+			.. "openssl dgst -sha256 -"
+		-- 'Output: SHA2-256(stdin)= <64 bytes hash>'
+		hash_value = pkgconf.run_cmd(hash_cmd):sub(18, 81)
+	end
+	return license_normalized, hash_value
+end
+
+-------------------------------------------------------------------------------
+-- Remove * at the begining and other variants
+-- Also remove double spaces and tabs and replace
+-- with one space
+-- @param license licese text to normalize
+-- @return Return nil or nomalized text
+-------------------------------------------------------------------------------
 function pkgconf.add_string_to_table(cur_table, add_string)
 	for _, value in ipairs(cur_table) do
 		if value == add_string then
@@ -449,6 +623,30 @@ function pkgconf.add_string_to_table(cur_table, add_string)
 	return true
 end
 
+-------------------------------------------------------------------------------
+-- Remove * at the begining and other variants
+-- Also remove double spaces and tabs and replace
+-- with one space
+-- @param license licese text to normalize
+-- @return Return nil or nomalized text
+-------------------------------------------------------------------------------
+function pkgconf.get_arranged_table(input_table, func)
+	local output_table = {}
+	for input_key in pairs(input_table) do
+		table.insert(output_table, input_key)
+	end
+	table.sort(output_table, func)
+	local i = 0 -- iterator variable
+	local iter = function() -- iterator function
+		i = i + 1
+		if output_table[i] == nil then
+			return nil
+		else
+			return output_table[i], input_table[output_table[i]]
+		end
+	end
+	return iter
+end
 -------------------------------------------------------------------------------
 -- Open YAML file and make and object
 -- @param location Location for YAML file

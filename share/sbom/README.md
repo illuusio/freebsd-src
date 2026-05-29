@@ -321,10 +321,16 @@ grep -r SPDX-License-Identifier sbin bin usr.* | grep -E "\.c|\.h" | grep -v "\.
 
 # Using scancode-toolkit
 ```
-scancode --info --copyright --license --license-text --ignore "test*" --ignore "*.1" --ignore "*.2" --ignore "*.3" --ignore "*.4" --ignore "*.5" --ignore "*.6" --ignore "*.7" --ignore "*.8" --ignore "*.sh" --ignore "*.pc" --ignore "*.json" --ignore "Makefile*" --include "*.c" --include "*.h" --include "*.cc" --include "*.hh" --strip-root --license-score 95 --json-pp input.json bin lib
+scancode --info --copyright --license --license-score 95 --license-text --strip-root --ignore "test*" --ignore "*.1" --ignore "*.2" --ignore "*.3" --ignore "*.4" --ignore "*.5" --ignore "*.6" --ignore "*.7" --ignore "*.8" --ignore "Makefile*" --include "*.c" --include "*.h" --include "*.cc" --include "*.hh" --include "*.sh" --include "*.py" --include "*.pl" --include "*.S" --json-pp scancode_all_orig.json dirs
 ```
 
 ## Scancode JSON convert to usable
 ```
 lua5.4 share/sbom/read_scancode_yaml.lua scancode/input.json scancode/output.yaml
+```
+
+## Update licenses with SED
+This is example how to update licese information with SPDX-License-Identifier
+```
+sed -i -E "s#\/\* Copyright \(c\) (.*) The NetBSD Foundation, Inc.#/* SPDX-License-Identifier: BSD-2-Clause\n *\n * Copyright (c) \1 The NetBSD Foundation, Inc.#" *.c
 ```

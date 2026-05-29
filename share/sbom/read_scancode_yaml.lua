@@ -19,6 +19,7 @@
 -- Run on top directory something like
 -- share/sbom/convert_csv_to_json.lua share/sbom/FreeBSD-apps.csv output.yaml database_directory/database.yml
 
+local pkgconf = require("pkgconf")
 local yaml = require("lyaml")
 local ucl = require("ucl")
 
@@ -54,7 +55,7 @@ local function scancode_compare_strings(string1, string2)
 end
 
 if #arg < 2 then
-	print("Usage:\tread_scancode_yaml.lua [scancode.yaml] [output.yaml]\n")
+	print("Usage:\tread_scancode_yaml.lua [scancode.json] [output.json]\n")
 	print("\t\tParse YAML ja organise it by license and match level\n")
 	os.exit(1)
 end
@@ -88,7 +89,7 @@ if input_name:match("%.json$") then
 	local is_error, err = parser:parse_file(input_name)
 
 	if is_error == false then
-		print("pkgconf.open_yaml: Can't parse JSON file " .. location .. ": " .. err)
+		print("pkgconf.open_yaml: Can't parse JSON file " .. input_name .. ": " .. err)
 		return nil
 	end
 
@@ -101,27 +102,6 @@ else
 end
 
 local license_texts = {}
-
-license_texts["BSD-2-Clause"] =
-	'Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. 2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. THIS SOFTWARE IS PROVIDED BY <AUTHOR> "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL <AUTHOR> BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.'
-
--- Contains this extra text "in this position and unchanged" when compared with a BSD-2-Clause.
-license_texts["LicenseRef-scancode-bsd-unchanged"] =
-	'Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer in this position and unchanged. 2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. THIS SOFTWARE IS PROVIDED BY <AUTHOR> "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL <AUTHOR> BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.'
-
--- Contains text: without modification, immediately at the beginning of the file.
-license_texts["BSD-Source-beginning-file"] =
-	'Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer, without modification, immediately at the beginning of the file. 2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. THIS SOFTWARE IS PROVIDED BY <AUTHOR> "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL <AUTHOR> BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.'
-
-license_texts["BSD-3-Clause"] =
-	'Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. 2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. 3. Neither the name of <PROMOTE> may be used to endorse or promote products derived from this software without specific prior written permission. THIS SOFTWARE IS PROVIDED BY <AUTHOR> "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL <AUTHOR> BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.'
-
-license_texts["BSD-4-Clause"] =
-	'Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. 2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. 3. All advertising materials mentioning features or use of this software must display the following acknowledgements: <ACKNOWLEDGEMENTS> 4. The name of the author may not be used to endorse or promote products derived from this software without specific prior written permission. THIS SOFTWARE IS PROVIDED BY <AUTHOR> "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL <AUTHOR> BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.'
-
-test =
-	'Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. 2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. 3. Neither the name of <PROMOTE> may be used to endorse or promote products derived from this software without specific prior written permission. THIS SOFTWARE IS PROVIDED BY <AUTHOR> "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL <AUTHOR> BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.'
-
 local license_table = {}
 
 for _, cur_obj in pairs(yaml_obj["files"]) do
@@ -161,89 +141,30 @@ for _, cur_obj in pairs(yaml_obj["files"]) do
 					spdx_header = true
 				end
 				if matches_obj["matcher"] ~= "1-spdx-id" then
-					local license_text = matches_obj["matched_text"]
-						:gsub("\n %* ", "\n")
-						:gsub("\n %*\t", "\n\t")
-						:gsub("^ %* ", "")
-						:gsub("\n%* ", "\n")
-						:gsub("\n%*", "\n")
-						:gsub("^%* ", "")
-						:gsub("\n %*\n", "\n")
-						:gsub("%/%*%s+", "")
-						:gsub("%s+%*%/\n", "\n")
-						:gsub("%s+%*%/", "")
-						:gsub("%|%*%s+", "")
-						:gsub("%s+%*%|\n", "\n")
-						:gsub("%s+%*%|", "")
-						:gsub("#\n", "\n")
-						:gsub("#%s+", "")
-						local license_text_without_enter = license_text
-						:gsub("\n", " ")
-						:gsub("\t", " ")
-						:gsub("%s+", " ")
-						:gsub("`", "'")
-						:gsub("%'+", '"')
-						:gsub(" $", "")
+					local license_text = pkgconf.remove_commenting(matches_obj["matched_text"])
+					if license_text == nil then
+						io.close(output_handle)
+						io.close(input_handle)
+						os.exit(1)
+					end
+					local license_text_without_enter = pkgconf.nomalize_license(license_text)
 					-- Changes this as just for comparing
-					local license_author = license_text_without_enter:match('PROVIDED BY%s(.+)%s"AS')
-					local license_acknowledgements = "NOASSERTION"
-					local license_promote = "NOASSERTION"
-					if license_expression_spdx == "BSD-4-Clause" or license_expression_spdx == "BSD-4-Clause-UC" then
-						license_acknowledgements =
-							license_text_without_enter:match("display the following acknow.+%:%s(.+)%s4%.")
-						license_promote = license_text_without_enter:match("4%.%sNeither the name of%s(.+)%smay be")
-						if license_promote == nil then
-							license_promote = license_text_without_enter:match("4%.%s(.+)%smay")
-						end
-						if license_acknowledgements == nil then
-							license_acknowledgements = license_text_without_enter:match("3%.%s(.+)%s4%.")
-						end
-						print(license_expression_spdx .. "|" .. from_file .. ": " .. license_text_without_enter)
-						print(
-							from_file
-								.. ": "
-								.. license_expression_spdx
-								.. " (acknowledgement: '"
-								.. license_acknowledgements
-								.. "' promote: '"
-								.. license_promote
-								.. "')"
-						)
+					if license_text_without_enter == nil then
+						io.close(output_handle)
+						io.close(input_handle)
+						os.exit(1)
 					end
-					if license_expression_spdx == "BSD-3-Clause" then
-						license_promote = license_text_without_enter:match("Neither the name of%s(.+)%smay be used to")
-						if license_promote == nil then
-							license_promote = license_text_without_enter:match("[34]%.%s(.+)%smay not")
-						end
-						if license_promote == nil then
-							print(from_file .. ": " .. license_text_without_enter)
-							license_promote = "NOASSERTION"
-						end
-						print(from_file .. ": " .. license_expression_spdx .. " (promote: '" .. license_promote .. "')")
-					end
-					if license_acknowledgements == "NOASSERTION" and license_promote == "NOASSERTION" then
-						print(from_file .. ": " .. license_expression_spdx)
-					end
-					local license_text_without_enter = license_text_without_enter
-						:gsub('PROVIDED BY%s.+%s"AS', 'PROVIDED BY <AUTHOR> "AS')
-						:gsub("EVENT SHALL .+ BE LIABLE", "EVENT SHALL <AUTHOR> BE LIABLE")
-						:gsub(
-							"following acknowledgemen%a+:%s.+%s4%.",
-							"following acknowledgements: <ACKNOWLEDGEMENTS> 4."
-						)
-						:gsub("%s%- Redistributions of source", " 1. Redistributions of source")
-						:gsub("%s%- Redistributions in binary", " 2. Redistributions in binary")
-						:gsub("%s%- Neither the name of", " 3. Neither the name of")
-						:gsub("Neither the name of%s.+%smay be used to", "Neither the name of <PROMOTE> may be used to")
+					local license_author = pkgconf.get_author(license_text_without_enter)
+					local license_acknowledgements = pkgconf.get_acknowledgements(license_text_without_enter)
+					local license_promote = pkgconf.get_promote(license_text_without_enter)
+					local license_event = pkgconf.get_event(license_text_without_enter)
 
-					-- Fix BSD-4-Clause style expression
-					if license_expression_spdx == "BSD-3-Clause" then
-						license_text_without_enter = license_text_without_enter:gsub(
-							"3%.(.+)may not be used to",
-							"3. Neither the name of <PROMOTE> may be used to"
-						)
+					if license_author == nil then
+						license_author = "NOASSERTION"
 					end
-
+					if license_event == nil then
+						license_event = "NOASSERTION"
+					end
 					if license_promote == nil then
 						license_promote = "NOASSERTION"
 					end
@@ -258,6 +179,7 @@ for _, cur_obj in pairs(yaml_obj["files"]) do
 					cur_license["license_author"] = license_author
 					cur_license["license_acknowledgements"] = license_acknowledgements
 					cur_license["license_promote"] = license_promote
+					cur_license["license_event"] = license_event
 					table.insert(cur_table["licenses"], cur_license)
 				end
 			end
@@ -321,7 +243,9 @@ for _, cur_obj in pairs(yaml_obj["files"]) do
 	end
 end
 
-io.write(yaml.dump({ license_table }))
+-- io.write(yaml.dump({ license_table }))
+io.write(ucl.to_format(license_table, "json", true))
+io.flush()
 
 io.close(output_handle)
 
