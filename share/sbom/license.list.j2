@@ -1,0 +1,135 @@
+{% set license_ns = namespace() -%}
+{% set license_ns.last_license = "" -%}
+{% set license_ns.first_row = true -%}
+{% set license_ns.macro_row = true -%}
+{% set license_ns.printed = false -%}
+{% set license_ns.license_string = "" -%}
+{% set license_list = [] -%}
+{% set copyright_list = [] -%}
+{% set path_list = [] -%}
+{% set last_license_list = [] -%}
+{% set last_copyright_list = [] -%}
+{% set save_license_list = [] -%}
+{% set save_copyright_list = [] -%}
+{% macro print_annotation(path, license, copyright) -%}
+{% set license_ns.license_string = "" -%}
+{% for item in license -%}
+{% set spdx_license = item -%}
+{% if item == "bsd-new" -%}
+{% set spdx_license = "BSD-3-Clause" -%}
+{% elif item == "flex-2.5" -%}
+{% set spdx_license = "BSD-3-Clause-flex" -%}
+{% elif item == "intel-bsd" -%}
+{% set spdx_license = "BSD-3-Clause-acpica" -%}
+{% elif item == "bsd-simplified" -%}
+{% set spdx_license = "BSD-2-Clause" -%}
+{% elif item == "bsd-2-clause-views" -%}
+{% set spdx_license = "BSD-2-Clause-FreeBSD" -%}
+{% elif item == "bsd-unchanged" -%}
+{% set spdx_license = "LicenseRef-scancode-bsd-unchanged (https://scancode-licensedb.aboutcode.org/bsd-unchanged.html)" -%}
+{% elif item == "bsd-original" -%}
+{% set spdx_license = "BSD-4-Clause" -%}
+{% elif item == "bsd-original-uc" -%}
+{% set spdx_license = "BSD-4-Clause-UC" -%}
+{% elif item == "bsd-4-clause-shortened" -%}
+{% set spdx_license = "BSD-4-Clause-Shortened" -%}
+{% elif item == "intel-bsd-2-clause" -%}
+{% set spdx_license = "LicenseRef-scancode-intel-bsd-2-clause (https://scancode-licensedb.aboutcode.org/intel-bsd-2-clause.html)" -%}
+{% elif item == "bsd-source-code" -%}
+{% set spdx_license = "BSD-Source-Code" -%}
+{% elif item == "whistle" -%}
+{% set spdx_license = "LicenseRef-scancode-whistle (https://scancode-licensedb.aboutcode.org/whistle.html)" -%}
+{% elif item == "caldera-no-preamble" -%}
+{% set spdx_license = "Caldera-no-preamble" -%}
+{% elif item == "mit-old-style-no-advert" -%}
+{% set spdx_license = "NTP" -%}
+{% elif item == "carnegie-mellon-contributors" -%}
+{% set spdx_license = "CMU-Mach" -%}
+{% elif item == "isc" -%}
+{% set spdx_license = "ISC" -%}
+{% elif item == "mit" -%}
+{% set spdx_license = "MIT" -%}
+{% elif item == "ntp-0" -%}
+{% set spdx_license = "NTP-0" -%}
+{% elif item == "x11-keith-packard" -%}
+{% set spdx_license = "HPND-sell-variant" -%}
+{% elif item == "tcp-wrappers" -%}
+{% set spdx_license = "TCP-wrappers" -%}
+{% elif item == "tatu-ylonen" -%}
+{% set spdx_license = "SSH-short" -%}
+{% elif item == "gpl-1.0-plus" -%}
+{% set spdx_license = "GPL-1.0-or-later" -%}
+{% elif item == "bsd-axis-nomod" -%}
+{% set spdx_license = "LicenseRef-scancode-bsd-axis-nomod (https://scancode-licensedb.aboutcode.org/bsd-axis-nomod.html)" -%}
+{% elif item == "font-alias" -%}
+{% set spdx_license = "LicenseRef-scancode-font-alias (https://scancode-licensedb.aboutcode.org/font-alias.html)" -%}
+{% elif item == "rsa-1990" -%}
+{% set spdx_license = "LicenseRef-scancode-rsa-1990 (https://scancode-licensedb.aboutcode.org/rsa-1990.html)" -%}
+{% elif item == "mit-license-1998" -%}
+{% set spdx_license = "LicenseRef-scancode-mit-license-1998 (https://scancode-licensedb.aboutcode.org/mit-license-1998.html)" -%}
+{% elif item == "sun-rpc" -%}
+{% set spdx_license = "LicenseRef-scancode-sun-rpc (https://scancode-licensedb.aboutcode.org/sun-rpc.html)" -%}
+{% elif item == "sudo" -%}
+{% set spdx_license = "LicenseRef-scancode-sudo (https://scancode-licensedb.aboutcode.org/sudo.html)" -%}
+{% elif item == "bsd-unmodified" -%}
+{% set spdx_license = "LicenseRef-scancode-bsd-unmodified (https://scancode-licensedb.aboutcode.org/bsd-unmodified.html)" -%}
+{% elif item == "public-domain" -%}
+{% set spdx_license = "LicenseRef-PublicDomain (https://scancode-licensedb.aboutcode.org/public-domain.html)" -%}
+{% elif item == "public-domain-disclaimer" -%}
+{% set spdx_license = "LicenseRef-scancode-public-domain-disclaimer (https://scancode-licensedb.aboutcode.org/public-domain-disclaimer.html)" -%}
+{% endif -%}
+{% set license_ns.license_string = license_ns.license_string + " " + spdx_license -%}
+{% endfor -%}
+{% if path|length == 1 -%}
+{% set path_string = path[0] + ":" + license_ns.license_string -%}
+{{ path_string }}
+{% else -%}
+{% set license_ns.macro_row = true -%}
+{% for item in path_list -%}
+{% set path_string = item + ":" + license_ns.license_string -%}
+{{ path_string }}
+{% set license_ns.macro_row = false -%}
+{% endfor -%}
+{% endif -%}
+{% endmacro -%}
+{% if files.license_copyright -%}
+{% for path, data in files.license_copyright.items() -%}
+{% set license_ns.printed = false -%}
+{% for row in data -%}
+{% if row.what == 'copyright' -%}
+{% set tmp = copyright_list.append(row.value) -%}
+{% endif -%}
+{% if row.what == 'license' and license_ns.last_license != row.value -%}
+{% set tmp = license_list.append(row.value) -%}
+{% set license_ns.last_license = row.value -%}
+{% endif -%}
+{% endfor -%}
+{% if license_ns.first_row == false and (copyright_list != last_copyright_list or license_list != last_license_list) -%}
+{{ print_annotation(path_list, last_license_list, last_copyright_list) -}}
+{% set license_ns.printed = true -%}
+{% set tmp = path_list.clear() -%}
+{% set tmp = last_copyright_list.clear() -%}
+{% set tmp = last_license_list.clear() -%}
+{% set tmp = last_license_list.extend(license_list) -%}
+{% set tmp = last_copyright_list.extend(copyright_list) -%}
+{% set tmp = path_list.append(path) -%}
+{% else -%}
+{% set tmp = path_list.append(path) -%}
+{% endif -%}
+{% if license_ns.first_row == true -%}
+{% set tmp = last_license_list.extend(license_list) -%}
+{% set tmp = last_copyright_list.extend(copyright_list) -%}
+{% endif -%}
+{% set tmp = save_copyright_list.clear() -%}
+{% set tmp = save_license_list.clear() -%}
+{% set tmp = save_copyright_list.extend(copyright_list) -%}
+{% set tmp = save_license_list.extend(license_list) -%}
+{% set tmp = copyright_list.clear() -%}
+{% set tmp = license_list.clear() -%}
+{% set license_ns.first_row = false -%}
+{% set license_ns.last_license = "" -%}
+{% endfor -%}
+{% endif -%}
+{% if license_ns.printed == false -%}
+{{ print_annotation(path_list, save_license_list, save_copyright_list) -}}
+{% endif -%}
