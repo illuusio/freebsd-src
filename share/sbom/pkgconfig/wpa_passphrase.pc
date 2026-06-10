@@ -1,7 +1,6 @@
 # Copyright (c) 2026 The FreeBSD Foundation
 #
 # SPDX-License-Identifier: BSD-2-Clause AND LicenseRef-FreeBSD-SBOM
-# SPDX-FileCopyrightText: 2026 The FreeBSD Foundation
 #
 Description: Utility for generating a 256-bit pre-shared WPA key from an ASCII passphrase
 License: BSD-3-Clause

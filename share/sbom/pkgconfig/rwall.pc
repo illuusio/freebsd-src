@@ -1,7 +1,6 @@
 # Copyright (c) 2026 The FreeBSD Foundation
 #
 # SPDX-License-Identifier: BSD-2-Clause AND LicenseRef-FreeBSD-SBOM
-# SPDX-FileCopyrightText: 2026 The FreeBSD Foundation
 #
 Copyright: 1993 Christopher G. Demetriou, 1988, 1990 Regents of the University of California
 Description: Send a message to users logged on a host

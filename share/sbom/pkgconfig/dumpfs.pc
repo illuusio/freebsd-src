@@ -1,7 +1,6 @@
 # Copyright (c) 2026 The FreeBSD Foundation
 #
 # SPDX-License-Identifier: BSD-2-Clause AND LicenseRef-FreeBSD-SBOM
-# SPDX-FileCopyrightText: 2026 The FreeBSD Foundation
 #
 Copyright: 2009 Robert N. M. Watson, 2002 Networks Associates Technology, Inc., 1983, 1992, 1993 The Regents of the University of California
 Description: Dump UFS file system information

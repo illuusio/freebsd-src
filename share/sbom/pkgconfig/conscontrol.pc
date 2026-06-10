@@ -1,7 +1,6 @@
 # Copyright (c) 2026 The FreeBSD Foundation
 #
 # SPDX-License-Identifier: BSD-2-Clause AND LicenseRef-FreeBSD-SBOM
-# SPDX-FileCopyrightText: 2026 The FreeBSD Foundation
 #
 Copyright: 2001 Jonathan Lemon <jlemon@FreeBSD.org>
 Description: Control physical system video console devices

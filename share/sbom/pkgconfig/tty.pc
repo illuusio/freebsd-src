@@ -1,7 +1,6 @@
 # Copyright (c) 2026 The FreeBSD Foundation
 #
 # SPDX-License-Identifier: BSD-2-Clause AND LicenseRef-FreeBSD-SBOM
-# SPDX-FileCopyrightText: 2026 The FreeBSD Foundation
 #
 Copyright: 1988, 1993 The Regents of the University of California
 Description: Return user's terminal name

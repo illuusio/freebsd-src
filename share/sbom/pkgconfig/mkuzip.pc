@@ -1,7 +1,6 @@
 # Copyright (c) 2026 The FreeBSD Foundation
 #
 # SPDX-License-Identifier: BSD-2-Clause AND LicenseRef-FreeBSD-SBOM
-# SPDX-FileCopyrightText: 2026 The FreeBSD Foundation
 #
 Copyright: 2004-2016 Maxim Sobolev <sobomax@FreeBSD.org>, 2011 Aleksandr Rybalko <ray@ddteam.net>, 2016 Maxim Sobolev <sobomax@FreeBSD.org>, 2019 Conrad Meyer <cem@FreeBSD.org>
 Description: Compress disk image for use with geom_uzip(4) class

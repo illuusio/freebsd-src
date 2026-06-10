@@ -1,7 +1,6 @@
 # Copyright (c) 2026 The FreeBSD Foundation
 #
 # SPDX-License-Identifier: BSD-2-Clause AND LicenseRef-FreeBSD-SBOM
-# SPDX-FileCopyrightText: 2026 The FreeBSD Foundation
 #
 Copyright: 1998 Kenneth D. Merry, 2000 Kelly Yancey <kbyanc@posi.net>, 2016 Spectra Logic Corporation, 1997-2012 The NetBSD Foundation, Inc., 1997-2007 Kenneth D. Merry, 2011 Sandvine Incorporated, 2002-2011 Andre Albsmeier <andre@albsmeier.net>, 2013 Spectra Logic Corporation, 2015, 2016 Spectra Logic Corporation, Copyright julian Elischer 1993, 1994 HD Associates (contact dufault@hda.com), 2021 Netflix, Inc., 2014 Spectra Logic Corporation, 1997-2009 The NetBSD Foundation, Inc.
 Description: CAM control program

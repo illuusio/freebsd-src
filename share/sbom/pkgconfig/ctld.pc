@@ -1,7 +1,6 @@
 # Copyright (c) 2026 The FreeBSD Foundation
 #
 # SPDX-License-Identifier: BSD-2-Clause AND LicenseRef-FreeBSD-SBOM
-# SPDX-FileCopyrightText: 2026 The FreeBSD Foundation
 #
 Copyright: 2014 Alexander Motin <mav@FreeBSD.org>, 2012 The FreeBSD Foundation, 2003, 2004 Silicon Graphics International Corp., 1997-2007 Kenneth D. Merry, 2017 Jakub Wojciech Klama <jceel@FreeBSD.org>, 2025 Chelsio Communications, Inc., 2015 iXsystems Inc., 2023-2025 Chelsio Communications, Inc.
 Description: CAM Target Layer / iSCSI target daemon

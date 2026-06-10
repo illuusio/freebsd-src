@@ -1,7 +1,6 @@
 # Copyright (c) 2026 The FreeBSD Foundation
 #
 # SPDX-License-Identifier: BSD-2-Clause AND LicenseRef-FreeBSD-SBOM
-# SPDX-FileCopyrightText: 2026 The FreeBSD Foundation
 #
 Copyright: 1996 Jason R. Thorpe <thorpej@and.com>, 1997, by Matthew Jacob, for NASA/Ames Research Ctr, 2000, by C. Stephen Gunn, Waterspout Communications
 Description: Medium changer control utility

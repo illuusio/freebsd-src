@@ -1,7 +1,6 @@
 # Copyright (c) 2026 The FreeBSD Foundation
 #
 # SPDX-License-Identifier: BSD-2-Clause AND LicenseRef-FreeBSD-SBOM
-# SPDX-FileCopyrightText: 2026 The FreeBSD Foundation
 #
 Copyright: 2003 Poul-Henning Kamp, 2015 Spectra Logic Corporation, 2017 Alexander Motin <mav@FreeBSD.org>
 Description: Get information about disk device

@@ -1,7 +1,6 @@
 # Copyright (c) 2026 The FreeBSD Foundation
 #
 # SPDX-License-Identifier: BSD-2-Clause AND LicenseRef-FreeBSD-SBOM
-# SPDX-FileCopyrightText: 2026 The FreeBSD Foundation
 #
 Copyright: 2008 Stanislav Sedov <stas@FreeBSD.org>, 2011 Fabien Thomas <fabient@FreeBSD.org>, 2006, 2008 Stanislav Sedov <stas@FreeBSD.org>, 2012 Andriy Gapon <avg@FreeBSD.org>, 2008-2011 Stanislav Sedov <stas@FreeBSD.org>
 Description: Control utility for the cpuctl(4) device

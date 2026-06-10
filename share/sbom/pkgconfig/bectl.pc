@@ -1,7 +1,6 @@
 # Copyright (c) 2026 The FreeBSD Foundation
 #
 # SPDX-License-Identifier: BSD-2-Clause AND LicenseRef-FreeBSD-SBOM
-# SPDX-FileCopyrightText: 2026 The FreeBSD Foundation
 #
 Copyright: 2017 Kyle J. Kneitinger <kyle@kneit.in>, 2018 Kyle Evans <kevans@FreeBSD.org>
 Description: Manage ZFS boot environments

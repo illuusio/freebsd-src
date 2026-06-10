@@ -1,7 +1,6 @@
 # Copyright (c) 2026 The FreeBSD Foundation
 #
 # SPDX-License-Identifier: BSD-2-Clause AND LicenseRef-FreeBSD-SBOM
-# SPDX-FileCopyrightText: 2026 The FreeBSD Foundation
 #
 Description: WPA Supplicant for Linux, BSD, Mac OS X, and Windows with support for WPA, WPA2 (IEEE 802.11i / RSN), and WPA3.
 License: BSD-3-Clause

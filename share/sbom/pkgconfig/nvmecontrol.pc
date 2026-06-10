@@ -1,7 +1,6 @@
 # Copyright (c) 2026 The FreeBSD Foundation
 #
 # SPDX-License-Identifier: BSD-2-Clause AND LicenseRef-FreeBSD-SBOM
-# SPDX-FileCopyrightText: 2026 The FreeBSD Foundation
 #
 Copyright: 2012-2013 Intel Corporation, 2018-2019 Alexander Motin <mav@FreeBSD.org>, 2020 Chuck Tuffli, 2023-2024 Chelsio Communications, Inc., 2019-2021 Netflix, Inc, 2019 Netflix, Inc, 2017 Netflix, Inc., 2024 Netflix, Inc, 2013 EMC Corp., 2016-2023 Warner Losh <imp@FreeBSD.org>, 2019 Alexander Motin <mav@FreeBSD.org>, 2016 Netflix, Inc., 2018 Netflix, Inc.
 Description: NVM Express control utility
