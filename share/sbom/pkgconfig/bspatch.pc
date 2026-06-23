@@ -7,6 +7,6 @@ Description: Apply a patch built with bsdiff(1)
 License: BSD-2-Clause
 Name: bspatch
 Requires: csu, bzip2, libc, libcompiler_rt
-Source: https://cgit.freebsd.org/src/tree/usr.bin/bsdiff/bspatch
-URL: https://man.freebsd.org/cgi/man.cgi?query=bspatch(1)
+Source: https://cgit.freebsd.org/src/tree/usr.bin/bsdiff/bspatch${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=bspatch(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

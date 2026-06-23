@@ -7,6 +7,6 @@ Description: CAM Target Layer statistics utility
 License: BSD-3-Clause AND BSD-2-Clause
 Name: wait
 Requires: csu, libc, libcompiler_rt, libexpat, libsbuf
-Source: https://cgit.freebsd.org/src/tree/usr.bin/ctlstat
-URL: https://man.freebsd.org/cgi/man.cgi?query=ctlstat(8)
+Source: https://cgit.freebsd.org/src/tree/usr.bin/ctlstat${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=ctlstat(8)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

@@ -7,6 +7,6 @@ Description: Return false value
 License: BSD-3-Clause
 Name: false
 Requires: csu, libc, libcompiler_rt
-Source: https://cgit.freebsd.org/src/tree/usr.bin/false
-URL: https://man.freebsd.org/cgi/man.cgi?query=false(1)
+Source: https://cgit.freebsd.org/src/tree/usr.bin/false${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=false(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

@@ -7,6 +7,6 @@ Description: Randomize inode generation numbers
 License: BSD-4-Clause
 Name: fsirand
 Requires: csu, libc, libcompiler_rt, libufs
-Source: https://cgit.freebsd.org/src/tree/sbin/fsirand
-URL: https://man.freebsd.org/cgi/man.cgi?query=fsirand(8)
+Source: https://cgit.freebsd.org/src/tree/sbin/fsirand${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=fsirand(8)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

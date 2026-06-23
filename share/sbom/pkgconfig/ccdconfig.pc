@@ -2,11 +2,11 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause AND LicenseRef-FreeBSD-SBOM
 #
-Copyright: 2003 Poul-Henning Kamp, 1996 The NetBSD Foundation, Inc.
+Copyright: 1996 The NetBSD Foundation, Inc., 2003 Poul-Henning Kamp
 Description: Configuration utility for the concatenated disk driver
 License: BSD-2-Clause
 Name: ccdconfig
 Requires: csu, libc, libcompiler_rt, libgeom
-Source: https://cgit.freebsd.org/src/tree/sbin/ccdconfig
-URL: https://man.freebsd.org/cgi/man.cgi?query=ccdconfig(8)
+Source: https://cgit.freebsd.org/src/tree/sbin/ccdconfig${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=ccdconfig(8)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

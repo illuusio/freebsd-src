@@ -7,6 +7,6 @@ Description: Specify a device for crash dumps
 License: BSD-3-Clause
 Name: dumpon
 Requires: csu, libc, libcapsicum, libcasper, libcompiler_rt
-Source: https://cgit.freebsd.org/src/tree/sbin/dumpon
-URL: https://man.freebsd.org/cgi/man.cgi?query=dumpon(8)
+Source: https://cgit.freebsd.org/src/tree/sbin/dumpon${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=dumpon(8)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

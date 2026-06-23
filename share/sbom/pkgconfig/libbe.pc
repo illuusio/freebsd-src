@@ -6,5 +6,5 @@ Description: Library for creating, destroying and modifying ZFS boot environment
 License: BSD-2-Clause
 Name: libbe
 Requires: csu, libc, libcompiler_rt
-Source: https://cgit.freebsd.org/src/tree/lib/libbe
+Source: https://cgit.freebsd.org/src/tree/lib/libbe${FREEBSD_GIT_QUERY}
 Version: ${FREEBSD_RELEASE}

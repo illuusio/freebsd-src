@@ -6,5 +6,5 @@ Description: Library missing description
 License: BSD-2-Clause
 Name: libmemstat
 Requires: csu, libc, libcompiler_rt, libkvm
-Source: https://cgit.freebsd.org/src/tree/lib/libmemstat
+Source: https://cgit.freebsd.org/src/tree/lib/libmemstat${FREEBSD_GIT_QUERY}
 Version: ${FREEBSD_RELEASE}

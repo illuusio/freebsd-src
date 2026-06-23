@@ -7,6 +7,6 @@ Description: Retrieve a file by Uniform Resource Locator
 License: LicenseRef-scancode-bsd-unchanged
 Name: fetch
 Requires: csu, libc, libcompiler_rt, libfetch
-Source: https://cgit.freebsd.org/src/tree/usr.bin/fetch
-URL: https://man.freebsd.org/cgi/man.cgi?query=fetch(1)
+Source: https://cgit.freebsd.org/src/tree/usr.bin/fetch${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=fetch(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

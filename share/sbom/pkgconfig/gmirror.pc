@@ -7,6 +7,6 @@ Description: Control utility for mirrored devices
 License: BSD-2-Clause
 Name: gmirror
 Requires: csu, libc, libcompiler_rt, libgeom, libmd
-Source: https://cgit.freebsd.org/src/tree/lib/geom/mirror
-URL: https://man.freebsd.org/cgi/man.cgi?query=gmirror(8)
+Source: https://cgit.freebsd.org/src/tree/lib/geom/mirror${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=gmirror(8)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

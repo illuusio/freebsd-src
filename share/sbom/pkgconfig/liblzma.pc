@@ -7,4 +7,4 @@ License: 0BSD
 Name: liblzma
 Source: https://github.com/tukaani-project/xz
 URL: https://tukaani.org/xz/
-Version: 5.8.1
+Version: ${FREEBSD_RELEASE}

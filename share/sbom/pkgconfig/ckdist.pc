@@ -7,6 +7,6 @@ Description: Check software distributions
 License: BSD-2-Clause
 Name: ckdist
 Requires: csu, libc, libcompiler_rt, libmd
-Source: https://cgit.freebsd.org/src/tree/usr.sbin/ckdist
-URL: https://man.freebsd.org/cgi/man.cgi?query=ckdist(1)
+Source: https://cgit.freebsd.org/src/tree/usr.sbin/ckdist${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=ckdist(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

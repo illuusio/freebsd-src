@@ -5,5 +5,5 @@
 Description: Library for interaction with pf
 License: BSD-2-Clause
 Name: libpfctl
-Source: https://cgit.freebsd.org/src/tree/lib/libpfctl
+Source: https://cgit.freebsd.org/src/tree/lib/libpfctl${FREEBSD_GIT_QUERY}
 Version: ${FREEBSD_RELEASE}

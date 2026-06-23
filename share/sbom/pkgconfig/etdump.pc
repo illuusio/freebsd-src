@@ -6,6 +6,6 @@ Copyright: 2018 iXsystems, Inc.
 Description: Dump ISO-9660 El Torito boot catalog information
 License: BSD-2-Clause
 Name: etdump
-Source: https://cgit.freebsd.org/src/tree/usr.bin/etdump
-URL: https://man.freebsd.org/cgi/man.cgi?query=etdump(1)
+Source: https://cgit.freebsd.org/src/tree/usr.bin/etdump${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=etdump(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

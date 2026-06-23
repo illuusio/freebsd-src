@@ -6,6 +6,6 @@ Description: Grand digital clock (curses)
 License: NOASSERTION
 Name: grdc
 Requires: csu, libc, libcompiler_rt, libncurses, libtinfo
-Source: https://cgit.freebsd.org/src/tree/usr.bin/grdc
-URL: https://man.freebsd.org/cgi/man.cgi?query=grdc(6)
+Source: https://cgit.freebsd.org/src/tree/usr.bin/grdc${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=grdc(6)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

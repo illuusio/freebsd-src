@@ -7,6 +7,6 @@ Description: List open sockets
 License: BSD-2-Clause
 Name: sockstat
 Requires: csu, libc, libcapsicum, libcasper, libcasper.services.cap_net, libcasper.services.cap_netdb, libcasper.services.cap_pwd, libcasper.services.cap_sysctl, libcompiler_rt, libjail
-Source: https://cgit.freebsd.org/src/tree/usr.bin/sockstat
-URL: https://man.freebsd.org/cgi/man.cgi?query=sockstat(1)
+Source: https://cgit.freebsd.org/src/tree/usr.bin/sockstat${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=sockstat(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

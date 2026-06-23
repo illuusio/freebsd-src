@@ -7,6 +7,6 @@ Description: Display NFS statistics
 License: BSD-3-Clause AND LicenseRef-scancode-intel-bsd-2-clause
 Name: nfsstat
 Requires: csu, libc, libcompiler_rt, libdevstat, libkvm, libxo
-Source: https://cgit.freebsd.org/src/tree/usr.bin/nfsstat
-URL: https://man.freebsd.org/cgi/man.cgi?query=nfsstat(1)
+Source: https://cgit.freebsd.org/src/tree/usr.bin/nfsstat${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=nfsstat(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

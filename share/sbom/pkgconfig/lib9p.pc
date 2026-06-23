@@ -7,4 +7,4 @@ License: BSD-2-Clause AND MIT
 Name: lib9p
 Source: https://github.com/conclusiveeng/lib9p/tree/9d5aee77bcc1bf0e79b0a3bfefff5fdf2146283c
 URL: https://github.com/conclusiveeng/lib9p
-Version: 9d5aee77b
+Version: ${FREEBSD_RELEASE}

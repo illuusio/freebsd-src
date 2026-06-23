@@ -7,4 +7,4 @@ License: LicenseRef-scancode-public-domain
 Name: sqlite3
 Source: https://github.com/sqlite/sqlite/tree/version-3.50.2
 URL: https://sqlite.org/src
-Version: 3.50.2
+Version: ${FREEBSD_RELEASE}

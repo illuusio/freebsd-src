@@ -7,4 +7,4 @@ License: BSD-3-Clause
 Name: libpcap
 Source: https://www.tcpdump.org/release/libpcap-1.10.5.tar.xz
 URL: https://www.tcpdump.org
-Version: 1.10.5
+Version: ${FREEBSD_RELEASE}

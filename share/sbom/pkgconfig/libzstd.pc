@@ -7,4 +7,4 @@ License: BSD-3-Clause
 Name: libzstd
 Source: https://github.com/facebook/zstd
 URL: https://facebook.github.io/zstd/
-Version: 1.5.2
+Version: ${FREEBSD_RELEASE}

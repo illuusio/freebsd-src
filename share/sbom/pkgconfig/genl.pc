@@ -2,10 +2,10 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause AND LicenseRef-FreeBSD-SBOM
 #
-Copyright: Copyright 2025 Gleb Smirnoff <glebius@FreeBSD.org>, Copyright 2023 Baptiste Daroussin <bapt@FreeBSD.org>
+Copyright: Copyright 2023 Baptiste Daroussin <bapt@FreeBSD.org>, Copyright 2025 Gleb Smirnoff <glebius@FreeBSD.org>
 Description: Generic netlink
 License: BSD-2-Clause
 Name: genl
-Source: https://cgit.freebsd.org/src/tree/usr.bin/genl
-URL: https://man.freebsd.org/cgi/man.cgi?query=genl(1)
+Source: https://cgit.freebsd.org/src/tree/usr.bin/genl${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=genl(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

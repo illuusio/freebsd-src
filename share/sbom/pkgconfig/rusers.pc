@@ -7,6 +7,6 @@ Description: Who is logged in to machines on local network
 License: BSD-4-Clause AND BSD-2-Clause
 Name: rusers
 Requires: csu, libc, libcompiler_rt, librpcsvc
-Source: https://cgit.freebsd.org/src/tree/usr.bin/rusers
-URL: https://man.freebsd.org/cgi/man.cgi?query=rusers(1)
+Source: https://cgit.freebsd.org/src/tree/usr.bin/rusers${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=rusers(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

@@ -7,6 +7,6 @@ Description: Query routing daemons for their routing tables
 License: BSD-3-Clause
 Name: rtquery
 Requires: csu, libc, libcompiler_rt, libmd
-Source: https://cgit.freebsd.org/src/tree/sbin/routed/rtquery
-URL: https://man.freebsd.org/cgi/man.cgi?query=rtquery(8)
+Source: https://cgit.freebsd.org/src/tree/sbin/routed/rtquery${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=rtquery(8)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

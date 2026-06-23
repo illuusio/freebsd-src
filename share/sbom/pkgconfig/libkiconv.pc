@@ -6,5 +6,5 @@ Description: Library provides multi-byte character conversion tables for kernel 
 License: BSD-4-Clause and BSD-2-Clause
 Name: libkiconv
 Requires: csu, libc, libcompiler_rt
-Source: https://cgit.freebsd.org/src/tree/lib/libkiconv
+Source: https://cgit.freebsd.org/src/tree/lib/libkiconv${FREEBSD_GIT_QUERY}
 Version: ${FREEBSD_RELEASE}

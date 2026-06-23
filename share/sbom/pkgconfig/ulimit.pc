@@ -7,6 +7,6 @@ Description: Set or display process resource limits
 License: LicenseRef-scancode-other-permissive
 Name: ulimit
 Requires: csu, libc, libcompiler_rt, libutil
-Source: https://cgit.freebsd.org/src/tree/usr.bin/limits
-URL: https://man.freebsd.org/cgi/man.cgi?query=limits(1)
+Source: https://cgit.freebsd.org/src/tree/usr.bin/limits${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=limits(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

@@ -7,6 +7,6 @@ Description: Initialize, write, seek and extract data from a fifolog
 License: BSD-2-Clause
 Name: fifolog_writer
 Requires: csu, libc, libcompiler_rt, libutil, libz
-Source: https://cgit.freebsd.org/src/tree/usr.sbin/fifolog/fifolog_writer
-URL: https://man.freebsd.org/cgi/man.cgi?query=fifolog_writer(1)
+Source: https://cgit.freebsd.org/src/tree/usr.sbin/fifolog/fifolog_writer${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=fifolog_writer(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

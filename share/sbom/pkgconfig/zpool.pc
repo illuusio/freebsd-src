@@ -7,6 +7,6 @@ Description: Manage ZFS boot environments
 License: Beerware AND BSD-2-Clause
 Name: zpool
 Requires: csu, libbe, libc, libcompiler_rt, libjail, libutil
-Source: https://cgit.freebsd.org/src/tree/sbin/bectl
-URL: https://man.freebsd.org/cgi/man.cgi?query=bectl(8)
+Source: https://cgit.freebsd.org/src/tree/sbin/bectl${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=bectl(8)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

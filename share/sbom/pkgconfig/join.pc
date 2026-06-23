@@ -7,6 +7,6 @@ Description: Relational database operator
 License: BSD-3-Clause
 Name: join
 Requires: csu, libc, libcompiler_rt
-Source: https://cgit.freebsd.org/src/tree/usr.bin/join
-URL: https://man.freebsd.org/cgi/man.cgi?query=join(1)
+Source: https://cgit.freebsd.org/src/tree/usr.bin/join${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=join(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

@@ -7,6 +7,6 @@ Description: Report virtual memory statistics
 License: BSD-3-Clause
 Name: vmstat
 Requires: csu, libc, libcompiler_rt, libdevstat, libkvm, libmemstat, libutil, libxo
-Source: https://cgit.freebsd.org/src/tree/usr.bin/vmstat
-URL: https://man.freebsd.org/cgi/man.cgi?query=vmstat(8)
+Source: https://cgit.freebsd.org/src/tree/usr.bin/vmstat${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=vmstat(8)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

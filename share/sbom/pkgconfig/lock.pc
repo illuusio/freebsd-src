@@ -7,6 +7,6 @@ Description: Reserve a terminal
 License: Beerware AND BSD-3-Clause
 Name: lock
 Requires: csu, libc, libcompiler_rt, libpam
-Source: https://cgit.freebsd.org/src/tree/usr.bin/lock
-URL: https://man.freebsd.org/cgi/man.cgi?query=lock(1)
+Source: https://cgit.freebsd.org/src/tree/usr.bin/lock${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=lock(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

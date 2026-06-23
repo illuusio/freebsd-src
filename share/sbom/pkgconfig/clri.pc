@@ -7,6 +7,6 @@ Description: Clear an inode
 License: BSD-3-Clause AND BSD-2-Clause
 Name: clri
 Requires: csu, libc, libcompiler_rt, libufs
-Source: https://cgit.freebsd.org/src/tree/sbin/clri
-URL: https://man.freebsd.org/cgi/man.cgi?query=clri(8)
+Source: https://cgit.freebsd.org/src/tree/sbin/clri${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=clri(8)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

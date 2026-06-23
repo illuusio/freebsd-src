@@ -7,6 +7,6 @@ Description: Disk concatenation control utility
 License: BSD-2-Clause
 Name: gconcat
 Requires: csu, libc, libcompiler_rt, libgeom
-Source: https://cgit.freebsd.org/src/tree/lib/geom/concat
-URL: https://man.freebsd.org/cgi/man.cgi?query=gconcat(8)
+Source: https://cgit.freebsd.org/src/tree/lib/geom/concat${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=gconcat(8)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

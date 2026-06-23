@@ -2,11 +2,11 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause AND LicenseRef-FreeBSD-SBOM
 #
-Copyright: Copyright 2018 Staysail Systems, Inc. <info@staysail.tech>, Copyright 2014 Garrett D'Amore <garrett@damore.org>, Copyright 2010 Nexenta Systems, Inc., 1989, 1993 The Regents of the University of California
+Copyright: 1989, 1993 The Regents of the University of California, Copyright 2010 Nexenta Systems, Inc., Copyright 2014 Garrett D'Amore <garrett@damore.org>, Copyright 2018 Staysail Systems, Inc. <info@staysail.tech>
 Description: Formatted output
 License: BSD-3-Clause
 Name: printf
 Requires: csu, libc, libcompiler_rt
-Source: https://cgit.freebsd.org/src/tree/usr.bin/printf
-URL: https://man.freebsd.org/cgi/man.cgi?query=printf(1)
+Source: https://cgit.freebsd.org/src/tree/usr.bin/printf${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=printf(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

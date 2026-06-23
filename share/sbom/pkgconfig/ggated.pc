@@ -7,6 +7,6 @@ Description: GEOM Gate network daemon
 License: BSD-2-Clause
 Name: ggated
 Requires: csu, libc, libcompiler_rt, libgeom, libthr, libutil
-Source: https://cgit.freebsd.org/src/tree/sbin/ggate/ggated
-URL: https://man.freebsd.org/cgi/man.cgi?query=ggated(8)
+Source: https://cgit.freebsd.org/src/tree/sbin/ggate/ggated${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=ggated(8)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

@@ -7,6 +7,6 @@ Description: Display the system message buffer
 License: BSD-3-Clause AND BSD-2-Clause
 Name: dmesg
 Requires: csu, libc, libcompiler_rt, libkvm
-Source: https://cgit.freebsd.org/src/tree/sbin/dmesg
-URL: https://man.freebsd.org/cgi/man.cgi?query=dmesg(8)
+Source: https://cgit.freebsd.org/src/tree/sbin/dmesg${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=dmesg(8)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

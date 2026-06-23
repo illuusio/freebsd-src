@@ -7,6 +7,6 @@ Description: Indicate last logins of users and ttys
 License: BSD-3-Clause
 Name: last
 Requires: csu, libc, libcapsicum, libcasper, libcompiler_rt, libxo
-Source: https://cgit.freebsd.org/src/tree/usr.bin/last
-URL: https://man.freebsd.org/cgi/man.cgi?query=last(1)
+Source: https://cgit.freebsd.org/src/tree/usr.bin/last${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=last(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

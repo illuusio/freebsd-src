@@ -7,6 +7,6 @@ Description: Cut out selected portions of each line of a file
 License: BSD-3-Clause
 Name: cut
 Requires: csu, libc, libcompiler_rt
-Source: https://cgit.freebsd.org/src/tree/usr.bin/cut
-URL: https://man.freebsd.org/cgi/man.cgi?query=cut(1)
+Source: https://cgit.freebsd.org/src/tree/usr.bin/cut${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=cut(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

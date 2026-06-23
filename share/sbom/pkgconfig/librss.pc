@@ -6,5 +6,5 @@ Description: Library missing description
 License: NOASSERTION
 Name: librss
 Requires: csu, libc, libcompiler_rt
-Source: https://cgit.freebsd.org/src/tree/lib/librss
+Source: https://cgit.freebsd.org/src/tree/lib/librss${FREEBSD_GIT_QUERY}
 Version: ${FREEBSD_RELEASE}

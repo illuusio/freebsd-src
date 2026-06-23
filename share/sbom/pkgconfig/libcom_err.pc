@@ -7,4 +7,4 @@ License: BSD-3-Clause
 Name: libcom_err
 Requires: csu, libc, libcompiler_rt
 URL: https://www.heimdal.software
-Version: 1.5.2
+Version: ${FREEBSD_RELEASE}

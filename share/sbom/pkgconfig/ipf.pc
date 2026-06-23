@@ -7,6 +7,6 @@ Description: Alters packet filtering lists for IP packet input and output
 License: BSD-4-Clause-UC AND LicenseRef-scancode-other-permissive
 Name: ipf
 Requires: csu, libc, libcompiler_rt, libkvm, libpcap
-Source: https://cgit.freebsd.org/src/tree/sbin/ipf/ipf
-URL: https://man.freebsd.org/cgi/man.cgi?query=ipf(8)
+Source: https://cgit.freebsd.org/src/tree/sbin/ipf/ipf${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=ipf(8)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

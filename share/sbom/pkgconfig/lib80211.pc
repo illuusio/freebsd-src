@@ -3,8 +3,8 @@
 # SPDX-License-Identifier: BSD-2-Clause AND LicenseRef-FreeBSD-SBOM
 #
 Description: Library missing description
-License: NOASSERTION
+License: BSD-3-Clause AND BSD-2-Clause
 Name: lib80211
 Requires: csu, libc, libcompiler_rt, libexpat, libsbuf
-Source: https://cgit.freebsd.org/src/tree/lib/lib80211
+Source: https://cgit.freebsd.org/src/tree/lib/lib80211${FREEBSD_GIT_QUERY}
 Version: ${FREEBSD_RELEASE}

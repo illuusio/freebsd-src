@@ -6,5 +6,5 @@ Description: Library missing description
 License: NOASSERTION
 Name: libypclnt
 Requires: csu, libc, libcompiler_rt
-Source: https://cgit.freebsd.org/src/tree/lib/libypclnt
+Source: https://cgit.freebsd.org/src/tree/lib/libypclnt${FREEBSD_GIT_QUERY}
 Version: ${FREEBSD_RELEASE}

@@ -6,6 +6,6 @@ Copyright: 2019 The FreeBSD Foundation
 Description: Change an ELF binary's feature control note
 License: BSD-2-Clause
 Name: elfctl
-Source: https://cgit.freebsd.org/src/tree/usr.bin/elfctl
-URL: https://man.freebsd.org/cgi/man.cgi?query=elfctl(1)
+Source: https://cgit.freebsd.org/src/tree/usr.bin/elfctl${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=elfctl(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

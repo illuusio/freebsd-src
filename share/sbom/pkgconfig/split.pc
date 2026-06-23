@@ -7,6 +7,6 @@ Description: Split a file into pieces
 License: BSD-3-Clause
 Name: split
 Requires: csu, libc, libcompiler_rt, libutil
-Source: https://cgit.freebsd.org/src/tree/usr.bin/split
-URL: https://man.freebsd.org/cgi/man.cgi?query=split(1)
+Source: https://cgit.freebsd.org/src/tree/usr.bin/split${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=split(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

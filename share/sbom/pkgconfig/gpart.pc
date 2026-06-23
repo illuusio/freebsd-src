@@ -7,6 +7,6 @@ Description: Control utility for the disk partitioning GEOM class
 License: BSD-2-Clause
 Name: gpart
 Requires: csu, libc, libcompiler_rt, libgeom, libutil
-Source: https://cgit.freebsd.org/src/tree/lib/geom/part
-URL: https://man.freebsd.org/cgi/man.cgi?query=gpart(8)
+Source: https://cgit.freebsd.org/src/tree/lib/geom/part${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=gpart(8)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

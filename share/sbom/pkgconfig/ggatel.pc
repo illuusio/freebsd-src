@@ -7,6 +7,6 @@ Description: GEOM Gate local control utility
 License: BSD-2-Clause
 Name: ggatel
 Requires: csu, libc, libcompiler_rt, libgeom, libutil
-Source: https://cgit.freebsd.org/src/tree/sbin/ggate/ggatel
-URL: https://man.freebsd.org/cgi/man.cgi?query=ggatel(8)
+Source: https://cgit.freebsd.org/src/tree/sbin/ggate/ggatel${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=ggatel(8)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

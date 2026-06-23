@@ -5,5 +5,5 @@
 Description: Library missing description
 License: NOASSERTION
 Name: libedit.readline
-Source: https://cgit.freebsd.org/src/tree/lib/libedit/readline
+Source: https://cgit.freebsd.org/src/tree/lib/libedit/readline${FREEBSD_GIT_QUERY}
 Version: ${FREEBSD_RELEASE}

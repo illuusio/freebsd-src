@@ -7,6 +7,6 @@ Description: Firewall-like access controls for file system objects
 License: BSD-2-Clause
 Name: ugidfw
 Requires: csu, libc, libcompiler_rt, libugidfw
-Source: https://cgit.freebsd.org/src/tree/usr.sbin/ugidfw
-URL: https://man.freebsd.org/cgi/man.cgi?query=ugidfw(8)
+Source: https://cgit.freebsd.org/src/tree/usr.sbin/ugidfw${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=ugidfw(8)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

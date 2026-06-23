@@ -7,6 +7,6 @@ Description: Display the phase of the moon
 License: BSD-3-Clause
 Name: pom
 Requires: csu, libc, libcapsicum, libcasper, libcompiler_rt, msun
-Source: https://cgit.freebsd.org/src/tree/usr.bin/pom
-URL: https://man.freebsd.org/cgi/man.cgi?query=pom(6)
+Source: https://cgit.freebsd.org/src/tree/usr.bin/pom${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=pom(6)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

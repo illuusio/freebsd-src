@@ -7,6 +7,6 @@ Description: Spool queue examination program
 License: BSD-3-Clause
 Name: lpq
 Requires: csu, libc, libcompiler_rt
-Source: https://cgit.freebsd.org/src/tree/usr.sbin/lpr/lpq
-URL: https://man.freebsd.org/cgi/man.cgi?query=lpq(1)
+Source: https://cgit.freebsd.org/src/tree/usr.sbin/lpr/lpq${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=lpq(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

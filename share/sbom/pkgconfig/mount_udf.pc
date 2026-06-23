@@ -7,6 +7,6 @@ Description: Mount a UDF file system
 License: BSD-3-Clause
 Name: mount_udf
 Requires: csu, libc, libcompiler_rt, libkiconv
-Source: https://cgit.freebsd.org/src/tree/sbin/mount_udf
-URL: https://man.freebsd.org/cgi/man.cgi?query=mount_udf(8)
+Source: https://cgit.freebsd.org/src/tree/sbin/mount_udf${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=mount_udf(8)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

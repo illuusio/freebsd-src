@@ -2,9 +2,8 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause AND LicenseRef-FreeBSD-SBOM
 #
-Description: Event library
 License: BSD-3-Clause
+Maintainer: kp@, ks@
 Name: libevent1
 Requires: csu, libc, libcompiler_rt
 URL: https://openbsd.org
-Version: ${FREEBSD_RELEASE}

@@ -2,11 +2,11 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause AND LicenseRef-FreeBSD-SBOM
 #
-Copyright: 2000, 2001 Michael Smith, 2000 BSDi
+Copyright: 2000 BSDi, 2000, 2001 Michael Smith
 Description: Print information about system device configuration
 License: BSD-2-Clause
 Name: devinfo
 Requires: csu, libc, libcompiler_rt, libdevinfo
-Source: https://cgit.freebsd.org/src/tree/usr.sbin/devinfo
-URL: https://man.freebsd.org/cgi/man.cgi?query=devinfo(8)
+Source: https://cgit.freebsd.org/src/tree/usr.sbin/devinfo${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=devinfo(8)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

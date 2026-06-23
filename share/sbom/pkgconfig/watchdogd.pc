@@ -7,6 +7,6 @@ Description: Watchdog daemon
 License: BSD-2-Clause
 Name: watchdogd
 Requires: csu, libc, libcompiler_rt, libutil, msun
-Source: https://cgit.freebsd.org/src/tree/usr.sbin/watchdogd
-URL: https://man.freebsd.org/cgi/man.cgi?query=watchdogd(8)
+Source: https://cgit.freebsd.org/src/tree/usr.sbin/watchdogd${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=watchdogd(8)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

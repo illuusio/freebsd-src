@@ -2,9 +2,10 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause AND LicenseRef-FreeBSD-SBOM
 #
+Copyright: 2002 The FreeBSD Project
 Description: Test script for the speaker driver
 License: BSD-2-Clause
 Name: spkrtest
-Source: https://cgit.freebsd.org/src/tree/usr.sbin/spkrtest
-URL: https://man.freebsd.org/cgi/man.cgi?query=spkrtest(8)
+Source: https://cgit.freebsd.org/src/tree/usr.sbin/spkrtest${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=spkrtest(8)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

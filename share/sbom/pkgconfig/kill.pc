@@ -7,6 +7,6 @@ Description: Terminate or signal a process
 License: BSD-3-Clause
 Name: kill
 Requires: csu, libc, libcompiler_rt
-Source: https://cgit.freebsd.org/src/tree/bin/kill
-URL: https://man.freebsd.org/cgi/man.cgi?query=kill(1)
+Source: https://cgit.freebsd.org/src/tree/bin/kill${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=kill(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

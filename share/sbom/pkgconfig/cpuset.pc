@@ -7,6 +7,6 @@ Description: Configure processor sets
 License: BSD-2-Clause
 Name: cpuset
 Requires: csu, libc, libcompiler_rt, libjail
-Source: https://cgit.freebsd.org/src/tree/bin/cpuset
-URL: https://man.freebsd.org/cgi/man.cgi?query=cpuset(1)
+Source: https://cgit.freebsd.org/src/tree/bin/cpuset${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=cpuset(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

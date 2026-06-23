@@ -6,6 +6,6 @@ Copyright: 2019 Gleb Smirnoff <glebius@FreeBSD.org>
 Description: Pfil(9) control utility
 License: BSD-2-Clause
 Name: pfilctl
-Source: https://cgit.freebsd.org/src/tree/sbin/pfilctl
-URL: https://man.freebsd.org/cgi/man.cgi?query=pfilctl(8)
+Source: https://cgit.freebsd.org/src/tree/sbin/pfilctl${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=pfilctl(8)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

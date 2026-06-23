@@ -7,6 +7,6 @@ Description: Get locale-specific information
 License: BSD-2-Clause
 Name: locale
 Requires: csu, libc, libcompiler_rt, libsbuf
-Source: https://cgit.freebsd.org/src/tree/usr.bin/locale
-URL: https://man.freebsd.org/cgi/man.cgi?query=locale(1)
+Source: https://cgit.freebsd.org/src/tree/usr.bin/locale${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=locale(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

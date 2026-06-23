@@ -7,6 +7,6 @@ Description: Remove the specified message queues, semaphore sets, and shared seg
 License: BSD-4-Clause
 Name: ipcrm
 Requires: csu, libc, libcompiler_rt, libkvm
-Source: https://cgit.freebsd.org/src/tree/usr.bin/ipcrm
-URL: https://man.freebsd.org/cgi/man.cgi?query=ipcrm(1)
+Source: https://cgit.freebsd.org/src/tree/usr.bin/ipcrm${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=ipcrm(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

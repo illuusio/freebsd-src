@@ -2,9 +2,9 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause AND LicenseRef-FreeBSD-SBOM
 #
-Description: Apply a diff file to an original 
-License: BSD-3-Clause AND BSD-2-Clause
+Copyright: 1983, 1992, 1993 The Regents of the University of California, 1990 Free Software Foundation, Inc., Copyright 1986, Larry Wall
+License: BSD-3-Clause AND LicenseRef-scancode-public-domain
 Name: patch
-Source: https://cgit.freebsd.org/src/tree/usr.sbin/patch
-URL: https://man.freebsd.org/cgi/man.cgi?query=patch(1)
+Source: https://git.savannah.gnu.org/git/patch.git
+URL: https://www.gnu.org/software/patch/
 Version: ${FREEBSD_RELEASE}

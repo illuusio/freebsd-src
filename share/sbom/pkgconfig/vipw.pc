@@ -7,6 +7,6 @@ Description: Edit the password file
 License: BSD-3-Clause
 Name: vipw
 Requires: csu, libc, libcompiler_rt, libutil
-Source: https://cgit.freebsd.org/src/tree/usr.sbin/vipw
-URL: https://man.freebsd.org/cgi/man.cgi?query=vipw(8)
+Source: https://cgit.freebsd.org/src/tree/usr.sbin/vipw${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=vipw(8)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

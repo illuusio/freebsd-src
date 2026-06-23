@@ -7,6 +7,6 @@ Description: Tune up an existing UFS file system
 License: BSD-3-Clause
 Name: tunefs
 Requires: csu, libc, libcompiler_rt, libufs
-Source: https://cgit.freebsd.org/src/tree/sbin/tunefs
-URL: https://man.freebsd.org/cgi/man.cgi?query=tunefs(8)
+Source: https://cgit.freebsd.org/src/tree/sbin/tunefs${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=tunefs(8)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

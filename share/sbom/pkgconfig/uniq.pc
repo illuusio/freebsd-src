@@ -7,6 +7,6 @@ Description: Report or filter out repeated lines in a file
 License: BSD-3-Clause
 Name: uniq
 Requires: csu, libc, libcapsicum, libcasper, libcompiler_rt
-Source: https://cgit.freebsd.org/src/tree/usr.bin/uniq
-URL: https://man.freebsd.org/cgi/man.cgi?query=uniq(1)
+Source: https://cgit.freebsd.org/src/tree/usr.bin/uniq${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=uniq(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

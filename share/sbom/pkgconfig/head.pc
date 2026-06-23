@@ -7,6 +7,6 @@ Description: Display first lines of a file
 License: BSD-3-Clause
 Name: head
 Requires: csu, libc, libcapsicum, libcompiler_rt, libutil
-Source: https://cgit.freebsd.org/src/tree/usr.bin/head
-URL: https://man.freebsd.org/cgi/man.cgi?query=head(1)
+Source: https://cgit.freebsd.org/src/tree/usr.bin/head${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=head(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

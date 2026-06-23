@@ -2,11 +2,11 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause AND LicenseRef-FreeBSD-SBOM
 #
-Copyright: 2004-2009 Pawel Jakub Dawidek <pjd@FreeBSD.org>, 2004 Pawel Jakub Dawidek <pjd@FreeBSD.org>
+Copyright: 2004 Pawel Jakub Dawidek <pjd@FreeBSD.org>, 2004-2009 Pawel Jakub Dawidek <pjd@FreeBSD.org>
 Description: Universal control utility for GEOM classes
 License: BSD-2-Clause
 Name: geom
 Requires: csu, libc, libcompiler_rt, libexpat, libgeom, libsbuf, libutil
-Source: https://cgit.freebsd.org/src/tree/sbin/geom/core
-URL: https://man.freebsd.org/cgi/man.cgi?query=geom(8)
+Source: https://cgit.freebsd.org/src/tree/sbin/geom/core${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=geom(8)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

@@ -7,6 +7,6 @@ Description: List current users
 License: BSD-3-Clause
 Name: users
 Requires: csu, libc, libc++, libcapsicum, libcasper, libcompiler_rt, libcxxrt, msun
-Source: https://cgit.freebsd.org/src/tree/usr.bin/users
-URL: https://man.freebsd.org/cgi/man.cgi?query=users(1)
+Source: https://cgit.freebsd.org/src/tree/usr.bin/users${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=users(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

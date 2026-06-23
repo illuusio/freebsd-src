@@ -6,6 +6,6 @@ Copyright: 2004-2016 Maxim Sobolev <sobomax@FreeBSD.org>, 2011 Aleksandr Rybalko
 Description: Compress disk image for use with geom_uzip(4) class
 License: BSD-2-Clause
 Name: mkuzip
-Source: https://cgit.freebsd.org/src/tree/usr.bin/mkuzip
+Source: https://cgit.freebsd.org/src/tree/usr.bin/mkuzip${FREEBSD_GIT_QUERY}
 URL: https://www.FreeBSD.org
 Version: ${FREEBSD_RELEASE}

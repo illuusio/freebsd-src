@@ -7,6 +7,6 @@ Description: Create and control memory disks
 License: BSD-2-Clause
 Name: mdconfig
 Requires: csu, libc, libcompiler_rt, libdevstat, libgeom, libkvm, libutil
-Source: https://cgit.freebsd.org/src/tree/sbin/mdconfig
-URL: https://man.freebsd.org/cgi/man.cgi?query=mdconfig(8)
+Source: https://cgit.freebsd.org/src/tree/sbin/mdconfig${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=mdconfig(8)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

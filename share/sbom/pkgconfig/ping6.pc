@@ -7,6 +7,6 @@ Description: Send ICMP or ICMPv6 ECHO_REQUEST packets to network hosts
 License: BSD-2-Clause
 Name: ping6
 Requires: csu, libc, libcapsicum, libcompiler_rt, libipsec, libmd, msun
-Source: https://cgit.freebsd.org/src/tree/sbin/ping
-URL: https://man.freebsd.org/cgi/man.cgi?query=ping(8)
+Source: https://cgit.freebsd.org/src/tree/sbin/ping${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=ping(8)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

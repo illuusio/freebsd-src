@@ -7,6 +7,6 @@ Description: Set or print the name of current host system
 License: BSD-3-Clause
 Name: hostname
 Requires: csu, libc, libcompiler_rt
-Source: https://cgit.freebsd.org/src/tree/bin/hostname
-URL: https://man.freebsd.org/cgi/man.cgi?query=hostname(1)
+Source: https://cgit.freebsd.org/src/tree/bin/hostname${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=hostname(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

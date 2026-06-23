@@ -2,11 +2,11 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause AND LicenseRef-FreeBSD-SBOM
 #
-Copyright: 1992, 1993 The Regents of the University of California, 2017 Dell EMC, 2007 Sandvine Incorporated, 1998 John D. Polstra
+Copyright: 1992, 1993 The Regents of the University of California, 1998 John D. Polstra, 2007 Sandvine Incorporated, 2017 Dell EMC
 Description: Get core images of running process
 License: BSD-3-Clause AND BSD-2-Clause
 Name: gcore
 Requires: csu, libc, libcompiler_rt, libsbuf, libutil
-Source: https://cgit.freebsd.org/src/tree/usr.bin/gcore
-URL: https://man.freebsd.org/cgi/man.cgi?query=gcore(1)
+Source: https://cgit.freebsd.org/src/tree/usr.bin/gcore${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=gcore(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

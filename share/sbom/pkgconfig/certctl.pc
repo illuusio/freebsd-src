@@ -6,6 +6,6 @@ Copyright: 2023-2025 Dag-Erling Smorgrav <des@FreeBSD.org>
 Description: Tool for managing trusted and untrusted TLS certificates
 License: BSD-2-Clause
 Name: certctl
-Source: https://cgit.freebsd.org/src/tree/usr.sbin/certctl
-URL: https://man.freebsd.org/cgi/man.cgi?query=certctl(8)
+Source: https://cgit.freebsd.org/src/tree/usr.sbin/certctl${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=certctl(8)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

@@ -2,9 +2,9 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause AND LicenseRef-FreeBSD-SBOM
 #
-Description: Library missing description
-License: NOASSERTION
+Description: Userland character device library
+License: BSD-2-Clause
 Name: libcuse
 Requires: csu, libc, libcompiler_rt, libthr
-Source: https://cgit.freebsd.org/src/tree/lib/libcuse
+Source: https://cgit.freebsd.org/src/tree/lib/libcuse${FREEBSD_GIT_QUERY}
 Version: ${FREEBSD_RELEASE}

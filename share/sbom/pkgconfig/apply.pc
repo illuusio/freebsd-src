@@ -7,6 +7,6 @@ Description: Apply a command to a set of arguments
 License: BSD-3-Clause
 Name: apply
 Requires: csu, libc, libcompiler_rt, libsbuf
-Source: https://cgit.freebsd.org/src/tree/usr.bin/apply
-URL: https://man.freebsd.org/cgi/man.cgi?query=apply(1)
+Source: https://cgit.freebsd.org/src/tree/usr.bin/apply${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=apply(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

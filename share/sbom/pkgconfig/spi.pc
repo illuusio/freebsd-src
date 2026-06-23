@@ -6,6 +6,6 @@ Copyright: 2018 S.F.T. Inc.
 Description: Communicate on SPI bus with slave devices
 License: BSD-3-Clause AND BSD-2-Clause
 Name: spi
-Source: https://cgit.freebsd.org/src/tree/usr.sbin/spi
-URL: https://man.freebsd.org/cgi/man.cgi?query=spi(8)
+Source: https://cgit.freebsd.org/src/tree/usr.sbin/spi${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=spi(8)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

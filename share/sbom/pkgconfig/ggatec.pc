@@ -7,6 +7,6 @@ Description: GEOM Gate network client and control utility
 License: BSD-2-Clause
 Name: ggatec
 Requires: csu, libc, libcompiler_rt, libgeom, libthr, libutil
-Source: https://cgit.freebsd.org/src/tree/sbin/ggate/ggatec
-URL: https://man.freebsd.org/cgi/man.cgi?query=ggatec(8)
+Source: https://cgit.freebsd.org/src/tree/sbin/ggate/ggatec${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=ggatec(8)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

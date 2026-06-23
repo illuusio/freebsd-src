@@ -7,4 +7,4 @@ License: BSD-2-Clause
 Name: libucl
 Source: https://github.com/vstakhov/libucl
 URL: https://github.com/vstakhov/libucl
-Version: 0.9.2
+Version: ${FREEBSD_RELEASE}

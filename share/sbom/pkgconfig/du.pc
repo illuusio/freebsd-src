@@ -7,6 +7,6 @@ Description: Display disk usage statistics
 License: BSD-3-Clause
 Name: du
 Requires: csu, libc, libcompiler_rt, libutil, libxo
-Source: https://cgit.freebsd.org/src/tree/usr.bin/du
-URL: https://man.freebsd.org/cgi/man.cgi?query=du(1)
+Source: https://cgit.freebsd.org/src/tree/usr.bin/du${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=du(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

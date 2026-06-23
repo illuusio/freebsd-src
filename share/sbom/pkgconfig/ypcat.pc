@@ -7,6 +7,6 @@ Description: Print the values of all keys in a NIS database
 License: BSD-2-Clause
 Name: ypcat
 Requires: csu, libc, libcompiler_rt
-Source: https://cgit.freebsd.org/src/tree/usr.bin/ypcat
-URL: https://man.freebsd.org/cgi/man.cgi?query=ypcat(1)
+Source: https://cgit.freebsd.org/src/tree/usr.bin/ypcat${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=ypcat(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

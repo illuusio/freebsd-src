@@ -2,11 +2,11 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause AND LicenseRef-FreeBSD-SBOM
 #
-Copyright: 1987, 1993 The Regents of the University of California, (c) UNIX System Laboratories, Inc.
+Copyright: (c) UNIX System Laboratories, Inc., 1987, 1993 The Regents of the University of California
 Description: Display (do not display) messages from other users
 License: BSD-3-Clause
 Name: mesg
 Requires: csu, libc, libcompiler_rt
-Source: https://cgit.freebsd.org/src/tree/usr.bin/mesg
-URL: https://man.freebsd.org/cgi/man.cgi?query=mesg(1)
+Source: https://cgit.freebsd.org/src/tree/usr.bin/mesg${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=mesg(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

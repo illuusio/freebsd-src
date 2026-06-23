@@ -7,6 +7,6 @@ Description: Look up Bluetooth host names and Protocol Service Multiplexor value
 License: BSD-2-Clause
 Name: bthost
 Requires: csu, libbluetooth, libc, libcompiler_rt
-Source: https://cgit.freebsd.org/src/tree/usr.bin/bluetooth/bthost
-URL: https://man.freebsd.org/cgi/man.cgi?query=bthost(1)
+Source: https://cgit.freebsd.org/src/tree/usr.bin/bluetooth/bthost${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=bthost(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

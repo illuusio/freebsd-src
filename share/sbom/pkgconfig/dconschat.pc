@@ -7,6 +7,6 @@ Description: User interface to dcons(4)
 License: BSD-4-Clause
 Name: dconschat
 Requires: csu, libc, libcompiler_rt, libkvm
-Source: https://cgit.freebsd.org/src/tree/usr.sbin/dconschat
-URL: https://man.freebsd.org/cgi/man.cgi?query=dconschat(8)
+Source: https://cgit.freebsd.org/src/tree/usr.sbin/dconschat${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=dconschat(8)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

@@ -7,6 +7,6 @@ Description: Specify devices for paging and swapping
 License: BSD-3-Clause
 Name: swapoff
 Requires: csu, libc, libcompiler_rt, libutil
-Source: https://cgit.freebsd.org/src/tree/sbin/swapon
-URL: https://man.freebsd.org/cgi/man.cgi?query=swapoff(8)
+Source: https://cgit.freebsd.org/src/tree/sbin/swapon${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=swapoff(8)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

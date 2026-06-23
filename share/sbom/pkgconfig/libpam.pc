@@ -8,4 +8,4 @@ Name: libpam
 Requires: csu, libc, libcompiler_rt
 Source: https://git.des.dev/OpenPAM/OpenPAM/src/commit/7a0660d699c4f82aa234524256b5b9f5a7cba786
 URL: https://openpam.org
-Version: 20250531
+Version: ${FREEBSD_RELEASE}

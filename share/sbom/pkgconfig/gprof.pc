@@ -7,6 +7,6 @@ Description: Display call graph profile data
 License: BSD-3-Clause AND BSD-2-Clause
 Name: gprof
 Requires: csu, libc, libcompiler_rt
-Source: https://cgit.freebsd.org/src/tree/usr.bin/gprof
-URL: https://man.freebsd.org/cgi/man.cgi?query=gprof(1)
+Source: https://cgit.freebsd.org/src/tree/usr.bin/gprof${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=gprof(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

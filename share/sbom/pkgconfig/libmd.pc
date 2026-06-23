@@ -3,8 +3,8 @@
 # SPDX-License-Identifier: BSD-2-Clause AND LicenseRef-FreeBSD-SBOM
 #
 Description: Library for calculating digests
-License: BSD-4-Clause AND BSD-2-Clause AND Beerware AND RSA-MD
+License: BSD-4-Clause AND BSD-2-Clause AND Beeware AND RSA-MD AND
 Name: libmd
 Requires: csu, libc, libcompiler_rt
-Source: https://cgit.freebsd.org/src/tree/lib/libmd
+Source: https://cgit.freebsd.org/src/tree/lib/libmd${FREEBSD_GIT_QUERY}
 Version: ${FREEBSD_RELEASE}

@@ -7,6 +7,6 @@ Description: Close down the system at a given time
 License: BSD-3-Clause
 Name: poweroff
 Requires: csu, libc, libcompiler_rt
-Source: https://cgit.freebsd.org/src/tree/sbin/shutdown
-URL: https://man.freebsd.org/cgi/man.cgi?query=poweroff(8)
+Source: https://cgit.freebsd.org/src/tree/sbin/shutdown${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=poweroff(8)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

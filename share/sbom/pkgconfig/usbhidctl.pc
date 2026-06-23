@@ -7,6 +7,6 @@ Description: Manipulate USB HID devices
 License: BSD-3-Clause AND BSD-2-Clause
 Name: usbhidctl
 Requires: csu, libc, libcompiler_rt, libusbhid
-Source: https://cgit.freebsd.org/src/tree/usr.bin/usbhidctl
-URL: https://man.freebsd.org/cgi/man.cgi?query=usbhidctl(1)
+Source: https://cgit.freebsd.org/src/tree/usr.bin/usbhidctl${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=usbhidctl(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

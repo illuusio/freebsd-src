@@ -7,6 +7,6 @@ Description: Check the syntax of the group file
 License: LicenseRef-scancode-bsd-unchanged
 Name: chkgrp
 Requires: csu, libc, libcompiler_rt
-Source: https://cgit.freebsd.org/src/tree/usr.sbin/chkgrp
-URL: https://man.freebsd.org/cgi/man.cgi?query=chkgrp(8)
+Source: https://cgit.freebsd.org/src/tree/usr.sbin/chkgrp${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=chkgrp(8)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

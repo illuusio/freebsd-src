@@ -7,6 +7,6 @@ Description: Snoop on another tty line
 License: LicenseRef-scancode-other-permissive
 Name: watch
 Requires: csu, libc, libcompiler_rt, libtinfo
-Source: https://cgit.freebsd.org/src/tree/usr.sbin/watch
-URL: https://man.freebsd.org/cgi/man.cgi?query=watch(8)
+Source: https://cgit.freebsd.org/src/tree/usr.sbin/watch${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=watch(8)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

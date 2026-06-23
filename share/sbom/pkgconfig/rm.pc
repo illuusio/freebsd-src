@@ -7,6 +7,6 @@ Description: Remove directory entries
 License: BSD-3-Clause
 Name: rm
 Requires: csu, libc, libcompiler_rt
-Source: https://cgit.freebsd.org/src/tree/bin/rm
-URL: https://man.freebsd.org/cgi/man.cgi?query=rm(1)
+Source: https://cgit.freebsd.org/src/tree/bin/rm${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=rm(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

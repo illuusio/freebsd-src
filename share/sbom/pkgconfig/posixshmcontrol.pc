@@ -6,6 +6,6 @@ Copyright: 2019 The FreeBSD Foundation
 Description: Control POSIX shared memory segments
 License: BSD-2-Clause
 Name: posixshmcontrol
-Source: https://cgit.freebsd.org/src/tree/usr.bin/posixshmcontrol
-URL: https://man.freebsd.org/cgi/man.cgi?query=posixshmcontrol(1)
+Source: https://cgit.freebsd.org/src/tree/usr.bin/posixshmcontrol${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=posixshmcontrol(1)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}

@@ -7,6 +7,6 @@ Description: Control utility for UNION GEOM class
 License: BSD-2-Clause
 Name: gunion
 Requires: csu, libc, libcompiler_rt, libgeom
-Source: https://cgit.freebsd.org/src/tree/lib/geom/union
-URL: https://man.freebsd.org/cgi/man.cgi?query=gunion(8)
+Source: https://cgit.freebsd.org/src/tree/lib/geom/union${FREEBSD_GIT_QUERY}
+URL: https://man.freebsd.org/cgi/man.cgi?query=gunion(8)${FREEBSD_MAN_QUERY}
 Version: ${FREEBSD_RELEASE}
