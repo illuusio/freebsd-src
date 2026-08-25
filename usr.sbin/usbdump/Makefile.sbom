@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Dump traffic on USB host controller
+SBOM_LICENSE=	BSD-2-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/usbdump
+SBOM_URL=	https://www.FreeBSD.org

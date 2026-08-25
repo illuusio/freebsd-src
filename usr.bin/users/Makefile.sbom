@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	List current users
+SBOM_LICENSE=	BSD-3-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.bin/users
+SBOM_URL=	https://www.FreeBSD.org

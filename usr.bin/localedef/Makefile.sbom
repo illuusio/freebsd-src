@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Define locale environment
+SBOM_LICENSE=	BSD-2-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.bin/localedef
+SBOM_URL=	https://www.FreeBSD.org

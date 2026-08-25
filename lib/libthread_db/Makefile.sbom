@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Library missing description
+SBOM_LICENSE=	NOASSERTION
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/lib/libthread_db
+SBOM_URL=	https://www.FreeBSD.org

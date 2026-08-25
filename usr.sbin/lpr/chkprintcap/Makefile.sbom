@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Check validity of entries in the print spooler database
+SBOM_LICENSE=	BSD-3-Clause AND BSD-2-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/lpr/chkprintcap
+SBOM_URL=	https://www.FreeBSD.org

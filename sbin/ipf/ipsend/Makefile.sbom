@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Resend IP packets out to network
+SBOM_LICENSE=	LicenseRef-scancode-other-permissive
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/sbin/ipf/ipsend
+SBOM_URL=	https://www.FreeBSD.org

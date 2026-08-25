@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	A utility for manipulating the lpt printer driver
+SBOM_LICENSE=	BSD-4-Clause AND BSD-2-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/lptcontrol
+SBOM_URL=	https://www.FreeBSD.org

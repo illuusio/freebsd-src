@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Maintain system log files to manageable sizes
+SBOM_LICENSE=	BSD-2-Clause AND BSD-2-Clause-Views AND NTP
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/newsyslog
+SBOM_URL=	https://www.FreeBSD.org

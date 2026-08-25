@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Implement ``nos'' or ``ka9q'' style IP over IP tunnel
+SBOM_LICENSE=	BSD-3-Clause AND BSD-2-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/sbin/nos-tun
+SBOM_URL=	https://www.FreeBSD.org

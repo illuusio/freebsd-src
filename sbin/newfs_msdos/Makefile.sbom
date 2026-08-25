@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Construct a new MS-DOS (FAT) file system
+SBOM_LICENSE=	BSD-2-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/sbin/newfs_msdos
+SBOM_URL=	https://www.FreeBSD.org

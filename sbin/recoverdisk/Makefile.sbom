@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Recover data from disk-like devices.
+SBOM_LICENSE=	Beerware
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/sbin/recoverdisk
+SBOM_URL=	https://www.FreeBSD.org

@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Mount a loopback file system sub-tree; demonstrate the use of a null file system layer
+SBOM_LICENSE=	BSD-3-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/sbin/mount_nullfs
+SBOM_URL=	https://www.FreeBSD.org

@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Make temporary file name (unique)
+SBOM_LICENSE=	BSD-2-Clause AND LicenseRef-scancode-other-permissive
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.bin/mktemp
+SBOM_URL=	https://www.FreeBSD.org

@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Create a file system image from a directory tree or a mtree manifest
+SBOM_LICENSE=	BSD-4-Clause AND BSD-2-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/makefs
+SBOM_URL=	https://www.FreeBSD.org

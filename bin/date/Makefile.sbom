@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Display or set date and time
+SBOM_LICENSE=	BSD-3-Clause AND BSD-2-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/bin/date
+SBOM_URL=	https://www.FreeBSD.org

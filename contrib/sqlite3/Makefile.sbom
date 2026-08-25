@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	SQLite3 database engine
+SBOM_LICENSE=	LicenseRef-scancode-public-domain
+SBOM_SOURCE=	https://github.com/sqlite/sqlite/tree/version-3.50.2
+SBOM_URL=	https://sqlite.org/src

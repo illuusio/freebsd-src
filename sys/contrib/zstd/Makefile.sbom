@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Zstandard is a fast compression algorithm
+SBOM_LICENSE=	BSD-3-Clause
+SBOM_SOURCE=	https://github.com/facebook/zstd
+SBOM_URL=	https://facebook.github.io/zstd/

@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Execute, examine or modify a utility's or process's realtime or idletime scheduling priority
+SBOM_LICENSE=	BSD-4-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/rtprio
+SBOM_URL=	https://www.FreeBSD.org

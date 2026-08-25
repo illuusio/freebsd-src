@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Retrieve a file by Uniform Resource Locator
+SBOM_LICENSE=	LicenseRef-scancode-bsd-unchanged
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.bin/fetch
+SBOM_URL=	https://www.FreeBSD.org

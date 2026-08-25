@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Dynamic Host Configuration Protocol (DHCP) client
+SBOM_LICENSE=	BSD-3-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/sbin/dhclient
+SBOM_URL=	https://www.FreeBSD.org

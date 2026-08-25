@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Convert from BSM to other formats
+SBOM_LICENSE=	BSD-3-Clause AND BSD-2-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/lib/libbsm
+SBOM_URL=	https://www.FreeBSD.org

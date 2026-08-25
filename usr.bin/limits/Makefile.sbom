@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Set or display process resource limits
+SBOM_LICENSE=	LicenseRef-scancode-other-permissive
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.bin/limits
+SBOM_URL=	https://www.FreeBSD.org

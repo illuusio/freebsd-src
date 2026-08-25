@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Automated conversational script with a modem
+SBOM_LICENSE=	LicenseRef-scancode-public-domain-disclaimer
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.bin/chat
+SBOM_URL=	https://www.FreeBSD.org

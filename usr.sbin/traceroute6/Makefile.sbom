@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Print the route IPv6 packets will take to a network node
+SBOM_LICENSE=	BSD-3-Clause AND BSD-2-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/traceroute6
+SBOM_URL=	https://www.FreeBSD.org

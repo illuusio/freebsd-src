@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Display or set MBIM cellular modem interface parameters (4G/LTE)
+SBOM_LICENSE=	BSD-3-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/sbin/umbctl
+SBOM_URL=	https://www.FreeBSD.org

@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Alters packet filtering lists for IP packet input and output
+SBOM_LICENSE=	BSD-4-Clause-UC AND LicenseRef-scancode-other-permissive
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/sbin/ipf/ipf
+SBOM_URL=	https://www.FreeBSD.org

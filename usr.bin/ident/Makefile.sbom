@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Identify RCS keyword string in files
+SBOM_LICENSE=	LicenseRef-scancode-bsd-unchanged
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.bin/ident
+SBOM_URL=	https://www.FreeBSD.org

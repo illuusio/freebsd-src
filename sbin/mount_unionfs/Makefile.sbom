@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Mount union file systems
+SBOM_LICENSE=	BSD-3-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/sbin/mount_unionfs
+SBOM_URL=	https://www.FreeBSD.org

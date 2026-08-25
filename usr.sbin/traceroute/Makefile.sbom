@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Print the route packets take to network host
+SBOM_LICENSE=	BSD-2-Clause AND BSD-4-Clause-Shortened AND BSD-4-Clause-UC
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/traceroute
+SBOM_URL=	https://www.FreeBSD.org

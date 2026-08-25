@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Show what versions of object modules were used to construct a file
+SBOM_LICENSE=	BSD-3-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.bin/what
+SBOM_URL=	https://www.FreeBSD.org

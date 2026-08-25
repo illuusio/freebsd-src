@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Display or modify the kernel module search path
+SBOM_LICENSE=	BSD-2-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/sbin/kldconfig
+SBOM_URL=	https://www.FreeBSD.org

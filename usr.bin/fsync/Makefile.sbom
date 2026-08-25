@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Synchronize a file's in-core state with that on disk
+SBOM_LICENSE=	BSD-2-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.bin/fsync
+SBOM_URL=	https://www.FreeBSD.org

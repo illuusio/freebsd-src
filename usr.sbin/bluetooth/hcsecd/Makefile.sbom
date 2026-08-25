@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Control link keys and PIN codes for Bluetooth devices
+SBOM_LICENSE=	BSD-2-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/bluetooth/hcsecd
+SBOM_URL=	https://www.FreeBSD.org

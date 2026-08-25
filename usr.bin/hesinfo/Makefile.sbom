@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Find out what is stored in the Hesiod database
+SBOM_LICENSE=	NTP
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.bin/hesinfo
+SBOM_URL=	https://www.FreeBSD.org

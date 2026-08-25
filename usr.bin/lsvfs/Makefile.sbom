@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	List installed virtual file systems
+SBOM_LICENSE=	LicenseRef-scancode-public-domain
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.bin/lsvfs
+SBOM_URL=	https://www.FreeBSD.org

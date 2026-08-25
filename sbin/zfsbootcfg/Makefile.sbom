@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Specify zfsboot options for the next boot
+SBOM_LICENSE=	BSD-2-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/sbin/zfsbootcfg
+SBOM_URL=	https://www.FreeBSD.org

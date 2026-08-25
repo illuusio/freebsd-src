@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Control the APM BIOS and display its information
+SBOM_LICENSE=	LicenseRef-scancode-font-alias
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/apm
+SBOM_URL=	https://www.FreeBSD.org

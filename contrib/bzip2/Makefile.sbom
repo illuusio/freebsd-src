@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	High-quality data compressor
+SBOM_LICENSE=	bzip2-1.0.6
+SBOM_SOURCE=	https://sourceware.org/git/?p=bzip2.git;a=commit;h=6a8690fc8d26c815e798c588f796eabe9d684cf0
+SBOM_URL=	https://sourceware.org/bzip2/

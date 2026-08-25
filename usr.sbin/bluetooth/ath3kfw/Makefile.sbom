@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Load firmware for Atheros AR3011/AR3012 Bluetooth USB devices
+SBOM_LICENSE=	LicenseRef-scancode-intel-bsd-2-clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/bluetooth/ath3kfw
+SBOM_URL=	https://www.FreeBSD.org

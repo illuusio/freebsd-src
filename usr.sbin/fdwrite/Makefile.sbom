@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Format and write floppy disks
+SBOM_LICENSE=	Beerware
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/fdwrite
+SBOM_URL=	https://www.FreeBSD.org

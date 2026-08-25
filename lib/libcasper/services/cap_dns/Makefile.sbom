@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Library for getting network host entry in capability mode
+SBOM_LICENSE=	BSD-2-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/lib/libcasper/services/cap_dns
+SBOM_URL=	https://www.FreeBSD.org

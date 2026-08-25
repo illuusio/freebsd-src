@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Hides symbol names from ld, for crunching programs together
+SBOM_LICENSE=	BSD-4-Clause AND BSD-2-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/crunch/crunchide
+SBOM_URL=	https://www.FreeBSD.org

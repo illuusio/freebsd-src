@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Display a pNFS data storage file's location(s) and/or modify the “pnfsd.dsfile” extended attribute for them
+SBOM_LICENSE=	BSD-2-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/pnfsdsfile
+SBOM_URL=	https://www.FreeBSD.org

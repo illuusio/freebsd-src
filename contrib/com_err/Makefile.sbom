@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Common error display library
+SBOM_LICENSE=	BSD-3-Clause
+SBOM_SOURCE=	https://github.com/heimdal/heimdal/tree/master/lib/com_err
+SBOM_URL=	https://www.heimdal.software

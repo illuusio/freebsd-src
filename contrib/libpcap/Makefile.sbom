@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Platform-independent network traffic capture library
+SBOM_LICENSE=	BSD-3-Clause
+SBOM_SOURCE=	https://www.tcpdump.org/release/libpcap-1.10.5.tar.xz
+SBOM_URL=	https://www.tcpdump.org

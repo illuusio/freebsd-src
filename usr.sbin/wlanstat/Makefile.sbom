@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Query 802.11 wireless network statistics
+SBOM_LICENSE=	NOASSERTION
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/wlanstat
+SBOM_URL=	https://www.FreeBSD.org

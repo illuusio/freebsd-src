@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	FreeBSD Device Tree Compiler
+SBOM_LICENSE=	BSD-2-Clause
+SBOM_SOURCE=	https://github.com/davidchisnall/dtc/tree/23387dd5462d38bf2e7301e2811913d82e167efc
+SBOM_URL=	https://github.com/davidchisnall/dtc

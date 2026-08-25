@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Copy diverted packets to a file in tcpdump format
+SBOM_LICENSE=	LicenseRef-scancode-other-permissive
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/ipfwpcap
+SBOM_URL=	https://www.FreeBSD.org

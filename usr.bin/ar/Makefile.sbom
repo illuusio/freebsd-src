@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Manage archives
+SBOM_LICENSE=	BSD-2-Clause AND BSD-3-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.bin/ar
+SBOM_URL=	https://www.FreeBSD.org

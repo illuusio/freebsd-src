@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	FreeBSD misc util library
+SBOM_LICENSE=	BSD-4-Clause AND BSD-3-Clause AND BSD-2-Clause AND LicenseRef-scancode-other-permissive
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/lib/libutil
+SBOM_URL=	https://www.FreeBSD.org

@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	NetBSD Editline library (libedit)
+SBOM_LICENSE=	BSD-3-Clause
+SBOM_SOURCE=	https://github.com/NetBSD/src/commit/2cf0b469b9d048aeccdc6451da18d68a11366991
+SBOM_URL=	https://www.NetBSD.org

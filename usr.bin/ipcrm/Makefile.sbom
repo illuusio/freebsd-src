@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Remove the specified message queues, semaphore sets, and shared segments
+SBOM_LICENSE=	BSD-4-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.bin/ipcrm
+SBOM_URL=	https://www.FreeBSD.org

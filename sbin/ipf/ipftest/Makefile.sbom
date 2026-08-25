@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Test packet filter rules with arbitrary input.
+SBOM_LICENSE=	LicenseRef-scancode-other-permissive AND RSA-MD
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/sbin/ipf/ipftest
+SBOM_URL=	https://www.FreeBSD.org

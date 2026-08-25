@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Add or change user database information
+SBOM_LICENSE=	BSD-4-Clause AND BSD-3-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.bin/chpass
+SBOM_URL=	https://www.FreeBSD.org

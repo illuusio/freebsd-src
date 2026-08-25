@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Interpret .so requests in manpages
+SBOM_LICENSE=	LicenseRef-scancode-bsd-unchanged
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.bin/soelim
+SBOM_URL=	https://www.FreeBSD.org

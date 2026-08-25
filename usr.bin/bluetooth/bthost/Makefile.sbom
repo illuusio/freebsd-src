@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Look up Bluetooth host names and Protocol Service Multiplexor values
+SBOM_LICENSE=	BSD-2-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.bin/bluetooth/bthost
+SBOM_URL=	https://www.FreeBSD.org

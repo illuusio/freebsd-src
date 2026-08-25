@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Display free disk space
+SBOM_LICENSE=	BSD-3-Clause AND LicenseRef-scancode-unknown-license-reference
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/bin/df
+SBOM_URL=	https://www.FreeBSD.org

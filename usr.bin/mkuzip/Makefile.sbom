@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Compress disk image for use with geom_uzip(4) class
+SBOM_LICENSE=	BSD-2-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.bin/mkuzip
+SBOM_URL=	https://www.FreeBSD.org

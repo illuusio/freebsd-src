@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Mark an ELF binary for a specific ABI
+SBOM_LICENSE=	LicenseRef-scancode-bsd-unchanged
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.bin/brandelf
+SBOM_URL=	https://www.FreeBSD.org

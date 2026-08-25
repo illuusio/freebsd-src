@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	function performs password hashing with additional code added to deter key search attempts. Different algorithms can be used to in the hash.
+SBOM_LICENSE=	BSD-3-Clause AND BSD-2-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/lib/libcrypt
+SBOM_URL=	https://www.FreeBSD.org

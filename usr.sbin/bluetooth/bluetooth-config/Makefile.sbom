@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	A script to manage config files for the bluetooth sub system
+SBOM_LICENSE=	Beerware
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/bluetooth/bluetooth-config
+SBOM_URL=	https://www.FreeBSD.org

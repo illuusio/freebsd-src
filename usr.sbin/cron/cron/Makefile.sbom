@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Daemon to execute scheduled commands (Vixie Cron)
+SBOM_LICENSE=	BSD-4.3TAHOE AND BSD-3-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/cron/cron
+SBOM_URL=	https://www.FreeBSD.org

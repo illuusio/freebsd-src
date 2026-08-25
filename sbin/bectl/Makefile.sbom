@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Manage ZFS boot environments
+SBOM_LICENSE=	Beerware AND BSD-2-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/sbin/bectl
+SBOM_URL=	https://www.FreeBSD.org

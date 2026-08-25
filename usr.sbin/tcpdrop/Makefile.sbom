@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Drop TCP connections
+SBOM_LICENSE=	ISC
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/tcpdrop
+SBOM_URL=	https://www.FreeBSD.org

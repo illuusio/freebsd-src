@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	openssl cryptography library
+SBOM_LICENSE=	Apache-2.0
+SBOM_SOURCE=	https://github.com/openssl/openssl/tree/openssl-3.5.4
+SBOM_URL=	https://openssl-library.org

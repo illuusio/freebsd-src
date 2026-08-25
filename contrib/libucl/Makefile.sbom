@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Universal configuration library parser
+SBOM_LICENSE=	BSD-2-Clause
+SBOM_SOURCE=	https://github.com/vstakhov/libucl
+SBOM_URL=	https://github.com/vstakhov/libucl

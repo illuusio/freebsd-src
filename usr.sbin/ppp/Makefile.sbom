@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Point to Point Protocol (a.k.a. user-ppp)
+SBOM_LICENSE=	BSD-4.3TAHOE AND BSD-3-Clause AND BSD-2-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/ppp
+SBOM_URL=	https://www.FreeBSD.org

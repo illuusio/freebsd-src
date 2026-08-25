@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Generates build environment for a crunched binary
+SBOM_LICENSE=	BSD-2-Clause AND HPND-sell-variant
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/crunch/crunchgen
+SBOM_URL=	https://www.FreeBSD.org

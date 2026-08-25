@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Begemot SNMP library
+SBOM_LICENSE=	BSD-2-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/lib/libbsnmp/libbsnmp
+SBOM_URL=	https://www.FreeBSD.org

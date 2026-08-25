@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	YP map server using LDAP backend
+SBOM_LICENSE=	ISC AND NTP-0
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/ypldap
+SBOM_URL=	https://www.FreeBSD.org

@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Router renumbering daemon
+SBOM_LICENSE=	BSD-4-Clause AND BSD-3-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/rrenumd
+SBOM_URL=	https://www.FreeBSD.org

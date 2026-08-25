@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Server for updating NIS passwords
+SBOM_LICENSE=	BSD-4-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/rpc.yppasswdd
+SBOM_URL=	https://www.FreeBSD.org

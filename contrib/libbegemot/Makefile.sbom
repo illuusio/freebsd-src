@@ -1,0 +1,6 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Begemot utility function library. It is needed to build most of the begemot tools
+SBOM_LICENSE=	BSD-2-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/contrib/libbegemot
+SBOM_URL=	https://people.freebsd.org/~harti/libbegemot/
+SBOM_VERSION=	1.14

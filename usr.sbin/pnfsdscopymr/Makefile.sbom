@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Copy or move a data storage file for a MDS file to a different DS
+SBOM_LICENSE=	BSD-2-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/pnfsdscopymr
+SBOM_URL=	https://www.FreeBSD.org

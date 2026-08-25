@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Calculate a message- digest fingerprint (checksum) for a file
+SBOM_LICENSE=	LicenseRef-scancode-rsa-1990
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/sbin/md5
+SBOM_URL=	https://www.FreeBSD.org

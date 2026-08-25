@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Reverse ARP daemon
+SBOM_LICENSE=	LicenseRef-scancode-bsd-simplified-intel
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/rarpd
+SBOM_URL=	https://www.FreeBSD.org

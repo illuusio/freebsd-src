@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Load firmware for Realtek 87XX/88XX Bluetooth USB devices
+SBOM_LICENSE=	BSD-2-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/bluetooth/rtlbtfw
+SBOM_URL=	https://www.FreeBSD.org

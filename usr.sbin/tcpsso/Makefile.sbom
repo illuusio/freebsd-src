@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Set a socket option on a TCP endpoint
+SBOM_LICENSE=	BSD-4-Clause AND BSD-2-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/tcpsso
+SBOM_URL=	https://www.FreeBSD.org

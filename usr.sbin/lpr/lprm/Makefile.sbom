@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Remove jobs from the line printer spooling queue
+SBOM_LICENSE=	BSD-3-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/lpr/lprm
+SBOM_URL=	https://www.FreeBSD.org

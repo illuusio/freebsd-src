@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Pf logging daemon
+SBOM_LICENSE=	BSD-3-Clause
+SBOM_SOURCE=	https://github.com/openbsd/src/tree/master/sbin/pflogd
+SBOM_URL=	https://openbsd.org

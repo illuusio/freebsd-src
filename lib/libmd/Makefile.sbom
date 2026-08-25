@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Library for calculating digests
+SBOM_LICENSE=	BSD-4-Clause AND BSD-2-Clause AND Beeware AND RSA-MD AND
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/lib/libmd
+SBOM_URL=	https://www.FreeBSD.org

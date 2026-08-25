@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Grand digital clock (curses)
+SBOM_LICENSE=	NOASSERTION
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.bin/grdc
+SBOM_URL=	https://www.FreeBSD.org

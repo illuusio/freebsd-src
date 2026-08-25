@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Network Address Translation daemon
+SBOM_LICENSE=	LicenseRef-scancode-other-permissive
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/sbin/natd
+SBOM_URL=	https://www.FreeBSD.org

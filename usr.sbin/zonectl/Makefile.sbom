@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Shingled Magnetic Recording Zone Control utility
+SBOM_LICENSE=	LicenseRef-scancode-intel-bsd-2-clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/zonectl
+SBOM_URL=	https://www.FreeBSD.org

@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Connect to a netgraph(4) node
+SBOM_LICENSE=	LicenseRef-scancode-whistle
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/nghook
+SBOM_URL=	https://www.FreeBSD.org

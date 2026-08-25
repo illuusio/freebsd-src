@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Maintain crontab files for individual users (V3)
+SBOM_LICENSE=	ISC
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/cron/crontab
+SBOM_URL=	https://www.FreeBSD.org

@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	General purpose internetwork email routing application
+SBOM_LICENSE=	Sendmail
+SBOM_SOURCE=	https://ftp.sendmail.org/sendmail.8.18.1.tar.gz
+SBOM_URL=	https://ftp.sendmail.org

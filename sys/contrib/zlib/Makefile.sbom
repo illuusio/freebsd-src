@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	zlib compression library
+SBOM_LICENSE=	Zlib
+SBOM_SOURCE=	https://github.com/madler/zlib/tree/develop
+SBOM_URL=	https://zlib.net

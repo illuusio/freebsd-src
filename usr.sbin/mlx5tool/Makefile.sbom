@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Utility for managing Connect-X 4/5/6 Mellanox network adapters
+SBOM_LICENSE=	BSD-2-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/mlx5tool
+SBOM_URL=	https://www.FreeBSD.org

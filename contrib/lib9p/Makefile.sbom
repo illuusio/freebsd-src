@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	BSD-licensed 9P2000.u/.L server library
+SBOM_LICENSE=	BSD-2-Clause AND MIT
+SBOM_SOURCE=	https://github.com/conclusiveeng/lib9p/tree/9d5aee77bcc1bf0e79b0a3bfefff5fdf2146283c
+SBOM_URL=	https://github.com/conclusiveeng/lib9p

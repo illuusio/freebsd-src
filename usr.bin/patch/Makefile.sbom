@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Applies diff files to original files
+SBOM_LICENSE=	BSD-3-Clause AND LicenseRef-scancode-public-domain
+SBOM_SOURCE=	https://git.savannah.gnu.org/git/patch.git
+SBOM_URL=	https://www.gnu.org/software/patch/

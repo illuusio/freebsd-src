@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Convert file to c-source
+SBOM_LICENSE=	Beerware
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.bin/file2c
+SBOM_URL=	https://www.FreeBSD.org

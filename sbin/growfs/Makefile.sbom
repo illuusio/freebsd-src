@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Expand an existing UFS file system
+SBOM_LICENSE=	BSD-4-Clause AND BSD-3-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/sbin/growfs
+SBOM_URL=	https://www.FreeBSD.org

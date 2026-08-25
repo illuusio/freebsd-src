@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	XML 1.0 parser written in C
+SBOM_LICENSE=	MIT
+SBOM_SOURCE=	https://github.com/libexpat/libexpat/tree/R_2_7_3
+SBOM_URL=	https://github.com/libexpat/libexpat

@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	General purpose data compression library
+SBOM_LICENSE=	0BSD
+SBOM_SOURCE=	https://github.com/tukaani-project/xz
+SBOM_URL=	https://tukaani.org/xz/

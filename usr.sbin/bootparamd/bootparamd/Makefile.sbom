@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Boot parameter server
+SBOM_LICENSE=	LicenseRef-scancode-public-domain
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/bootparamd/bootparamd
+SBOM_URL=	https://www.FreeBSD.org

@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Multi-format archive and compression library
+SBOM_LICENSE=	BSD-3-Clause AND BSD-2-Clause AND CC0-1.0 AND openssl AND Apache-2.0
+SBOM_SOURCE=	https://github.com/libarchive/libarchive/tree/v3.8.2
+SBOM_URL=	https://libarchive.org

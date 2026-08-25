@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	User interface to dcons(4)
+SBOM_LICENSE=	BSD-4-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/dconschat
+SBOM_URL=	https://www.FreeBSD.org

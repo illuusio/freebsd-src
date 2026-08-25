@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Parse command options
+SBOM_LICENSE=	LicenseRef-scancode-public-domain
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.bin/getopt
+SBOM_URL=	https://www.FreeBSD.org

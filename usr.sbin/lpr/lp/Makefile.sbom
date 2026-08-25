@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Front-end to the print spooler
+SBOM_LICENSE=	BSD-4-Clause-UC AND LicenseRef-scancode-unknown-license-reference
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/lpr/lp
+SBOM_URL=	https://www.FreeBSD.org

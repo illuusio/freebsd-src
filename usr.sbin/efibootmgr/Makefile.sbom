@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Manipulate the EFI Boot Manager
+SBOM_LICENSE=	LicenseRef-scancode-bsd-unchanged
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/efibootmgr
+SBOM_URL=	https://www.FreeBSD.org

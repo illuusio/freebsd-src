@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	3-way differential file comparison
+SBOM_LICENSE=	BSD-3-Clause AND Caldera-no-preamble
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.bin/diff3
+SBOM_URL=	https://www.FreeBSD.org

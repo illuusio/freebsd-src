@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Compact disc control utility
+SBOM_LICENSE=	NOASSERTION
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/cdcontrol
+SBOM_URL=	https://www.FreeBSD.org

@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	NIS domain binding daemon
+SBOM_LICENSE=	BSD-4-Clause AND BSD-3-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/ypbind
+SBOM_URL=	https://www.FreeBSD.org

@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	1:1 POSIX threads library
+SBOM_LICENSE=	BSD-4-Clause AND BSD-3-Clause AND BSD-2-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/lib/libthr
+SBOM_URL=	https://www.FreeBSD.org

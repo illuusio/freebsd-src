@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Remote status display
+SBOM_LICENSE=	BSD-4-Clause-UC
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.bin/rup
+SBOM_URL=	https://www.FreeBSD.org

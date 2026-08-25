@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	An RPC protocol compiler
+SBOM_LICENSE=	LicenseRef-scancode-sun-rpc
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.bin/rpcgen
+SBOM_URL=	https://www.FreeBSD.org

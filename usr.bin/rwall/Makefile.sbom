@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Send a message to users logged on a host
+SBOM_LICENSE=	BSD-4-Clause-UC
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.bin/rwall
+SBOM_URL=	https://www.FreeBSD.org

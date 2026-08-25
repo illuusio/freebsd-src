@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Create an IPsec policy structure from a human readable string
+SBOM_LICENSE=	BSD-3-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/lib/libipsec
+SBOM_URL=	https://www.FreeBSD.org

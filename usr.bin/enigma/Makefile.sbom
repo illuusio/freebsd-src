@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Very simple file encryption
+SBOM_LICENSE=	LicenseRef-Public-Domain
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.bin/enigma
+SBOM_URL=	https://www.FreeBSD.org

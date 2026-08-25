@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Display MP configuration table
+SBOM_LICENSE=	BSD-Source-Code
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/mptable
+SBOM_URL=	https://www.FreeBSD.org

@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Set/query 802.11 wireless debugging messages
+SBOM_LICENSE=	NOASSERTION
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/wlandebug
+SBOM_URL=	https://www.FreeBSD.org

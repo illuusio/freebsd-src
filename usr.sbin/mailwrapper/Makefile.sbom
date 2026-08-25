@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Invoke appropriate MTA software based on configuration file
+SBOM_LICENSE=	BSD-4-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/mailwrapper
+SBOM_URL=	https://www.FreeBSD.org

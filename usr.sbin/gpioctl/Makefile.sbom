@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	GPIO control utility
+SBOM_LICENSE=	LicenseRef-scancode-bsd-unmodified
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/gpioctl
+SBOM_URL=	https://www.FreeBSD.org

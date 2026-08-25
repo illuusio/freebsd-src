@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	The Clang C, C++, and Objective-C compiler
+SBOM_LICENSE=	Apache-2.0
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/contrib/llvm-project/clang
+SBOM_URL=	https://llvm.org

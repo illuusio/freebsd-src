@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Fast lexical analyzer generator
+SBOM_LICENSE=	BSD-3-Clause-flex
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.bin/lex
+SBOM_URL=	https://www.FreeBSD.org

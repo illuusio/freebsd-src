@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Display file status
+SBOM_LICENSE=	BSD-4-Clause AND BSD-2-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.bin/stat
+SBOM_URL=	https://www.FreeBSD.org

@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Utility for managing SCSI Enclosure Services (SES) device
+SBOM_LICENSE=	LicenseRef-scancode-bsd-axis-nomod OR GPL-1.0-or-later AND LicenseRef-scancode-bsd-unchanged
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.sbin/sesutil
+SBOM_URL=	https://www.FreeBSD.org

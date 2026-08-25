@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Display NFS statistics
+SBOM_LICENSE=	BSD-3-Clause AND LicenseRef-scancode-intel-bsd-2-clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.bin/nfsstat
+SBOM_URL=	https://www.FreeBSD.org

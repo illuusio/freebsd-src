@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Monitors /dev/ipl for logged packets
+SBOM_LICENSE=	LicenseRef-scancode-other-permissive
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/sbin/ipf/ipmon
+SBOM_URL=	https://www.FreeBSD.org

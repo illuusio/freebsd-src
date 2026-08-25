@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Reserve a terminal
+SBOM_LICENSE=	Beerware AND BSD-3-Clause
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.bin/lock
+SBOM_URL=	https://www.FreeBSD.org

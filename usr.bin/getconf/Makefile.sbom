@@ -1,0 +1,5 @@
+SBOM_NAME=	${PACKAGE}
+SBOM_DESC=	Retrieve standard configuration variables
+SBOM_LICENSE=	LicenseRef-scancode-mit-license-1998
+SBOM_SOURCE=	https://cgit.freebsd.org/src/tree/usr.bin/getconf
+SBOM_URL=	https://www.FreeBSD.org
