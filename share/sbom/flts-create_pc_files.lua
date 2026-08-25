@@ -153,13 +153,25 @@ local allowed_dirs = {
 	"usr.sbin/",
 }
 
-if arg[2] == nil or arg[2] == "pkgconf" then
+if arg[2] == nil or (arg[2] == "pkgconf" or arg[2] == "makefile") then
 	local meta_package = {}
 	local dep_libraries = {}
+	local is_pkgconf = true
+
+	print(arg[2])
+
+	if arg[2] == "makefile" then
+		print(arg[2])
+		is_pkgconf = false
+		is_pc_subdir = true
+	end
 
 	for key, value in pairs(whole_packages) do
 		local dir_name = "pkgconfig"
 		local cur_dir = "bin"
+		-- If file is wanted to put under subdir like
+		-- bin.cat then this one is used. Otherwise
+		-- it's flat output in one dir
 		if is_pc_subdir then
 			dir_name = value["directory"]
 
@@ -180,11 +192,21 @@ if arg[2] == nil or arg[2] == "pkgconf" then
 			end
 		end
 
+		-- For default key (application name) is used as name of .pc-file
+		-- and as expected suffix is .pc
 		local name_str = key
+		local suffix_str = ".pc"
 
-		local output_filename = name_str .. ".pc"
-		if is_pc_subdir then
-			output_filename = string.gsub(dir_name, "/", ".") .. ".pc"
+		-- For makefile as it should be under subdir then name are always
+		-- the same Makefile.sbom
+		if arg[2] == "makefile" then
+			name_str = "Makefile"
+			suffix_str = ".sbom"
+		end
+
+		local output_filename = name_str .. suffix_str
+		if is_pc_subdir and arg[2] == "pkgconf" then
+			output_filename = string.gsub(dir_name, "/", ".") .. suffix_str
 		end
 		local output_full = dir_name .. "/" .. output_filename
 		local copyright_table = {}
@@ -193,6 +215,7 @@ if arg[2] == nil or arg[2] == "pkgconf" then
 
 		local is_correct = false
 
+		-- There should be directory and it should be type of string
 		if value["directory"] ~= nil and type(value["directory"]) == "string" then
 			for _, searchvalue in ipairs(allowed_dirs) do
 				if string.find(value["directory"], searchvalue) ~= nil then
@@ -226,9 +249,16 @@ if arg[2] == nil or arg[2] == "pkgconf" then
 						)
 						pkgconf.add_string_to_table(license_expression_spdx, license_value["license_expression_spdx"])
 						pkgconf.add_string_to_table(license_file_table, "${pcfiledir}/LICENSES/" .. license_file)
+
+						local license_output_dir = dir_name
+
+						if arg[2] == "makefile" then
+							license_output_dir = "./"
+						end
+
 						if pkgconf.file_exists(license_file) == false then
 							pkgconf.write_file(
-								dir_name .. "/LICENSES/" .. license_file,
+								license_output_dir .. "/LICENSES/" .. license_file,
 								license_value["license_original"]
 							)
 						end
@@ -241,7 +271,7 @@ if arg[2] == nil or arg[2] == "pkgconf" then
 				value["license"] = table.concat(license_expression_spdx, " AND ")
 			end
 
-			print("Write to PC-file to '" .. output_full .. "'")
+			print("Write to file to '" .. output_full .. "'")
 			pkgconf.write_pkgconfig(
 				output_full,
 				name_str,
@@ -253,7 +283,8 @@ if arg[2] == nil or arg[2] == "pkgconf" then
 				value["depends"],
 				value["owner"],
 				copyright_table,
-				license_file_table
+				license_file_table,
+				is_pkgconf
 			)
 			pkgconf.add_string_to_table(meta_package, string.lower(name_str))
 
@@ -270,8 +301,33 @@ if arg[2] == nil or arg[2] == "pkgconf" then
 	for _, dep_name in ipairs(dep_libraries) do
 		if whole_packages[dep_name] ~= nil then
 			local package = whole_packages[dep_name]
-			local output_filename = dep_name .. ".pc"
-			local output_full = "pkgconfig/" .. output_filename
+			local dir_name = "pkgconfig"
+			if is_pc_subdir then
+				dir_name = package["directory"]
+
+				if dir_name == nil then
+					dir_name = "."
+				end
+
+				if type(dir_name) == "table" then
+					dir_name = package["directory"][1]
+				end
+			end
+
+			-- For default key (application name) is used as name of .pc-file
+			-- and as expected suffix is .pc
+			local name_str = dep_name
+			local suffix_str = ".pc"
+
+			-- For makefile as it should be under subdir then name are always
+			-- the same Makefile.sbom
+			if arg[2] == "makefile" then
+				name_str = "Makefile"
+				suffix_str = ".sbom"
+			end
+
+			local output_filename = name_str .. suffix_str
+			local output_full = dir_name .. "/" .. output_filename
 			pkgconf.write_pkgconfig(
 				output_full,
 				dep_name,
@@ -283,7 +339,8 @@ if arg[2] == nil or arg[2] == "pkgconf" then
 				package["depends"],
 				package["owner"],
 				nil,
-				nil
+				nil,
+				is_pkgconf
 			)
 			if package["depends"] ~= nil then
 				for _, new_dep in ipairs(package["depends"]) do
@@ -296,17 +353,19 @@ if arg[2] == nil or arg[2] == "pkgconf" then
 
 	-- Write FreeBSD metapackage which holds every pkgconfig and make sure that
 	-- that we can create whole SBOM
-	table.sort(meta_package)
-	pkgconf.write_pkgconfig(
-		"pkgconfig/FreeBSD.pc",
-		"FreeBSD",
-		"Power to serve",
-		"https://www.freebsd.org/",
-		"15.0",
-		"NOASSERTION",
-		"https://cgit.freebsd.org/src/",
-		meta_package
-	)
+	if arg[2] == "pkgconf" then
+		table.sort(meta_package)
+		pkgconf.write_pkgconfig(
+			"pkgconfig/FreeBSD.pc",
+			"FreeBSD",
+			"Power to serve",
+			"https://www.freebsd.org/",
+			"15.0",
+			"NOASSERTION",
+			"https://cgit.freebsd.org/src/",
+			meta_package
+		)
+	end
 elseif arg[2] ~= nil and arg[2] == "markdown" then
 	local markdown_license_table = {}
 	local markdown_noassertion_table = {}

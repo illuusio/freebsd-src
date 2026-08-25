@@ -178,6 +178,53 @@ function pkgconf.pkgconfig(
 	return pc_str
 end
 
+------------------------------------------------------------------------------
+-- Create Makefile file
+-- @param name Name of package
+-- @param description description of package
+-- @param url Homepage for package
+-- @param version Package version
+-- @param license Package license
+-- @param source Package source
+-- @param deps_table Table of depends
+-- @return Concated string or nil if problem
+-------------------------------------------------------------------------------
+function pkgconf.makefile(
+	name,
+	description,
+	url,
+	version,
+	license,
+	source,
+	deps_table,
+	maintainer_table,
+	copyright_table,
+	license_table
+)
+	print("pkgconf.makefile: " .. name)
+	local pc_str = "SBOM_NAME=\t${PACKAGE}\n"
+	pc_str = pc_str .. "SBOM_DESC=\t".. description .. "\n"
+	pc_str = pc_str .. "SBOM_LICENSE=\t" .. license .. "\n"
+	pc_str = pc_str .. "SBOM_SOURCE=\t" .. source .. "\n"
+	pc_str = pc_str .. "SBOM_URL=\t" .. url .. "\n"
+	if version ~= nil then
+	pc_str = pc_str .. "SBOM_VERSION=\t" .. version .. "\n"
+	end
+	return pc_str
+end
+
+-- These are in these order
+-- Copyright: Copyright of application
+-- Description: Description for this application
+-- License: License for application in SPDX License Identifier short format
+-- License.file: This should point to license file which contains license text
+-- Maintainer: Maintener or maintainers
+-- Name: Name of application
+-- Requires: Requirements for this application that it can be build
+-- Source: Source where one can get application
+-- URL: Homepage for this application
+-- Version: Application version
+
 -------------------------------------------------------------------------------
 -- Does file exist and can it be opened and read
 -- @param filename Filename to be checked
@@ -211,7 +258,7 @@ function pkgconf.write_file(location, output_string)
 		local output_handle = io.open(location, "w")
 
 		if output_handle == nil then
-			print("Can't open file: '" .. location .. "' for output")
+			print("pkgconf.write_file: Can't open file: '" .. location .. "' for output")
 			return false
 		else
 			output_handle:write(output_string)
@@ -244,29 +291,51 @@ function pkgconf.write_pkgconfig(
 	deps_table,
 	maintainer_table,
 	copyright_table,
-	license_file_table
+	license_file_table,
+	is_pkgconf
 )
-	if url ~= nil and url:match(pkgconf.escape_regex(man_url)) ~= nil then
+	if url ~= nil and url:match(pkgconf.escape_regex(man_url)) ~= nil and is_pkgconf then
 		url = url .. man_url_addition
+	elseif url == nil or (url:match(pkgconf.escape_regex(man_url)) ~= nil and is_pkgconf == false) then
+		url = "https://www.FreeBSD.org"
 	end
-	if source ~= nil and source:match(pkgconf.escape_regex(git_url)) ~= nil then
+	if source ~= nil and source:match(pkgconf.escape_regex(git_url)) ~= nil and is_pkgconf then
 		source = source .. git_url_addition
 	end
-	if version ~= nil and type(version) == "string" and version:match("15.0") ~= true then
+	if version ~= nil and type(version) == "string" and version:match("15.0") ~= true and is_pkgconf then
 		version = "${FREEBSD_RELEASE}"
+	elseif version ~= nil and type(version) == "string" and version:match("15.0") ~= true and is_pkgconf == false then
+		version = nil
 	end
-	local pc_str = pkgconf.pkgconfig(
-		name,
-		description,
-		url,
-		version,
-		license,
-		source,
-		deps_table,
-		maintainer_table,
-		copyright_table,
-		license_file_table
-	)
+	local pc_str = ""
+
+	if is_pkgconf then
+		pc_str = pkgconf.pkgconfig(
+			name,
+			description,
+			url,
+			version,
+			license,
+			source,
+			deps_table,
+			maintainer_table,
+			copyright_table,
+			license_file_table
+		)
+	else
+		pc_str = pkgconf.makefile(
+			name,
+			description,
+			url,
+			version,
+			license,
+			source,
+			deps_table,
+			maintainer_table,
+			copyright_table,
+			license_file_table
+		)
+	end
 	if pkgconf.write_file(location, pc_str) == false then
 		return false, nil
 	end
