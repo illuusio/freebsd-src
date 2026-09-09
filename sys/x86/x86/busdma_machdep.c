@@ -1,5 +1,5 @@
 /*-
- * SPDX-License-Identifier: BSD-2-Clause
+ * SPDX-License-Identifier: BSD-Source-beginning-file
  *
  * Copyright (c) 1997, 1998 Justin T. Gibbs.
  * Copyright (c) 2013 The FreeBSD Foundation
