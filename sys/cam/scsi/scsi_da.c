@@ -1,7 +1,7 @@
 /*-
  * Implementation of SCSI Direct Access Peripheral driver for CAM.
  *
- * SPDX-License-Identifier: BSD-2-Clause
+ * SPDX-License-Identifier: BSD-Source-beginning-file
  *
  * Copyright (c) 1997 Justin T. Gibbs.
  * All rights reserved.

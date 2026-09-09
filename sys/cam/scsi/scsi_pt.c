@@ -1,5 +1,5 @@
 /*-
- * SPDX-License-Identifier: BSD-2-Clause
+ * SPDX-License-Identifier: BBSD-Source-beginning-file
  *
  * Implementation of SCSI Processor Target Peripheral driver for CAM.
  *

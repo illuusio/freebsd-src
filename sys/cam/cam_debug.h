@@ -1,7 +1,7 @@
 /*-
  * Macros for tracing/loging information in the CAM layer
  *
- * SPDX-License-Identifier: BSD-2-Clause
+ * SPDX-License-Identifier: BSD-Source-beginning-file
  *
  * Copyright (c) 1997 Justin T. Gibbs.
  * All rights reserved.

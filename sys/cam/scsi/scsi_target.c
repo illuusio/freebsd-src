@@ -1,7 +1,7 @@
 /*-
  * Generic SCSI Target Kernel Mode Driver
  *
- * SPDX-License-Identifier: BSD-2-Clause
+ * SPDX-License-Identifier: BSD-Source-beginning-file
  *
  * Copyright (c) 2002 Nate Lawson.
  * Copyright (c) 1998, 1999, 2001, 2002 Justin T. Gibbs.

@@ -1,5 +1,5 @@
 /*-
- * SPDX-License-Identifier: BSD-2-Clause
+ * SPDX-License-Identifier: BSD-Source-beginning-file
  *
  * Written by: yen_cw@myson.com.tw
  * Copyright (c) 2002 Myson Technology Inc.

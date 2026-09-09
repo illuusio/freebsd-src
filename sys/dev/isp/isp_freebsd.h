@@ -1,5 +1,5 @@
 /*-
- * SPDX-License-Identifier: BSD-2-Clause
+ * SPDX-License-Identifier:  BSD-Source-beginning-file
  *
  * Qlogic ISP SCSI Host Adapter FreeBSD Wrapper Definitions
  *

@@ -1,7 +1,7 @@
 /*-
  * Structure and function declarations for Processor type devices.
  *
- * SPDX-License-Identifier: BSD-2-Clause
+ * SPDX-License-Identifier: BSD-Source-beginning-file
  *
  * Copyright (c) 1998 Justin T. Gibbs
  * All rights reserved.

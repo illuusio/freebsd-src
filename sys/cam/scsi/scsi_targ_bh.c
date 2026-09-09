@@ -1,7 +1,7 @@
 /*-
  * Implementation of the Target Mode 'Black Hole device' for CAM.
  *
- * SPDX-License-Identifier: BSD-2-Clause
+ * SPDX-License-Identifier: BSD-Source-beginning-file
  *
  * Copyright (c) 1999 Justin T. Gibbs.
  * All rights reserved.
